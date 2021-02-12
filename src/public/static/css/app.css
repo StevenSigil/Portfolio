@@ -1,0 +1,73 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Main - row1 */
+.topRow-container {
+  min-height: 100vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15% 9%;
+
+  background-color: rgb(214, 214, 214);
+}
+.topRow-nameItem {
+  font-size: 1.75rem;
+  line-height: 3rem;
+}
+.topRow-nameItem h1 {
+  margin-bottom: 2.5rem;
+  font-size: 3.5rem;
+}
+.topRow-nameItem p {
+  margin-left: 1rem;
+}
+
+.topRow-textItem {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+/* Main - row2 */
+.r2-main-container {
+  min-height: 70vh;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.r2-main-container h4 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.r2-main-container p {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 2rem;
+
+}
+.centered-inner-footer {
+  text-align: center;
+}
+
+/* Main - row3 */
+.row3-main-container {
+  min-height: 80vh;
+  padding: 2rem;
+  background-color: rgb(214, 214, 214);
+}
+.row3-main-container h3 {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+.row3-inner-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  width: 22rem;
+  margin: 1rem auto;
+}
