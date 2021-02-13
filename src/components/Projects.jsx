@@ -8,13 +8,12 @@ function Projects() {
   return (
     <>
       <Container fluid className="row3-main-container">
-        <h2>Some recent projects</h2>
-
-        <JSCards />
-
-        <ReactCards />
+        <h2>Recent projects</h2>
 
         <PythonCards />
+        <ReactCards />
+        <JSCards />
+        
       </Container>
     </>
   );

@@ -1,53 +1,27 @@
-import { Card, Col, Row } from "react-bootstrap";
-import simon from "../public/static/media/simon.png";
-import diceGame from "../public/static/media/dice_game.png";
-import tinDog from "../public/static/media/tin_dog.png";
+import { Col, Row } from "react-bootstrap";
+
+import { SimonApp, TinDogApp, DiceApp } from "./ProjectCards";
 
 function JSCards() {
   return (
     <>
-      <h3>JavaScript, Html, CSS (vanilla) </h3>
-      <Row>
-        <Col md={4}>
-          <Card>
-            <Card.Img src={simon} />
-            <Card.Body>
-              <Card.Title>Simon</Card.Title>
-              <Card.Text>
-                Similique sunt in culpa qui officia deserunt mollitia animi, id
-                est laborum et dolorum fuga. Et harum quidem rerum facilis est
-                et expedita distinctio.Nam libero tempore, cum soluta nobis est
-              </Card.Text>
-            </Card.Body>
-          </Card>
+      <Row className="row3-inner-container">
+        <Col md={2}>
+          <div className="h3-p-title">
+            <h3>JavaScript</h3>
+            <h5>- (vanilla)</h5>
+          </div>
+          <h3>Html/CSS</h3>
         </Col>
 
-        <Col md={4}>
-          <Card>
-            <Card.Img src={diceGame} />
-            <Card.Body>
-              <Card.Title>Dice.random</Card.Title>
-              <Card.Text>
-                Similique sunt in culpa qui officia deserunt mollitia animi, id
-                est laborum et dolorum fuga. Et harum quidem rerum facilis est
-                et expedita distinctio.Nam libero tempore, cum soluta nobis est
-              </Card.Text>
-            </Card.Body>
-          </Card>
+        <Col md={3}>
+          <SimonApp />
         </Col>
-
-        <Col md={4}>
-          <Card>
-            <Card.Img src={tinDog} />
-            <Card.Body>
-              <Card.Title>Tindog</Card.Title>
-              <Card.Text>
-                Similique sunt in culpa qui officia deserunt mollitia animi, id
-                est laborum et dolorum fuga. Et harum quidem rerum facilis est
-                et expedita distinctio.Nam libero tempore, cum soluta nobis est
-              </Card.Text>
-            </Card.Body>
-          </Card>
+        <Col md={3}>
+          <TinDogApp />
+        </Col>
+        <Col md={3}>
+          <DiceApp />
         </Col>
       </Row>
     </>

@@ -47,7 +47,6 @@ body {
   margin-top: 1.5rem;
   margin-bottom: 0;
   line-height: 2rem;
-
 }
 .centered-inner-footer {
   text-align: center;
@@ -59,15 +58,66 @@ body {
   padding: 2rem;
   background-color: rgb(214, 214, 214);
 }
+.row3-main-container h2 {
+  margin: 2rem -1rem 4rem -1rem;
+}
 .row3-main-container h3 {
   text-align: center;
-  margin: 2rem 0 1rem;
 }
+
 .row3-inner-container {
   display: flex;
+  align-items: baseline;
   justify-content: space-evenly;
+  margin-top: 20vh;
+  min-height: 70vh;
 }
+
+.row3-inner-container > .col-md-2 {
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+.row3-inner-container > .col-md-2 h3 {
+  margin-bottom: 1rem;
+}
+.row3-inner-container >.col-md-3 >.card {
+  box-shadow: 15px 10px 17px rgba(49, 49, 49, 0.603),
+    -2px -2px 15px rgba(58, 58, 58, 0.568);
+}
+
+.h3-p-title {
+  display: inline-flex;
+  justify-content: center;
+  align-items: baseline;
+  width: inherit;
+}
+.h3-p-title h3 {
+  margin: 0;
+}
+.h3-p-title h5 {
+  margin: 0 2px 0 5px;
+}
+
 .card {
   width: 22rem;
   margin: 1rem auto;
+}
+.card-body {
+  width: 100%;
+  min-height: 196px;
+  margin: auto;
+}
+
+/* Card Footer */
+.projectCard-footer {
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+.projectCard-footer > .btn {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: black;
+}
+.projectCard-footer > .btn:hover {
+  color: #eeeeee;
 }
