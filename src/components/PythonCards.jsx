@@ -5,7 +5,7 @@ import { CryptographyApp, KivyApp, LifeApp } from "./ProjectCards";
 function PythonCards() {
   return (
     <>
-      <Row className="row3-inner-container">
+      <Row id='python-programming' className="row3-inner-container">
         <Col md={2}>
           <h3>Python</h3>
         </Col>

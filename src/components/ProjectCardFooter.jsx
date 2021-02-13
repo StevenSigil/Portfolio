@@ -11,7 +11,7 @@ function ProjectCardFooter(props) {
 
   return (
     <Card.Footer className="projectCard-footer">
-      <Button type="link" href={links.github} variant="outline-secondary">
+      <Button className='github-btn' type="link" href={links.github} variant="outline-secondary">
         <Image src={GithubMark} />
       </Button>
 
