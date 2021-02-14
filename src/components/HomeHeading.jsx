@@ -16,7 +16,9 @@ function HomeHeading() {
               <a href="#python-programming">Python Programming</a>
             </p>
             <p>Team Leader</p>
-            <p>Independent Learning</p>
+            <p>
+              <a href="#certifications">Independent Learning</a>
+            </p>
           </Col>
         </Row>
 
