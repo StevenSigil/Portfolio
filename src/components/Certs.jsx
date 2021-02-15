@@ -6,6 +6,7 @@ import DataAnalysis from "../public/static/media/certs/0.75x/Data-Analysis_fCC.p
 import PyBasic from "../public/static/media/certs/0.75x/Python-Basic.png";
 import Postgres from "../public/static/media/certs/0.75x/Postgre-Python.png";
 import Django from "../public/static/media/certs/0.75x/Django.png";
+import WebDev from "../public/static/media/certs/0.75x/Web-Dev.png";
 
 import Flash from "../public/static/media/certs/0.75x/Flash-2013.png";
 import Illustrator from "../public/static/media/certs/0.75x/Illustrator-2013.png";
@@ -21,6 +22,23 @@ function Certs() {
         <Row noGutters className="full-row">
           <Col>
             <Row className="img-row">
+              <Col md={6} className="img-col">
+                <Row>
+                  <Col md={5}>
+                    <h2>Web development</h2>
+                    {/* <h3>(2021)</h3> */}
+                  </Col>
+                  <Col>
+                    <Image
+                      src={WebDev}
+                      alt="Steven E. Web Development Bootcamp"
+                      width="100%"
+                      height="100%"
+                    />
+                  </Col>
+                </Row>
+              </Col>
+
               <Col md={6} className="img-col">
                 <Row>
                   <Col md={5}>
