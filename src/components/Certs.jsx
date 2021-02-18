@@ -1,17 +1,18 @@
 import { Container, Image, Row, Col } from "react-bootstrap";
 
 // Images
-import SciComp from "../public/static/media/certs/0.75x/Scientific-Computing_fCC.png";
-import DataAnalysis from "../public/static/media/certs/0.75x/Data-Analysis_fCC.png";
-import PyBasic from "../public/static/media/certs/0.75x/Python-Basic.png";
-import Postgres from "../public/static/media/certs/0.75x/Postgre-Python.png";
-import Django from "../public/static/media/certs/0.75x/Django.png";
-import WebDev from "../public/static/media/certs/0.75x/Web-Dev.png";
-import Flash from "../public/static/media/certs/0.75x/Flash-2013.png";
-import Illustrator from "../public/static/media/certs/0.75x/Illustrator-2013.png";
-import InDesign from "../public/static/media/certs/0.75x/InDesign-2014.png";
-import Photoshop from "../public/static/media/certs/0.75x/Photoshop-2013.png";
-import Premiere from "../public/static/media/certs/0.75x/Premiere-2014.png";
+import RWD from "../public/static/media/webp/certs/Responsive-Web-Design_fCC.webp";
+import SciComp from "../public/static/media/webp/certs/Scientific-Computing_fCC.webp";
+import DataAnalysis from "../public/static/media/webp/certs/Data-Analysis_fCC.webp";
+import PyBasic from "../public/static/media/webp/certs/Python-Basic.webp";
+import Postgres from "../public/static/media/webp/certs/Postgre-Python.webp";
+import Django from "../public/static/media/webp/certs/Django.webp";
+import WebDev from "../public/static/media/webp/certs/Web-Dev.webp";
+import Flash from "../public/static/media/webp/certs/Flash-2013.webp";
+import Illustrator from "../public/static/media/webp/certs/Illustrator-2013.webp";
+import InDesign from "../public/static/media/webp/certs/InDesign-2014.webp";
+import Photoshop from "../public/static/media/webp/certs/Photoshop-2013.webp";
+import Premiere from "../public/static/media/webp/certs/Premiere-2014.webp";
 
 function Certs() {
   return (
@@ -84,6 +85,23 @@ function Certs() {
                     <Image
                       src={PyBasic}
                       alt="Steven E. Python (general) bootcamp Certification"
+                      width="100%"
+                      height="100%"
+                    />
+                  </Col>
+                </Row>
+              </Col>
+
+              <Col md={6} className="img-col">
+                <Row>
+                  <Col md={5}>
+                    <h2>Responsive Web Design</h2>
+                    {/* <h3>(2021)</h3> */}
+                  </Col>
+                  <Col>
+                    <Image
+                      src={RWD}
+                      alt="Steven E. Responsive Web Design Certification"
                       width="100%"
                       height="100%"
                     />

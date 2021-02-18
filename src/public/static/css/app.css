@@ -64,7 +64,7 @@ font-style: italic;
   align-items: center;
   justify-content: center;
 
-  background-image: url("../media/background.png");
+  background-image: url("../media/webp/background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 1px solid #818181;
@@ -105,20 +105,12 @@ font-style: italic;
   padding: 2px;
 }
 
-/* .topRow-textItem {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  font-weight: 500;
-} */
-
 /* Main - row2 */
 .r2-main-container {
   min-height: 100vh;
   text-align: center;
   display: flex;
   align-items: center;
-  /* scroll-snap-align: start;
-  scroll-padding: 10vh; */
 }
 .r2-main-container > .row {
   display: flex;
@@ -168,16 +160,10 @@ font-style: italic;
 
 /* Main - row3 */
 .row3-main-container {
-  /* background-color: rgba(55, 64, 77, 0.329); */
-  /* margin-top: 2rem; */
   padding: 2rem 0;
-  /* background-color: rgb(42, 127, 155); */
-  /* background-color: #f3d5ae75; */
-
-background-image: url("https://www.transparenttextures.com/patterns/translucent-fibres.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  
-border-top: 2px solid #8a92a3;
+  background-image: url("https://www.transparenttextures.com/patterns/translucent-fibres.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  border-top: 2px solid #8a92a3;
   border-bottom: 2px solid #8a92a3;
 }
 
@@ -190,10 +176,7 @@ border-top: 2px solid #8a92a3;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  /* margin: 2.5% auto 3.5%; */
-  /* color: #eeeeee; */
   color: #000;
-  /* background-color: rgb(19, 88, 110); */
 }
 .r3-head-inner {
   margin: 2rem 0.5rem;
@@ -212,12 +195,12 @@ border-top: 2px solid #8a92a3;
 .outer-list-group {
   margin-left: -20vh;
 }
-@media (max-width: 550px){
+@media (max-width: 550px) {
   .outer-list-group {
     margin: 0;
   }
 }
-.custom-list-group {  
+.custom-list-group {
   padding: 1.5rem;
 }
 .custom-list-group div {
@@ -233,11 +216,9 @@ border-top: 2px solid #8a92a3;
   text-decoration: none;
   font-size: 1.25em;
   margin-left: -0.5rem;
-  /* color: #e7e7e7; */
   color: #303030;
   transition-duration: 200ms;
 }
-
 
 /* Outside Projects heading */
 .row3-inner-container {

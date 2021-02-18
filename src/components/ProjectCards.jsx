@@ -11,7 +11,7 @@ import Todo from "../public/static/media/todo-djreact.png";
 
 import Encrypted from "../public/static/media/encryption.png";
 import Life from "../public/static/media/glider-static.png";
-import Kivy from "../public/static/media/kivy.png";
+import Kivy from "../public/static/media/webp/kivy.webp";
 
 // Card Button Footer
 import ProjectCardFooter from "./ProjectCardFooter";
