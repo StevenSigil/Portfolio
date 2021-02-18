@@ -11,12 +11,12 @@ function ProjectCardFooter(props) {
 
   return (
     <Card.Footer className="projectCard-footer">
-      <Button className='github-btn' type="link" href={links.github} variant="outline-secondary">
-        <Image src={GithubMark} />
+      <Button className='github-btn' type="link" href={links.github} variant="outline-dark" alt={links.github}>
+        <Image src={GithubMark} width="100%" height="100%" alt={links.github} />
       </Button>
 
       {links.website !== null ? (
-        <Button type="link" href={links.website} variant="outline-secondary">
+        <Button type="link" href={links.website} variant="outline-dark">
           {btnName}
         </Button>
       ) : null}

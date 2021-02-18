@@ -6,16 +6,16 @@ function PastPresFuture() {
       <Container fluid className="r2-main-container">
         <Row>
           <Col md={2}>
-            <div className="test-div">
+            <Container className="test-div">
               <Container className="ppf-top summary">
                 <h2>My Summary</h2>
               </Container>
-            </div>
+            </Container>
           </Col>
           <Col md={2}>
-            <div className="test-div">
+            <Container className="test-div">
               <Container className="ppf-top">
-                <h4>Past</h4>
+                <h3>Past</h3>
 
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -36,13 +36,13 @@ function PastPresFuture() {
                   should have been doing years ago. <br /> Learn to code!
                 </p>
               </Container>
-            </div>
+            </Container>
           </Col>
 
           <Col md={2}>
-            <div className="test-div">
+            <Container className="test-div">
               <Container className="ppf-top">
-                <h4>Present</h4>
+                <h3>Present</h3>
 
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -65,13 +65,13 @@ function PastPresFuture() {
                   accomplish a need for another person.
                 </p>
               </Container>
-            </div>
+            </Container>
           </Col>
 
           <Col md={2}>
-            <div className="test-div">
+            <Container className="test-div">
               <Container className="ppf-top">
-                <h4>Future</h4>
+                <h3>Future</h3>
 
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ function PastPresFuture() {
                   a better world!
                 </p>
               </Container>
-            </div>
+            </Container>
           </Col>
         </Row>
       </Container>

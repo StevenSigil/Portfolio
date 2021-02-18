@@ -7,7 +7,6 @@ import PyBasic from "../public/static/media/certs/0.75x/Python-Basic.png";
 import Postgres from "../public/static/media/certs/0.75x/Postgre-Python.png";
 import Django from "../public/static/media/certs/0.75x/Django.png";
 import WebDev from "../public/static/media/certs/0.75x/Web-Dev.png";
-
 import Flash from "../public/static/media/certs/0.75x/Flash-2013.png";
 import Illustrator from "../public/static/media/certs/0.75x/Illustrator-2013.png";
 import InDesign from "../public/static/media/certs/0.75x/InDesign-2014.png";
