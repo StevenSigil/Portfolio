@@ -350,7 +350,9 @@ font-style: italic;
   justify-content: center;
 }
 .singleitem-col img {
-  aspect-ratio: 890 / 662;
+  /* aspect-ratio: 890 / 662; */
+  height: auto;
+  width: 100%;
 
   margin-bottom: -0.5rem;
   box-shadow: 10px 12px 20px #2c2c2c, -7px 0px 10px #4e4e4e9d;
@@ -413,6 +415,9 @@ footer {
   min-height: 10vh;
   padding: 1.5rem;
   background-color: rgb(199, 207, 211);
+}
+footer h5 {
+  font-size: 1.5em;
 }
 footer .github-btn {
   margin: 1rem 2rem;
