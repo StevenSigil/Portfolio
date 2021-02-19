@@ -64,7 +64,7 @@ font-style: italic;
   align-items: center;
   justify-content: center;
 
-  background-image: url("../media/webp/background.webp");
+  background-image: url("../media/background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 1px solid #818181;
@@ -161,8 +161,7 @@ font-style: italic;
 /* Main - row3 */
 .row3-main-container {
   padding: 2rem 0;
-  background-image: url("https://www.transparenttextures.com/patterns/translucent-fibres.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("../media/translucent-fibres.png");
   border-top: 2px solid #8a92a3;
   border-bottom: 2px solid #8a92a3;
 }

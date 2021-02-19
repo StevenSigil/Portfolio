@@ -1,18 +1,18 @@
 import { Container, Image, Row, Col } from "react-bootstrap";
 
 // Images
-import RWD from "../public/static/media/webp/certs/Responsive-Web-Design_fCC.webp";
-import SciComp from "../public/static/media/webp/certs/Scientific-Computing_fCC.webp";
-import DataAnalysis from "../public/static/media/webp/certs/Data-Analysis_fCC.webp";
-import PyBasic from "../public/static/media/webp/certs/Python-Basic.webp";
-import Postgres from "../public/static/media/webp/certs/Postgre-Python.webp";
-import Django from "../public/static/media/webp/certs/Django.webp";
-import WebDev from "../public/static/media/webp/certs/Web-Dev.webp";
-import Flash from "../public/static/media/webp/certs/Flash-2013.webp";
-import Illustrator from "../public/static/media/webp/certs/Illustrator-2013.webp";
-import InDesign from "../public/static/media/webp/certs/InDesign-2014.webp";
-import Photoshop from "../public/static/media/webp/certs/Photoshop-2013.webp";
-import Premiere from "../public/static/media/webp/certs/Premiere-2014.webp";
+import RWD from "../public/static/media/certs/Responsive-Web-Design_fCC.webp";
+import SciComp from "../public/static/media/certs/Scientific-Computing_fCC.webp";
+import DataAnalysis from "../public/static/media/certs/Data-Analysis_fCC.webp";
+import PyBasic from "../public/static/media/certs/Python-Basic.webp";
+import Postgres from "../public/static/media/certs/Postgre-Python.webp";
+import Django from "../public/static/media/certs/Django.webp";
+import WebDev from "../public/static/media/certs/Web-Dev.webp";
+import Flash from "../public/static/media/certs/Flash-2013.webp";
+import Illustrator from "../public/static/media/certs/Illustrator-2013.webp";
+import InDesign from "../public/static/media/certs/InDesign-2014.webp";
+import Photoshop from "../public/static/media/certs/Photoshop-2013.webp";
+import Premiere from "../public/static/media/certs/Premiere-2014.webp";
 
 function Certs() {
   return (
