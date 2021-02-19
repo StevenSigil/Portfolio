@@ -4,7 +4,6 @@ import { Button, Image, Tooltip, Overlay } from "react-bootstrap";
 import GithubLogo from "../public/static/media/logos/GitHub-Mark-32px.png";
 import LinkedinLogo from "../public/static/media/logos/linkedin.svg";
 import EmailLogo from "../public/static/media/logos/envelope-fill.svg";
-import "../public/static/css/bootstrap-social.css";
 
 function Footer() {
   const [showPopover, setShowPopover] = useState(false);
