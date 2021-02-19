@@ -220,7 +220,7 @@ font-style: italic;
   transition-duration: 200ms;
 }
 
-/* Outside Projects heading */
+/* Projects heading */
 .row3-inner-container {
   display: flex;
   justify-content: space-evenly;
@@ -260,8 +260,8 @@ font-style: italic;
     -2px -2px 15px rgba(58, 58, 58, 0.568);
 }
 .row3-inner-container .card-img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom: 1px solid rgba(55, 64, 77, 0.329);
@@ -326,47 +326,57 @@ font-style: italic;
   word-wrap: break-word;
 }
 
-.img-row {
+.cert-row {
   padding: 0 1rem;
 }
-.img-col {
+.singleitem-col {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
 }
-.img-col > .row {
+.singleitem-col > .row {
   min-width: 95%;
-  padding: 1rem 0;
+  padding: 1rem 0 0;
   margin: 1rem;
   border: 2px solid #000;
 }
-.img-col > .row > .col-md-5 {
+.singleitem-col > .row > .col-md-5 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.img-col > .row > .col {
+.singleitem-col > .row > .col {
   display: flex;
   justify-content: center;
 }
-.img-col img {
+.singleitem-col img {
   aspect-ratio: 890 / 662;
 
   margin-bottom: -0.5rem;
   box-shadow: 10px 12px 20px #2c2c2c, -7px 0px 10px #4e4e4e9d;
 }
-.img-col h2,
-.img-col h3 {
+.singleitem-col h2,
+.singleitem-col h3 {
   font-weight: 700;
   padding: 0.5rem;
 }
-.img-col h3 {
+.singleitem-col h3 {
   font-weight: 500;
   margin: -0.5rem;
 }
-.test {
-  margin: 2rem 0 0;
+.cert-link {
+  margin: 1rem 0 0;
+  padding: 0 12px;
+  text-align: center;
+}
+@media(min-width: 768px) {
+  .cert-link {
+    text-align: start;
+  }
+}
+.cert-link a, .cert-link p {
+  margin: 0;
 }
 
 /* Colored-animated borders */
@@ -397,4 +407,21 @@ font-style: italic;
   50% {
     background-position: 100% 50%;
   }
+}
+
+footer {
+  text-align: center;
+  min-height: 10vh;
+  padding: 1.5rem;
+  background-color: rgb(199, 207, 211);
+}
+footer .github-btn {
+  margin: 1rem 2rem;
+}
+footer .github-btn img {
+  height: 50px;
+  width: auto;
+}
+.tooltip-inner p {
+  margin: 0.25rem;
 }

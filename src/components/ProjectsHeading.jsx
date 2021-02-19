@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 
 function ProjectsHeading() {
   return (
-    <div className="row3-heading">
+    <div className="row3-heading" id="projects-heading">
       <div className="r3-head-inner">
         <Container className="title">
           <h2>Recent projects</h2>
@@ -23,7 +23,7 @@ function ProjectsHeading() {
               </a>
             </div>
             <div>
-              <a href="#python-programming">
+              <a href="#javascript">
                 - Simple Javascript and HTML Design
               </a>
             </div>

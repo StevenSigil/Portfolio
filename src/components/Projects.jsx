@@ -55,7 +55,7 @@ function Projects() {
           </Col>
         </Row>
 
-        <Row className="row3-inner-container">
+        <Row id="javascript" className="row3-inner-container">
           <Col md={2}>
             {/* <div className="h3-p-title"> */}
             <div className="ppf-top">

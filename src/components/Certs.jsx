@@ -21,8 +21,8 @@ function Certs() {
         <h1>Certifications</h1>
         <Row noGutters className="full-row">
           <Col>
-            <Row className="img-row">
-              <Col md={6} className="img-col">
+            <Row className="cert-row">
+              <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
                     <h2>Web development</h2>
@@ -36,10 +36,19 @@ function Certs() {
                       height="100%"
                     />
                   </Col>
+                  <Col xs={12} className="cert-link">
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://ude.my/UC-4b570ae2-6661-4205-bd34-891fe5826b29"
+                    >
+                      ude.my/UC-4b570ae2-6661-4205-bd34-891fe5826b29
+                    </a>
+                  </Col>
                 </Row>
               </Col>
 
-              <Col md={6} className="img-col">
+              <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
                     <h2>
@@ -55,10 +64,19 @@ function Certs() {
                       height="100%"
                     />
                   </Col>
+                  <Col xs={12} className="cert-link">
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://ude.my/UC-f4aa6f2a-cfec-4d51-aefe-60cf3cf4b204"
+                    >
+                      ude.my/UC-f4aa6f2a-cfec-4d51-aefe-60cf3cf4b204
+                    </a>
+                  </Col>
                 </Row>
               </Col>
 
-              <Col md={6} className="img-col">
+              <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
                     <h2>PostgreSQL & Python</h2>
@@ -72,10 +90,19 @@ function Certs() {
                       height="100%"
                     />
                   </Col>
+                  <Col xs={12} className="cert-link">
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://ude.my/UC-71af8350-c493-42b4-ad09-7166e54fca9b"
+                    >
+                      ude.my/UC-71af8350-c493-42b4-ad09-7166e54fca9b
+                    </a>
+                  </Col>
                 </Row>
               </Col>
 
-              <Col md={6} className="img-col">
+              <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
                     <h2>Python Introductory Bootcamp</h2>
@@ -89,10 +116,19 @@ function Certs() {
                       height="100%"
                     />
                   </Col>
+                  <Col xs={12} className="cert-link">
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://ude.my/UC-3cf32283-ab46-4532-b49d-6162ae52c16c"
+                    >
+                      ude.my/UC-3cf32283-ab46-4532-b49d-6162ae52c16c
+                    </a>
+                  </Col>
                 </Row>
               </Col>
 
-              <Col md={6} className="img-col">
+              <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
                     <h2>Responsive Web Design</h2>
@@ -106,10 +142,19 @@ function Certs() {
                       height="100%"
                     />
                   </Col>
+                  <Col xs={12} className="cert-link">
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://www.freecodecamp.org/certification/522steven/responsive-web-design"
+                    >
+                      freecodecamp.org/certification/522steven/responsive-web-design
+                    </a>
+                  </Col>
                 </Row>
               </Col>
 
-              <Col md={6} className="img-col">
+              <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
                     <h2>
@@ -125,10 +170,19 @@ function Certs() {
                       height="100%"
                     />
                   </Col>
+                  <Col xs={12} className="cert-link">
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://freecodecamp.org/certification/522steven/scientific-computing-with-python-v7"
+                    >
+                      freecodecamp.org/certification/522steven/scientific-computing-with-python-v7
+                    </a>
+                  </Col>
                 </Row>
               </Col>
 
-              <Col md={6} className="img-col">
+              <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
                     <h2>
@@ -144,67 +198,20 @@ function Certs() {
                       height="100%"
                     />
                   </Col>
-                </Row>
-              </Col>
-
-              <Col md={6} className="img-col">
-                <Row>
-                  <Col md={5}>
-                    <h2>
-                      Rich Media <br /> -Adobe Flash
-                    </h2>
-                    {/* <h3>(2013)</h3> */}
-                  </Col>
-                  <Col>
-                    <Image
-                      src={Flash}
-                      alt="Steven E. Adobe Flash Certification"
-                      width="100%"
-                      height="100%"
-                    />
+                  <Col xs={12} className="cert-link">
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://www.freecodecamp.org/certification/522steven/data-analysis-with-python-v7"
+                    >
+                      freecodecamp.org/certification/522steven/data-analysis-with-python-v7
+                    </a>
                   </Col>
                 </Row>
               </Col>
 
-              <Col md={6} className="img-col">
-                <Row>
-                  <Col md={5}>
-                    <h2>
-                      Graphic Design <br /> -Adobe Illustrator
-                    </h2>
-                    {/* <h3>(2013)</h3> */}
-                  </Col>
-                  <Col>
-                    <Image
-                      src={Illustrator}
-                      alt="Steven E. Adobe Illustrator Certification"
-                      width="100%"
-                      height="100%"
-                    />
-                  </Col>
-                </Row>
-              </Col>
-
-              <Col md={6} className="img-col">
-                <Row>
-                  <Col md={5}>
-                    <h2>
-                      Media Publication <br /> -Adobe InDesign
-                    </h2>
-                    {/* <h3>(2014)</h3> */}
-                  </Col>
-                  <Col>
-                    <Image
-                      src={InDesign}
-                      alt="Steven E. Adobe InDesign Certification"
-                      width="100%"
-                      height="100%"
-                    />
-                  </Col>
-                </Row>
-              </Col>
-
-              <Col md={6} className="img-col">
+              {/* Adobe */}
+              <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
                     <h2>
@@ -220,9 +227,78 @@ function Certs() {
                       alt="Steven E. Adobe Photoshop Certification"
                     />
                   </Col>
+                  <Col xs={12} className="cert-link">
+                    <a
+                      href="https://verify.certiport.com"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      verify.certiport.com
+                    </a>
+                    <p>enter code: wAMN6-22xr</p>
+                  </Col>
                 </Row>
               </Col>
-              <Col md={6} className="img-col">
+
+              <Col md={6} className="singleitem-col">
+                <Row>
+                  <Col md={5}>
+                    <h2>
+                      Graphic Design <br /> -Adobe Illustrator
+                    </h2>
+                    {/* <h3>(2013)</h3> */}
+                  </Col>
+                  <Col>
+                    <Image
+                      src={Illustrator}
+                      alt="Steven E. Adobe Illustrator Certification"
+                      width="100%"
+                      height="100%"
+                    />
+                  </Col>
+                  <Col xs={12} className="cert-link">
+                    <a
+                      href="https://verify.certiport.com"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      verify.certiport.com
+                    </a>
+                    <p>enter code: duHD-DTze</p>
+                  </Col>
+                </Row>
+              </Col>
+
+              <Col md={6} className="singleitem-col">
+                <Row>
+                  <Col md={5}>
+                    <h2>
+                      Media Publication <br /> -Adobe InDesign
+                    </h2>
+                    {/* <h3>(2014)</h3> */}
+                  </Col>
+                  <Col>
+                    <Image
+                      src={InDesign}
+                      alt="Steven E. Adobe InDesign Certification"
+                      width="100%"
+                      height="100%"
+                    />
+                  </Col>
+                  <Col xs={12} className="cert-link">
+                    <a
+                      href="https://verify.certiport.com"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      verify.certiport.com
+                    </a>
+                    <p>enter code: mdd9-DTzP</p>
+                  </Col>
+                </Row>
+              </Col>
+
+              <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
                     <h2>
@@ -237,6 +313,45 @@ function Certs() {
                       height="100%"
                       alt="Steven E. Adobe Premiere Certification"
                     />
+                  </Col>
+                  <Col xs={12} className="cert-link">
+                    <a
+                      href="https://verify.certiport.com"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      verify.certiport.com
+                    </a>
+                    <p>enter code: wLuuM-HanH</p>
+                  </Col>
+                </Row>
+              </Col>
+
+              <Col md={6} className="singleitem-col">
+                <Row>
+                  <Col md={5}>
+                    <h2>
+                      Rich Media <br /> -Adobe Flash
+                    </h2>
+                    {/* <h3>(2013)</h3> */}
+                  </Col>
+                  <Col>
+                    <Image
+                      src={Flash}
+                      alt="Steven E. Adobe Flash Certification"
+                      width="100%"
+                      height="100%"
+                    />
+                  </Col>
+                  <Col xs={12} className="cert-link">
+                    <a
+                      href="https://verify.certiport.com"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      verify.certiport.com
+                    </a>
+                    <p>enter code: wbzsW-Hany</p>
                   </Col>
                 </Row>
               </Col>
