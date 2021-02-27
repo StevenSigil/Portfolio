@@ -120,6 +120,7 @@ font-style: italic;
 }
 .r2-main-container > .row > .col-md-2 {
   margin: 2rem 0;
+  min-width: 20%;
 }
 .test-div {
   /* Inner div for Colored-animated "borders" - see end of doc */

@@ -15,6 +15,7 @@ function PastPresFuture() {
               </Container>
             </Container>
           </Col>
+
           <Col md={2}>
             <Container className="test-div">
               <Container className="ppf-top">
@@ -41,13 +42,13 @@ function PastPresFuture() {
                 <Image src={HourglassSplit} alt="Pouring hourglass"  width="75" height='75' />
 
                 <p>
-                  Since my past realizations, I decided the quickest way to
+                  Since my past realizations, I've decided the quickest way to
                   break into the 'Tech' industry, given my work ethic, was to
                   enroll in self-paced bootcamps. I am happy to say I have
-                  completed 4 bootcamps in under 4 months, and am on track to
-                  completing 2 more by March! Additionally, using the
-                  information to build applications that I find interesting, or
-                  accomplish a need for another person.
+                  completed multiple bootcamp style corses in under 4 months, and am on track to
+                  completing 2 more by the end of March! Additionally, I have been busy using the
+                  skills gained to build applications that are interesting, or
+                  fulfill a need for another person.
                 </p>
               </Container>
             </Container>
@@ -61,12 +62,11 @@ function PastPresFuture() {
                 <Image src={Hourglass} alt="Empty hourglass"  width="75" height='75' />
 
                 <p>
-                  I believe my future looks bright! My current understanding of
-                  the languages, modules, packages, etc... that I am currently
-                  using proved to me that I can work in this field; I can make a
-                  difference in the company that decided to take a chance on me;
-                  I can continue to stay educated on the tools that will lead to
-                  a better world!
+                  Looking ahead, it is clear to me that working on a hardware level is a goal worth achieving. I plan to begin study of the C language
+                  and hope to implement those skills to software controlled hardware. My dabblings in algorithms/machine learning has lit a flame in me to 
+                  create projects that allow everyday tasks people do, made easier.  I think technologies like Alexa are a great start to goals like mine, however
+                  they seem to lack something on the user level.  I want to find and fix those problems, build public trust in such technologies, and work for a 
+                  sustainable, advanced future for everyone.
                 </p>
               </Container>
             </Container>
