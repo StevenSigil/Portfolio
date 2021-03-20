@@ -23,7 +23,7 @@ function Footer() {
   return (
     <>
       <footer>
-        <h5>Let's talk</h5>
+        <h6>Let's talk!</h6>
         <Button
           className="github-btn"
           type="link"

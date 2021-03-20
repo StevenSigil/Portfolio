@@ -32,8 +32,8 @@ function Certs() {
                     <Image
                       src={WebDev}
                       alt="Steven E. Web Development Bootcamp"
-                      width="100%"
-                      height="100%"
+                      width="890px"
+                      height="662px"
                     />
                   </Col>
                   <Col xs={12} className="cert-link">
@@ -60,8 +60,8 @@ function Certs() {
                     <Image
                       src={Django}
                       alt="Steven E. Django Full Stack Certification"
-                      width="100%"
-                      height="100%"
+                      width="890px"
+                      height="662px"
                     />
                   </Col>
                   <Col xs={12} className="cert-link">
@@ -86,8 +86,8 @@ function Certs() {
                     <Image
                       src={Postgres}
                       alt="Steven E. Python and PostgreSQL Certification"
-                      width="100%"
-                      height="100%"
+                      width="890px"
+                      height="662px"
                     />
                   </Col>
                   <Col xs={12} className="cert-link">
@@ -112,8 +112,8 @@ function Certs() {
                     <Image
                       src={PyBasic}
                       alt="Steven E. Python (general) bootcamp Certification"
-                      width="100%"
-                      height="100%"
+                      width="890px"
+                      height="662px"
                     />
                   </Col>
                   <Col xs={12} className="cert-link">
@@ -138,8 +138,8 @@ function Certs() {
                     <Image
                       src={RWD}
                       alt="Steven E. Responsive Web Design Certification"
-                      width="100%"
-                      height="100%"
+                      width="890px"
+                      height="662px"
                     />
                   </Col>
                   <Col xs={12} className="cert-link">
@@ -166,8 +166,8 @@ function Certs() {
                     <Image
                       src={SciComp}
                       alt="Steven E. Scientific Computing with Python Certification"
-                      width="100%"
-                      height="100%"
+                      width="1186px"
+                      height="882px"
                     />
                   </Col>
                   <Col xs={12} className="cert-link">
@@ -194,8 +194,8 @@ function Certs() {
                     <Image
                       src={DataAnalysis}
                       alt="Steven E. Data Analysis with Python Certification"
-                      width="100%"
-                      height="100%"
+                      width="890px"
+                      height="662px"
                     />
                   </Col>
                   <Col xs={12} className="cert-link">
@@ -222,8 +222,8 @@ function Certs() {
                   <Col>
                     <Image
                       src={Photoshop}
-                      width="100%"
-                      height="100%"
+                      width="890px"
+                      height="662px"
                       alt="Steven E. Adobe Photoshop Certification"
                     />
                   </Col>
@@ -252,8 +252,8 @@ function Certs() {
                     <Image
                       src={Illustrator}
                       alt="Steven E. Adobe Illustrator Certification"
-                      width="100%"
-                      height="100%"
+                      width="890px"
+                      height="662px"
                     />
                   </Col>
                   <Col xs={12} className="cert-link">
@@ -281,8 +281,8 @@ function Certs() {
                     <Image
                       src={InDesign}
                       alt="Steven E. Adobe InDesign Certification"
-                      width="100%"
-                      height="100%"
+                      width="890px"
+                      height="662px"
                     />
                   </Col>
                   <Col xs={12} className="cert-link">
@@ -309,8 +309,8 @@ function Certs() {
                   <Col>
                     <Image
                       src={Premiere}
-                      width="100%"
-                      height="100%"
+                      width="890px"
+                      height="662px"
                       alt="Steven E. Adobe Premiere Certification"
                     />
                   </Col>
@@ -339,8 +339,8 @@ function Certs() {
                     <Image
                       src={Flash}
                       alt="Steven E. Adobe Flash Certification"
-                      width="100%"
-                      height="100%"
+                      width="890px"
+                      height="662px"
                     />
                   </Col>
                   <Col xs={12} className="cert-link">
