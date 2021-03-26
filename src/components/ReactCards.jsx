@@ -5,7 +5,7 @@ import { MedTrackApp, TodoApp, KeeperApp } from "./ProjectCards";
 function ReactCards() {
   return (
     <>
-      <Row id='web-design' className="row3-inner-container">
+      <Row id="web-design" className="row3-inner-container">
         <Col md={2}>
           <h3>React & Django</h3>
         </Col>

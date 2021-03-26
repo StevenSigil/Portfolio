@@ -352,7 +352,6 @@ font-style: italic;
   justify-content: center;
 }
 .singleitem-col img {
-  
   height: 100%;
   width: 100%;
 
@@ -373,7 +372,7 @@ font-style: italic;
   padding: 0 12px;
   text-align: center;
 }
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .cert-link {
     text-align: start;
   }
@@ -381,7 +380,8 @@ font-style: italic;
 .cert-link a {
   color: #0062cc;
 }
-.cert-link a, .cert-link p {
+.cert-link a,
+.cert-link p {
   margin: 0;
 }
 
@@ -421,8 +421,13 @@ footer {
   padding: 1.5rem;
   background-color: rgb(199, 207, 211);
 }
+footer h5 {
+  font-size: 2em;
+}
 footer h6 {
   font-size: 1.75em;
+}
+footer .underline {
   text-decoration: underline solid black 2px;
 }
 footer .github-btn {

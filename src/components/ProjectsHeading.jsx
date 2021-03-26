@@ -11,21 +11,19 @@ function ProjectsHeading() {
             created
           </h3>
         </Container>
-        <Container className='outer-list-group'>
+        <Container className="outer-list-group">
           <h4>Jump to:</h4>
           <div className="custom-list-group">
-            <div>
-              <a href="#python-programming">- Misc. Python Projects</a>
-            </div>
             <div>
               <a href="#web-design">
                 - Full Stack Applications with React & Django
               </a>
             </div>
             <div>
-              <a href="#javascript">
-                - Simple Javascript and HTML Design
-              </a>
+              <a href="#javascript">- Simple Javascript and HTML Design</a>
+            </div>
+            <div>
+              <a href="#python-programming">- Misc. Python Projects</a>
             </div>
           </div>
         </Container>

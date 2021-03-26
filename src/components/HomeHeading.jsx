@@ -1,4 +1,5 @@
 import { Container, Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function HomeHeading() {
   return (
@@ -8,7 +9,7 @@ function HomeHeading() {
           <Col sm={8} xs={12} className="topRow-nameItem">
             <h1>STEVEN ELLIOTT</h1>
           </Col>
-          
+
           <Col sm={4} xs={12} className="topRow-list">
             <p>
               <a href="#my-summary"> Who I am </a>
@@ -20,6 +21,10 @@ function HomeHeading() {
 
             <p>
               <a href="#certifications">How I learn</a>
+            </p>
+
+            <p>
+              <Link to="/resume">Public resume</Link>
             </p>
           </Col>
         </Row>

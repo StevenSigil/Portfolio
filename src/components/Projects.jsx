@@ -7,36 +7,11 @@ import { SimonApp, TinDogApp, DiceApp } from "./ProjectCards";
 
 import ProjectsHeading from "./ProjectsHeading";
 
-// import JSCards from "./JSCards";
-// import ReactCards from "./ReactCards";
-// import PythonCards from "./PythonCards";
-
 function Projects() {
   return (
     <>
       <Container fluid className="row3-main-container">
-        
         <ProjectsHeading />
-
-        <Row id="python-programming" className="row3-inner-container">
-          <Col md={2}>
-            <div className="ppf-top">
-              <h3>Python</h3>
-            </div>
-          </Col>
-
-          <Col md={3}>
-            <LifeApp />
-          </Col>
-
-          <Col md={3}>
-            <KivyApp />
-          </Col>
-
-          <Col md={3}>
-            <CryptographyApp />
-          </Col>
-        </Row>
 
         <Row id="web-design" className="row3-inner-container">
           <Col md={2}>
@@ -57,13 +32,9 @@ function Projects() {
 
         <Row id="javascript" className="row3-inner-container">
           <Col md={2}>
-            {/* <div className="h3-p-title"> */}
             <div className="ppf-top">
               <h3>JavaScript/Html</h3>
             </div>
-            {/* <h5>- (vanilla)</h5> */}
-            {/* </div> */}
-            {/* <h3></h3> */}
           </Col>
 
           <Col md={3}>
@@ -77,9 +48,25 @@ function Projects() {
           </Col>
         </Row>
 
-        {/* <PythonCards /> */}
-        {/* <ReactCards /> */}
-        {/* <JSCards /> */}
+        <Row id="python-programming" className="row3-inner-container">
+          <Col md={2}>
+            <div className="ppf-top">
+              <h3>Python</h3>
+            </div>
+          </Col>
+
+          <Col md={3}>
+            <LifeApp />
+          </Col>
+
+          <Col md={3}>
+            <KivyApp />
+          </Col>
+
+          <Col md={3}>
+            <CryptographyApp />
+          </Col>
+        </Row>
       </Container>
     </>
   );

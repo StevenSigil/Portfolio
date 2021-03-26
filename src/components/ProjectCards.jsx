@@ -1,17 +1,17 @@
 import { Card } from "react-bootstrap";
 
 // Card Header Images
-import simon from "../public/static/media/simon.png";
-import diceGame from "../public/static/media/dice_game.png";
-import tinDog from "../public/static/media/tin_dog.png";
+import simon from "../public/static/media/project_imgs/simon.png";
+import diceGame from "../public/static/media/project_imgs/dice_game.png";
+import tinDog from "../public/static/media/project_imgs/tin_dog.png";
 
-import MedTrack from "../public/static/media/drug_keep.png";
-import Keeper from "../public/static/media/keeper.png";
-import Todo from "../public/static/media/todo-djreact.png";
+import MedTrack from "../public/static/media/project_imgs/drug_keep.png";
+import Keeper from "../public/static/media/project_imgs/keeper.png";
+import Todo from "../public/static/media/project_imgs/todo-djreact.png";
 
-import Encrypted from "../public/static/media/encryption.png";
-import Life from "../public/static/media/glider-static.png";
-import Kivy from "../public/static/media/kivy.webp";
+import Encrypted from "../public/static/media/project_imgs/encryption.png";
+import Life from "../public/static/media/project_imgs/glider-static.png";
+import Kivy from "../public/static/media/project_imgs/kivy.webp";
 
 // Card Button Footer
 import ProjectCardFooter from "./ProjectCardFooter";
@@ -20,7 +20,12 @@ import { projectLinks } from "../util-data/project_links";
 export function LifeApp() {
   return (
     <Card>
-      <Card.Img src={Life} alt="Conway's game of life" width="100%" height="100%" />
+      <Card.Img
+        src={Life}
+        alt="Conway's game of life"
+        width="100%"
+        height="100%"
+      />
       <Card.Body>
         <Card.Title>Conway's Game of Life</Card.Title>
         <Card.Text>
@@ -38,7 +43,12 @@ export function LifeApp() {
 export function KivyApp() {
   return (
     <Card>
-      <Card.Img src={Kivy} alt="Kivy messaging application" width="100%" height="100%"/>
+      <Card.Img
+        src={Kivy}
+        alt="Kivy messaging application"
+        width="100%"
+        height="100%"
+      />
       <Card.Body>
         <Card.Title>Kivy - Messaging App</Card.Title>
         <Card.Text>
@@ -57,7 +67,7 @@ export function KivyApp() {
 export function CryptographyApp() {
   return (
     <Card>
-      <Card.Img src={Encrypted} alt="cryptography" width="100%" height="100%"/>
+      <Card.Img src={Encrypted} alt="cryptography" width="100%" height="100%" />
       <Card.Body>
         <Card.Title>Fernet Cryptography</Card.Title>
         <Card.Text>
@@ -78,7 +88,12 @@ export function CryptographyApp() {
 export function MedTrackApp() {
   return (
     <Card>
-      <Card.Img src={MedTrack} alt="Medication tracking application" width="100%" height="100%"/>
+      <Card.Img
+        src={MedTrack}
+        alt="Medication tracking application"
+        width="100%"
+        height="100%"
+      />
       <Card.Body>
         <Card.Title>Med-Track</Card.Title>
         <Card.Text>
@@ -97,7 +112,12 @@ export function MedTrackApp() {
 export function TodoApp() {
   return (
     <Card>
-      <Card.Img src={Todo} alt="Django React Todo app" width="100%" height="100%"/>
+      <Card.Img
+        src={Todo}
+        alt="Django React Todo app"
+        width="100%"
+        height="100%"
+      />
       <Card.Body>
         <Card.Title>Todo</Card.Title>
         <Card.Text>
@@ -117,7 +137,12 @@ export function TodoApp() {
 export function KeeperApp() {
   return (
     <Card>
-      <Card.Img src={Keeper} alt="Keeper screenshot" width="100%" height="100%"/>
+      <Card.Img
+        src={Keeper}
+        alt="Keeper screenshot"
+        width="100%"
+        height="100%"
+      />
       <Card.Body>
         <Card.Title>Keeper</Card.Title>
         <Card.Text>
@@ -136,7 +161,12 @@ export function KeeperApp() {
 export function SimonApp() {
   return (
     <Card>
-      <Card.Img src={simon} alt="Javascript Simon (game)" width="100%" height="100%"/>
+      <Card.Img
+        src={simon}
+        alt="Javascript Simon (game)"
+        width="100%"
+        height="100%"
+      />
       <Card.Body>
         <Card.Title>Simon</Card.Title>
         <Card.Text>
@@ -154,7 +184,12 @@ export function SimonApp() {
 export function TinDogApp() {
   return (
     <Card>
-      <Card.Img src={tinDog} alt="Tin-dog landing page." width="100%" height="100%"/>
+      <Card.Img
+        src={tinDog}
+        alt="Tin-dog landing page."
+        width="100%"
+        height="100%"
+      />
       <Card.Body>
         <Card.Title>Tindog</Card.Title>
         <Card.Text>
@@ -172,7 +207,12 @@ export function TinDogApp() {
 export function DiceApp() {
   return (
     <Card>
-      <Card.Img src={diceGame} alt="Dice rolling game" width="100%" height="100%"/>
+      <Card.Img
+        src={diceGame}
+        alt="Dice rolling game"
+        width="100%"
+        height="100%"
+      />
       <Card.Body>
         <Card.Title>Dice.random</Card.Title>
         <Card.Text>

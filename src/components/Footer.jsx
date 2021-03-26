@@ -23,7 +23,11 @@ function Footer() {
   return (
     <>
       <footer>
-        <h6>Let's talk!</h6>
+        <h5>Thank you for viewing my portfolio!</h5>
+        <div style={{ display: "inline" }}>
+          <h6>Can I help your team build new and interesting projects?</h6>
+          <h6 className="underline">Connect with me!</h6>
+        </div>
         <Button
           className="github-btn"
           type="link"
@@ -73,7 +77,12 @@ function Footer() {
             alt="Linkedin Logo"
           />
         </Button>
-        <Overlay transition={false} target={target.current} show={showPopover} placement="right">
+        <Overlay
+          transition={false}
+          target={target.current}
+          show={showPopover}
+          placement="right"
+        >
           <Tooltip id="email-popover" onClick={() => setShowPopover(false)}>
             <p>Email address has been copied to your clipboard.</p>{" "}
             <small>Click to close</small>
