@@ -9,7 +9,7 @@ body {
   font-display: swap;
   max-width: 100vw;
   overflow-x: hidden;
-
+  background-color: #eee;
   scroll-snap-type: y proximity;
 }
 
@@ -106,24 +106,22 @@ font-style: italic;
   padding: 2px;
 }
 
-/* Main - row2 */
-.r2-main-container {
-  min-height: 100vh;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-.r2-main-container > .row {
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 20vh;
-  padding-top: 5vh;
-}
-.r2-main-container > .row > .col-md-2 {
+/* Summary section */
+.sectionOuterRow {
   margin: 2rem 0;
-  min-width: 20%;
 }
-.test-div {
+.sectionHeading {
+  text-align: center;
+}
+.sectionHeading h1 {
+  font-weight: 600;
+  font-size: 2.5em;
+  margin: 0;
+}
+.sectionHeading > .coloredBorderDiv {
+  max-width: 45%;
+}
+.coloredBorderDiv {
   /* Inner div for Colored-animated "borders" - see end of doc */
   --border-width: 2px;
   padding: 1px;
@@ -132,32 +130,68 @@ font-style: italic;
   justify-content: center;
   align-items: center;
   border-radius: var(--border-width);
+  box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603),
+    -2px -2px 5px rgba(58, 58, 58, 0.568);
 }
-.ppf-top {
-  padding: 1rem;
-  background-color: #eeeeee;
-  box-shadow: 15px 10px 17px rgba(49, 49, 49, 0.603),
-    -2px -2px 15px rgba(58, 58, 58, 0.568);
-}
-.summary {
-  min-height: 30vh;
-}
-.summary h2 {
-  font-weight: 600;
+/* Colored-animated borders */
+.coloredBorderDiv::after {
   position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(
+    60deg,
+    hsl(224, 85%, 66%),
+    hsl(269, 85%, 66%),
+    hsl(314, 85%, 66%),
+    hsl(359, 85%, 66%),
+    hsl(44, 85%, 66%),
+    hsl(89, 85%, 66%),
+    hsl(134, 85%, 66%),
+    hsl(179, 85%, 66%)
+  );
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  animation: moveGradient 3s alternate infinite;
 }
-.r2-main-container h3 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-  font-weight: 600;
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
-.r2-main-container p {
-  margin-top: 3rem;
-  margin-bottom: 0;
-  line-height: 2rem;
-  font-size: 1.15rem;
+.whiteOverRainbowContainer {
+  padding: 0;
+  background-color: #fff;
+}
+.sectionInnerRow {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.smallerCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* text-align: center; */
+  /* padding: 3rem; */
+}
+.smallerCol h2 {
+  font-size: 3em;
+  font-weight: 400;
+}
+.smallerCol img {
+  margin-bottom: 3rem;
+}
+.sectionInnerRow p {
+  margin: 0;
+}
+.sectionInnerRow > .col-md-8 {
+  display: flex;
+  align-items: center;
 }
 
 /* Main - row3 */
@@ -383,36 +417,6 @@ font-style: italic;
 .cert-link a,
 .cert-link p {
   margin: 0;
-}
-
-/* Colored-animated borders */
-.test-div::after {
-  position: absolute;
-  content: "";
-  top: calc(-1 * var(--border-width));
-  left: calc(-1 * var(--border-width));
-  z-index: -1;
-  width: calc(100% + var(--border-width) * 2);
-  height: calc(100% + var(--border-width) * 2);
-  background: linear-gradient(
-    60deg,
-    hsl(224, 85%, 66%),
-    hsl(269, 85%, 66%),
-    hsl(314, 85%, 66%),
-    hsl(359, 85%, 66%),
-    hsl(44, 85%, 66%),
-    hsl(89, 85%, 66%),
-    hsl(134, 85%, 66%),
-    hsl(179, 85%, 66%)
-  );
-  background-size: 300% 300%;
-  background-position: 0 50%;
-  animation: moveGradient 3s alternate infinite;
-}
-@keyframes moveGradient {
-  50% {
-    background-position: 100% 50%;
-  }
 }
 
 footer {
