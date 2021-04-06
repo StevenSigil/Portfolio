@@ -1,4 +1,4 @@
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function HomeHeading() {
@@ -18,7 +18,7 @@ function HomeHeading() {
             <a href="#certifications">Certifications</a>
           </Col>
           <Col sm={3} xs={6} className="">
-            <a href="/resume">Resume</a>
+            <Link to="/resume">Resume</Link>
           </Col>
         </div>
       </Container>
