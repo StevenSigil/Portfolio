@@ -13,10 +13,10 @@ function Projects() {
       <Container fluid className="row3-main-container">
         <ProjectsHeading />
 
-        <Row id="web-design" className="row3-inner-container">
+        <Row id="web-design" className="projectsSubsectionRow">
           <Col md={2}>
-            <div className="ppf-top">
-              <h3>React & Django</h3>
+            <div className="subsectionHeading coloredBorderDiv">
+              <h3>Full-stack web applications</h3>
             </div>
           </Col>
           <Col md={3}>
@@ -30,9 +30,9 @@ function Projects() {
           </Col>
         </Row>
 
-        <Row id="javascript" className="row3-inner-container">
+        <Row id="javascript" className="projectsSubsectionRow">
           <Col md={2}>
-            <div className="ppf-top">
+            <div className="subsectionHeading coloredBorderDiv">
               <h3>JavaScript/Html</h3>
             </div>
           </Col>
@@ -48,9 +48,9 @@ function Projects() {
           </Col>
         </Row>
 
-        <Row id="python-programming" className="row3-inner-container">
+        <Row id="python-programming" className="projectsSubsectionRow">
           <Col md={2}>
-            <div className="ppf-top">
+            <div className="subsectionHeading coloredBorderDiv">
               <h3>Python</h3>
             </div>
           </Col>

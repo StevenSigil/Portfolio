@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { Button, Image, Tooltip, Overlay } from "react-bootstrap";
+import { Button, Image, Tooltip, Overlay, Container } from "react-bootstrap";
 
 import GithubLogo from "../public/static/media/logos-icons/GitHub-Mark-32px.png";
 import LinkedinLogo from "../public/static/media/logos-icons/linkedin.svg";
@@ -23,60 +23,63 @@ function Footer() {
   return (
     <>
       <footer>
-        <h5>Thank you for viewing my portfolio!</h5>
-        <div style={{ display: "inline" }}>
-          <h6>Can I help your team build new and interesting projects?</h6>
-          <h6 className="underline">Connect with me!</h6>
-        </div>
-        <Button
-          className="github-btn"
-          type="link"
-          href="https://github.com/StevenSigil"
-          rel="noreferrer"
-          target="_blank"
-          variant="outline-dark"
-        >
-          <Image
-            src={GithubLogo}
-            width="100%"
-            height="100%"
-            alt="Github logo"
-          />
-        </Button>
+        <h2>Thank you for viewing my portfolio!</h2>
 
-        <Button
-          className="github-btn"
-          type="link"
-          href="https://www.linkedin.com/in/stevensigil"
-          rel="noreferrer"
-          target="_blank"
-          variant="outline-dark"
-        >
-          <Image
-            src={LinkedinLogo}
-            height="100%"
-            width="100%"
-            alt="Linkedin Logo"
-          />
-        </Button>
+        <p>Let's build something together! Connect with me:</p>
+        {/* <p>Can I help your team build new and interesting projects? Connect with me:</p> */}
 
-        <Button
-          className="github-btn"
-          type="link"
-          href="mailto:steven.sigil@protonmail.com"
-          rel="noreferrer"
-          ref={target}
-          target="_blank"
-          variant="outline-dark"
-          onClick={copyEmail}
-        >
-          <Image
-            src={EmailLogo}
-            height="100%"
-            width="100%"
-            alt="Linkedin Logo"
-          />
-        </Button>
+        <Container>
+          <Button
+            className="github-btn"
+            type="link"
+            href="https://github.com/StevenSigil"
+            rel="noreferrer"
+            target="_blank"
+            variant="outline-dark"
+          >
+            <Image
+              src={GithubLogo}
+              width="100%"
+              height="100%"
+              alt="Github logo"
+            />
+          </Button>
+
+          <Button
+            className="github-btn"
+            type="link"
+            href="https://www.linkedin.com/in/stevensigil"
+            rel="noreferrer"
+            target="_blank"
+            variant="outline-dark"
+          >
+            <Image
+              src={LinkedinLogo}
+              height="100%"
+              width="100%"
+              alt="Linkedin Logo"
+            />
+          </Button>
+
+          <Button
+            className="github-btn"
+            type="link"
+            href="mailto:steven.sigil@protonmail.com"
+            rel="noreferrer"
+            ref={target}
+            target="_blank"
+            variant="outline-dark"
+            onClick={copyEmail}
+          >
+            <Image
+              src={EmailLogo}
+              height="100%"
+              width="100%"
+              alt="Linkedin Logo"
+            />
+          </Button>
+        </Container>
+
         <Overlay
           transition={false}
           target={target.current}

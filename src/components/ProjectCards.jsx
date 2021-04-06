@@ -146,7 +146,7 @@ export function KeeperApp() {
       <Card.Body>
         <Card.Title>Keeper</Card.Title>
         <Card.Text>
-          Keep is an application that allows you to creat and delete To Do notes
+          Keep is an application that allows you to create and delete To Do notes
           in the browser. Built with React and using minimal styling while
           exploring material-ui libraries. This was used to learn more about
           React, as such, no backend implementation is set up at this time.

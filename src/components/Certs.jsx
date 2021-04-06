@@ -18,7 +18,9 @@ function Certs() {
   return (
     <>
       <Container fluid id="certifications" className="certs-main-container">
-        <h1>Certifications</h1>
+        <Container>
+          <h1>Certifications</h1>
+        </Container>
         <Row noGutters className="full-row">
           <Col>
             <Row className="cert-row">

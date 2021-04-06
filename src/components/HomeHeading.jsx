@@ -5,29 +5,22 @@ function HomeHeading() {
   return (
     <>
       <Container fluid className="topRow-container">
-        <Row>
-          <Col sm={8} xs={12} className="topRow-nameItem">
-            <h1>STEVEN ELLIOTT</h1>
+        <h1>STEVEN ELLIOTT</h1>
+
+        <div className="linkDiv">
+          <Col sm={3} xs={6} className="">
+            <a href="#my-summary">Who I am</a>
           </Col>
-
-          <Col sm={4} xs={12} className="topRow-list">
-            <p>
-              <a href="#my-summary"> Who I am </a>
-            </p>
-
-            <p>
-              <a href="#projects-heading"> What I do </a>
-            </p>
-
-            <p>
-              <a href="#certifications">How I learn</a>
-            </p>
-
-            <p>
-              <Link to="/resume">Public resume</Link>
-            </p>
+          <Col sm={3} xs={6} className="">
+            <a href="#projects-heading">Projects</a>
           </Col>
-        </Row>
+          <Col sm={3} xs={6} className="">
+            <a href="#certifications">Certifications</a>
+          </Col>
+          <Col sm={3} xs={6} className="">
+            <a href="/resume">Resume</a>
+          </Col>
+        </div>
       </Container>
     </>
   );
