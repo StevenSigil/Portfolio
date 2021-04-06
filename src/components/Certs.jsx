@@ -53,9 +53,7 @@ function Certs() {
               <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
-                    <h2>
-                      Full Stack Development with Django 3
-                    </h2>
+                    <h2>Full Stack Development with Django 3</h2>
                     {/* <h3>(2021)</h3> */}
                   </Col>
                   <Col>
@@ -159,9 +157,7 @@ function Certs() {
               <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
-                    <h2>
-                      Scientific Computing with Python
-                    </h2>
+                    <h2>Scientific Computing with Python</h2>
                     {/* <h3>(2020)</h3> */}
                   </Col>
                   <Col>
@@ -187,9 +183,7 @@ function Certs() {
               <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
-                    <h2>
-                      Data Analysis with Python
-                    </h2>
+                    <h2>Data Analysis with Python</h2>
                     {/* <h3>(2020)</h3> */}
                   </Col>
                   <Col>
@@ -216,9 +210,7 @@ function Certs() {
               <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
-                    <h2>
-                      Visual Communication with Adobe Photoshop
-                    </h2>
+                    <h2>Visual Communication with Adobe Photoshop</h2>
                     {/* <h3>(2013)</h3> */}
                   </Col>
                   <Col>
@@ -245,9 +237,7 @@ function Certs() {
               <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
-                    <h2>
-                      Graphic Design with Adobe Illustrator
-                    </h2>
+                    <h2>Graphic Design with Adobe Illustrator</h2>
                     {/* <h3>(2013)</h3> */}
                   </Col>
                   <Col>
@@ -274,9 +264,7 @@ function Certs() {
               <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
-                    <h2>
-                      Media Publication with Adobe InDesign
-                    </h2>
+                    <h2>Media Publication with Adobe InDesign</h2>
                     {/* <h3>(2014)</h3> */}
                   </Col>
                   <Col>
@@ -303,9 +291,7 @@ function Certs() {
               <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
-                    <h2>
-                      Video Communication with Adobe Premiere
-                    </h2>
+                    <h2>Video Communication with Adobe Premiere</h2>
                     {/* <h3>(2014)</h3> */}
                   </Col>
                   <Col>
@@ -332,9 +318,7 @@ function Certs() {
               <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
-                    <h2>
-                      Rich Media with Adobe Flash
-                    </h2>
+                    <h2>Rich Media with Adobe Flash</h2>
                     {/* <h3>(2013)</h3> */}
                   </Col>
                   <Col>

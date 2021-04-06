@@ -7,17 +7,12 @@ import Certs from "./components/Certs";
 import Footer from "./components/Footer";
 
 import "./public/static/css/app.css";
-import Resume from "./components/Resume";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/resume">
-            <Resume />
-          </Route>
-
           <Route exact path="/home">
             <HomeHeading />
 
