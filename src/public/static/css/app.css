@@ -3,7 +3,6 @@ html {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
 body {
   font-family: mr-eaves-modern, sans-serif;
   font-weight: 400;
@@ -97,14 +96,19 @@ font-style: italic;
 }
 .linkDiv a {
   color: inherit;
-  font-family: fira-sans, sans-serif;
-  font-weight: 400;
+  min-width: max-content;
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  letter-spacing: 2px;
   font-style: normal;
   text-align: center;
-  min-width: max-content;
+  transition: all 1000ms;
 }
 .linkDiv a:hover {
   color: rgba(255, 255, 255, 0.753);
+  text-decoration: none;
+  letter-spacing: 5px;
 }
 
 /* Summary section */
@@ -116,15 +120,29 @@ font-style: italic;
   justify-content: space-evenly;
 }
 .sectionOuterRow {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 .sectionHeading {
   text-align: center;
+  margin: 1rem 0 5rem;
+}
+.sectionHeading .whiteOverRainbowContainer {
+  box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603),
+    -2px -2px 5px rgba(58, 58, 58, 0.568);
+  border-radius: 3px;
+}
+@media (min-width: 1200px) {
+  .sectionHeading > .whiteOverRainbowContainer {
+    max-width: 40vw;
+  }
 }
 .sectionHeading h1 {
   font-weight: 600;
   font-size: 2.5em;
+  letter-spacing: 2px;
   margin: 0;
+  font-family: mr-eaves-modern, sans-serif;
+  font-style: normal;
 }
 .coloredBorderDiv {
   /* Colored-animated borders */
@@ -183,8 +201,12 @@ font-style: italic;
   padding: 1rem;
 }
 .smallerCol h2 {
-  font-size: 3em;
-  font-weight: 400;
+  font-family: mr-eaves-modern, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.5em;
+  letter-spacing: 10px;
+  margin: 0;
 }
 .sectionInnerRow p {
   margin: 0;
@@ -199,64 +221,101 @@ font-style: italic;
 /* Main - row3 */
 .row3-main-container {
   margin: 4rem 0;
+  padding-top: 2rem;
   /* background-image: url("../media/translucent-fibres.png"); */
 }
 
 /* Projects Heading */
 .projectsHeadingSection {
-  font-size: 1.5em;
-  min-height: 95vh;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
-}
-.projectsHeadingSection > .innerDiv {
-  min-width: 50vw;
-  min-height: 75vh;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-bottom: 5rem;
+  color: rgb(34, 34, 34);
   border-radius: 5px;
   box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603),
     -2px -2px 5px rgba(58, 58, 58, 0.568);
+  /* background-image: url("../media/dotnoise-light-grey.png"); */
+}
+@media (min-width: 1200px) {
+  .projectsHeadingSection {
+    max-width: 50vw;
+  }
+}
+.innerDiv {
+  width: 100%;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 1px;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  margin: 1px;
 }
 .title {
   text-align: center;
   min-height: 15vh;
   display: grid;
   align-items: center;
+  padding: 0;
 }
-.title h2 {
-  font-size: 2em;
+.title h1 {
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 600;
+  font-size: 2.5em;
+  letter-spacing: 3px;
+  font-style: normal;
+  text-align: center;
+  margin: 0 0 2rem;
+  text-decoration: underline solid black 2px;
 }
+/* .title h3 {
+  margin: 0 -0.75rem 0;
+  font-family: fira-sans, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: .025rem;
+  font-style: normal;
+  text-align: center;
+  min-width: min-content;
+  word-wrap: break-word;
+} */
 .outer-list-group {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
-@media (max-width: 550px) {
-  .outer-list-group {
-    padding: 1rem;
-  }
+.dirHeader {
+  padding: 0;
+}
+.outer-list-group h2 {
+  margin: 0;
+  font-family: mr-eaves-modern, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2em;
+  letter-spacing: 2px;
 }
 .custom-list-group {
-  padding: 1.5rem;
+  margin: 2rem 0 0;
 }
-.custom-list-group div {
-  margin-bottom: 1rem;
+.custom-list-group li {
+  padding: 1rem 0;
+  font-family: mr-eaves-modern, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  letter-spacing: 1px;
 }
 .custom-list-group a {
   color: inherit;
   width: 100%;
   line-height: 35pt;
-  font-size: 1em;
+  transition: all 200ms;
 }
 .custom-list-group a:hover {
-  color: rgba(0, 0, 0, 0.733);
-  transition: all 200ms;
+  color: rgba(48, 48, 48, 0.733);
+  text-decoration: underline solid black 1px;
 }
 
 /* Projects */
@@ -278,8 +337,13 @@ font-style: italic;
 }
 .projectsSubsectionRow .subsectionHeading h3 {
   margin: 0;
-  font-size: 1.85em;
   width: 100%;
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 500;
+  font-size: 2.25em;
+  letter-spacing: 2px;
+  font-style: normal;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .subsectionHeading h3 {
@@ -315,7 +379,11 @@ font-style: italic;
   font-size: 1.15em;
   line-height: 1.5em;
   padding: 1.5rem;
-  text-align: justify;
+}
+@media (max-width: 768px) {
+  .projectsSubsectionRow .card-body {
+    padding: 1rem;
+  }
 }
 
 /* Project Card Footers */
@@ -347,7 +415,6 @@ font-style: italic;
   padding: 2rem 15px 0;
 }
 .certs-main-container > .container {
-  font-weight: 600;
   min-height: 5rem;
   width: calc(100% - 1rem);
   margin: 1rem auto 3rem;
@@ -361,8 +428,12 @@ font-style: italic;
     -2px -2px 5px rgba(58, 58, 58, 0.568);
 }
 .certs-main-container h1 {
-  font-size: 3em;
+  font-weight: 600;
+  font-size: 2.5em;
+  letter-spacing: 2px;
   margin: 0;
+  font-family: mr-eaves-modern, sans-serif;
+  font-style: normal;
 }
 .full-row {
   margin: 2rem 0 4rem;
@@ -374,13 +445,7 @@ font-style: italic;
   margin: 2rem auto;
   width: max-content;
 }
-.full-row h1 {
-  width: max-content;
-  height: max-content;
-  font-size: 5rem;
-  font-weight: 700;
-  word-wrap: break-word;
-}
+
 .cert-row {
   padding: 0 1rem;
 }
@@ -401,7 +466,7 @@ font-style: italic;
 .singleitem-col > .row > .col-md-5 {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .singleitem-col > .row > .col {
   display: flex;
@@ -415,9 +480,14 @@ font-style: italic;
   box-shadow: 10px 12px 20px #2c2c2c, -7px 0px 10px #4e4e4e9d;
 }
 .singleitem-col h2 {
-  font-weight: 700;
   padding: 0.5rem;
   margin-bottom: 2rem;
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 500;
+  font-size: 2.25em;
+  letter-spacing: 2px;
+  font-style: normal;
+  text-align: center;
 }
 .cert-link {
   margin: 1rem 0 0;

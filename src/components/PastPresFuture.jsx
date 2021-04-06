@@ -7,14 +7,12 @@ function PastPresFuture() {
   return (
     <>
       <Container fluid className="r2-main-container" id="my-summary">
-        <Row className="sectionOuterRow sectionHeading">
-          <Container className="coloredBorderDiv">
-            <Container
-              className="whiteOverRainbowContainer"
-              style={{ padding: "1rem" }}
-            >
-              <h1>My Summary</h1>
-            </Container>
+        <Row className="sectionHeading">
+          <Container
+            className="whiteOverRainbowContainer"
+            style={{ padding: "1rem" }}
+          >
+            <h1>My Summary</h1>
           </Container>
         </Row>
 

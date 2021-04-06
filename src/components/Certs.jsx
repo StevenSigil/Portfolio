@@ -27,7 +27,7 @@ function Certs() {
               <Col md={6} className="singleitem-col">
                 <Row>
                   <Col md={5}>
-                    <h2>Web development</h2>
+                    <h2>Web development - Complete for 2021</h2>
                     {/* <h3>(2021)</h3> */}
                   </Col>
                   <Col>
@@ -54,7 +54,7 @@ function Certs() {
                 <Row>
                   <Col md={5}>
                     <h2>
-                      Full Stack Development <br /> -Django 3
+                      Full Stack Development with Django 3
                     </h2>
                     {/* <h3>(2021)</h3> */}
                   </Col>
@@ -160,7 +160,7 @@ function Certs() {
                 <Row>
                   <Col md={5}>
                     <h2>
-                      Scientific Computing <br /> -Python{" "}
+                      Scientific Computing with Python
                     </h2>
                     {/* <h3>(2020)</h3> */}
                   </Col>
@@ -188,7 +188,7 @@ function Certs() {
                 <Row>
                   <Col md={5}>
                     <h2>
-                      Data Analysis <br /> -Python
+                      Data Analysis with Python
                     </h2>
                     {/* <h3>(2020)</h3> */}
                   </Col>
@@ -217,7 +217,7 @@ function Certs() {
                 <Row>
                   <Col md={5}>
                     <h2>
-                      Visual Communication <br /> -Adobe Photoshop
+                      Visual Communication with Adobe Photoshop
                     </h2>
                     {/* <h3>(2013)</h3> */}
                   </Col>
@@ -246,7 +246,7 @@ function Certs() {
                 <Row>
                   <Col md={5}>
                     <h2>
-                      Graphic Design <br /> -Adobe Illustrator
+                      Graphic Design with Adobe Illustrator
                     </h2>
                     {/* <h3>(2013)</h3> */}
                   </Col>
@@ -275,7 +275,7 @@ function Certs() {
                 <Row>
                   <Col md={5}>
                     <h2>
-                      Media Publication <br /> -Adobe InDesign
+                      Media Publication with Adobe InDesign
                     </h2>
                     {/* <h3>(2014)</h3> */}
                   </Col>
@@ -304,7 +304,7 @@ function Certs() {
                 <Row>
                   <Col md={5}>
                     <h2>
-                      Video Communication <br /> -Adobe Premiere
+                      Video Communication with Adobe Premiere
                     </h2>
                     {/* <h3>(2014)</h3> */}
                   </Col>
@@ -333,7 +333,7 @@ function Certs() {
                 <Row>
                   <Col md={5}>
                     <h2>
-                      Rich Media <br /> -Adobe Flash
+                      Rich Media with Adobe Flash
                     </h2>
                     {/* <h3>(2013)</h3> */}
                   </Col>

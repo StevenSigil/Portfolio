@@ -10,7 +10,7 @@ import ProjectsHeading from "./ProjectsHeading";
 function Projects() {
   return (
     <>
-      <Container fluid className="row3-main-container">
+      <Container fluid className="row3-main-container" id="projects-heading">
         <ProjectsHeading />
 
         <Row id="web-design" className="projectsSubsectionRow">
@@ -33,7 +33,7 @@ function Projects() {
         <Row id="javascript" className="projectsSubsectionRow">
           <Col md={2}>
             <div className="subsectionHeading coloredBorderDiv">
-              <h3>JavaScript/Html</h3>
+              <h3>JavaScript - Html - CSS</h3>
             </div>
           </Col>
 
@@ -51,7 +51,7 @@ function Projects() {
         <Row id="python-programming" className="projectsSubsectionRow">
           <Col md={2}>
             <div className="subsectionHeading coloredBorderDiv">
-              <h3>Python</h3>
+              <h3>Misc. Python</h3>
             </div>
           </Col>
 
