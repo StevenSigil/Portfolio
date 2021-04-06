@@ -326,8 +326,7 @@ font-style: italic;
   padding-top: 10vh;
 }
 .projectsSubsectionRow .subsectionHeading {
-  min-height: 30vh;
-  max-width: 90%;
+  min-height: 20vh;
   margin: 3rem auto;
   padding: 1rem 1rem;
   display: flex;
