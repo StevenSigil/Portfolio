@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 
-function ProjectsHeading() {
+export default function ProjectsHeading() {
   return (
     <Container className="projectsHeadingSection">
       <div className="innerDiv">
@@ -31,5 +31,3 @@ function ProjectsHeading() {
     </Container>
   );
 }
-
-export default ProjectsHeading;

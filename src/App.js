@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 import "./public/static/css/app.css";
 
-function App() {
+export default function App() {
   return (
     <>
       <BrowserRouter>
@@ -35,5 +35,3 @@ function App() {
 }
 
 // Wireframe: https://wireframe.cc/ROwrUh
-
-export default App;

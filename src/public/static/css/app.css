@@ -234,24 +234,24 @@ font-style: italic;
   justify-content: center;
   color: rgb(34, 34, 34);
   border-radius: 5px;
+  background-color: #fff;
   box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603),
     -2px -2px 5px rgba(58, 58, 58, 0.568);
   /* background-image: url("../media/dotnoise-light-grey.png"); */
 }
 @media (min-width: 1200px) {
   .projectsHeadingSection {
-    max-width: 50vw;
+    max-width: 45vw;
   }
 }
 .innerDiv {
-  width: 100%;
   min-height: 92vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   border-radius: 1px;
   padding: 2rem 1rem;
-  background-color: #fff;
+
   margin: 1px;
 }
 .title {
@@ -284,6 +284,9 @@ font-style: italic;
 } */
 .outer-list-group {
   padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
 }
 .dirHeader {
   padding: 0;
@@ -298,6 +301,7 @@ font-style: italic;
 }
 .custom-list-group {
   margin: 2rem 0 0;
+  padding-left: 3rem;
 }
 .custom-list-group li {
   padding: 1rem 0;
@@ -321,13 +325,15 @@ font-style: italic;
 /* Projects */
 .projectsSubsectionRow {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: stretch;
   padding-bottom: 10vh;
   padding-top: 10vh;
 }
 .projectsSubsectionRow .subsectionHeading {
   min-height: 20vh;
   max-height: 90%;
+  max-width: 90%;
   margin: 3rem auto;
   padding: 1rem 1rem;
   display: flex;
@@ -350,7 +356,7 @@ font-style: italic;
     text-align: center;
   }
 }
-.projectsSubsectionRow > .col-md-3 {
+.projectsSubsectionRow > .col-xl-3 {
   display: flex;
   align-items: baseline;
 }
@@ -452,7 +458,7 @@ font-style: italic;
 .singleitem-col {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   padding: 0;
 }
 .singleitem-col > .row {
@@ -463,7 +469,7 @@ font-style: italic;
   border-radius: 3px;
   background-color: #fff;
 }
-.singleitem-col > .row > .col-md-5 {
+.singleitem-col > .row > .col-xl-5 {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -2,68 +2,74 @@ import { Container } from "react-bootstrap";
 import { Col, Row } from "react-bootstrap";
 
 import { CryptographyApp, KivyApp, LifeApp } from "./ProjectCards";
-import { MedTrackApp, TodoApp, KeeperApp } from "./ProjectCards";
+import { MedTrackApp, MedTrackApp2, TodoApp, KeeperApp } from "./ProjectCards";
 import { SimonApp, TinDogApp, DiceApp } from "./ProjectCards";
 
 import ProjectsHeading from "./ProjectsHeading";
 
-function Projects() {
+export default function Projects() {
   return (
     <>
       <Container fluid className="row3-main-container" id="projects-heading">
         <ProjectsHeading />
 
         <Row id="web-design" className="projectsSubsectionRow">
-          <Col md={2}>
+          <Col xl={2} lg={12}>
             <div className="subsectionHeading coloredBorderDiv">
-              <h3>Full-stack web applications</h3>
+              <h3>Full-stack web apps</h3>
             </div>
           </Col>
-          <Col md={3}>
+
+          <Col xl={3} lg={5}>
             <MedTrackApp />
           </Col>
-          <Col md={3}>
+          <Col xl={3} lg={5}>
+            <MedTrackApp2 />
+          </Col>
+          <Col xl={3} lg={5}>
             <TodoApp />
           </Col>
-          <Col md={3}>
+
+          {/* 2nd row */}
+          <Col xl={3} lg={5}>
             <KeeperApp />
           </Col>
         </Row>
 
         <Row id="javascript" className="projectsSubsectionRow">
-          <Col md={2}>
+          <Col xl={2} lg={12}>
             <div className="subsectionHeading coloredBorderDiv">
               <h3>JavaScript - Html - CSS</h3>
             </div>
           </Col>
 
-          <Col md={3}>
+          <Col xl={3} lg={5}>
             <SimonApp />
           </Col>
-          <Col md={3}>
+          <Col xl={3} lg={5}>
             <TinDogApp />
           </Col>
-          <Col md={3}>
+          <Col xl={3} lg={5}>
             <DiceApp />
           </Col>
         </Row>
 
         <Row id="python-programming" className="projectsSubsectionRow">
-          <Col md={2}>
+          <Col xl={2} lg={12}>
             <div className="subsectionHeading coloredBorderDiv">
               <h3>Misc. Python</h3>
             </div>
           </Col>
 
-          <Col md={3}>
+          <Col xl={3} lg={5}>
             <LifeApp />
           </Col>
 
-          <Col md={3}>
+          <Col xl={3} lg={5}>
             <KivyApp />
           </Col>
 
-          <Col md={3}>
+          <Col xl={3} lg={5}>
             <CryptographyApp />
           </Col>
         </Row>
@@ -71,5 +77,3 @@ function Projects() {
     </>
   );
 }
-
-export default Projects;
