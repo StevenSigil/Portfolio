@@ -5,6 +5,7 @@ import PastPresFuture from "./components/PastPresFuture";
 import Projects from "./components/Projects";
 import Certs from "./components/Certs";
 import Footer from "./components/Footer";
+import EdZen from "./components/edZen/EdZen";
 
 import "./public/static/css/app.css";
 
@@ -22,6 +23,11 @@ export default function App() {
 
             <Certs />
 
+            <Footer />
+          </Route>
+
+          <Route exact path="/everyday-zen">
+            <EdZen />
             <Footer />
           </Route>
 

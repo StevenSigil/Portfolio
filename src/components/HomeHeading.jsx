@@ -1,4 +1,5 @@
 import { Container, Col } from "react-bootstrap";
+// import { Link } from 'react-router-dom';
 import PDF from "../public/static/media/stevenE_publicResume.pdf";
 
 function HomeHeading() {
@@ -20,6 +21,10 @@ function HomeHeading() {
           <Col sm={3} xs={6} className="">
             <a href={PDF}>Resume</a>
           </Col>
+
+          {/* <Col sm={3} xs={6} className="">
+            <Link to="/everyday-zen">EdZ</Link>
+          </Col> */}
         </div>
       </Container>
     </>

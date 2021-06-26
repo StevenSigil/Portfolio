@@ -1,0 +1,244 @@
+html {
+  scroll-snap-type: y proximity;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+body {
+  font-family: mr-eaves-modern, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #fefefe;
+  scroll-snap-type: y proximity;
+}
+
+h2 {
+  font: normal normal bold 42px/52px Mr Eaves Mod OT;
+  margin: 2rem 0 0;
+}
+h3 {
+  font: normal normal normal 38px/52px Mr Eaves Mod OT;
+  margin: 2rem 1rem 0;
+}
+ul,
+li {
+  font: normal normal normal 22px/28px Mr Eaves Mod OT;
+  color: #707070;
+  margin: 0 calc(1rem + 12px) 0.75em;
+}
+p {
+  font: normal normal normal 20px/28px Mr Eaves Mod OT;
+  letter-spacing: 0px;
+  margin: 0 calc(1rem + 12px) 0.75em;
+  width: 100%;
+}
+
+// ============================================================
+// ===================== COLOR BG BTN =========================
+.navBtns {
+  // background-color: #dbdbdb;
+
+  --borderWidth: 3px;
+  background: #1d1f20;
+  border-radius: var(--borderWidth);
+
+  padding: 0;
+  // min-width: 75px;
+  // min-height: 100px;
+  position: fixed;
+  bottom: 25px;
+  right: 50px;
+
+  box-shadow: 7px 5px 20px 1px rgba(0, 0, 0, 0.7);
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(
+      60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+    );
+    opacity: 100%;
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+
+  div {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(68, 68, 68);
+    box-shadow: 1px 3px 2px rgba(68, 68, 68, 0.75);
+    margin-bottom: var(--borderWidth);
+
+    padding: 5px;
+    border-radius: calc(var(--borderWidth) + var(--borderWidth));
+
+    p {
+      margin: 0;
+      text-align: center;
+      color: #fff;
+      font-size: 1em;
+      line-height: 1.25em;
+    }
+    svg {
+      fill: #fff;
+    }
+  }
+
+  hr {
+    margin: 5px 0 0;
+  }
+}
+
+// ============================================================
+// ============================================================
+header {
+  width: 100vw;
+  height: 208px;
+  background: url("../media/edZen_imgs/short_background.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  h1 {
+    text-align: center;
+    font: normal normal bold 61px/67px Mr Eaves Mod OT;
+    color: #ffffff;
+  }
+  .mainHeadBack {
+    display: flex;
+    align-self: flex-start;
+    padding: 0 10px;
+    cursor: pointer;
+
+    svg {
+      fill: #fff;
+      min-width: 50px;
+    }
+  }
+}
+
+#directory {
+  ul {
+    margin: 1.5em 0 1em;
+    padding-inline-start: 1rem;
+
+    li {
+      font: normal normal normal 22px/40px Mr Eaves Mod OT;
+      color: #707070;
+      margin-bottom: 1.5em;
+    }
+  }
+}
+
+.outerDiv {
+  padding: 5rem 1rem;
+
+  .row {
+    padding: 0 0 2rem;
+  }
+  .col {
+    margin: 0 1rem;
+  }
+}
+
+// ============================================================
+// ============================================================
+.imgContainer {
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+.one {
+  margin-bottom: 1rem;
+}
+.two {
+  img {
+    max-width: 50%;
+  }
+}
+
+.headingWithLink {
+  align-items: flex-end;
+}
+
+// ============================================================
+// ======================= SCROLL GROUPS ======================
+.scroll-x {
+  width: 100%;
+  max-height: 90vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: flex;
+
+  .scrollItem {
+    min-width: fit-content;
+    margin: 0 1.5rem;
+  }
+
+  .scrollItemWithHeading {
+    min-width: fit-content;
+    margin: 0 1.5rem;
+
+    h4 {
+      max-height: 10%;
+      width: 100%;
+    }
+    img {
+      width: auto;
+      height: 90%;
+    }
+  }
+}
+
+// ============================================================
+// ========================= ANIMATIONS =======================
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+// ============================================================
+// ========================== MEDIA ===========================
+@media only screen and (max-width: 1200px) {
+  #directory ul li {
+    line-height: 40px;
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #directory ul li {
+    line-height: 35px;
+    margin-bottom: 0;
+  }
+}

@@ -22,7 +22,7 @@ function Footer() {
 
   return (
     <>
-      <footer>
+      <footer id="footer">
         <h2>Thank you for viewing my portfolio!</h2>
 
         <p>Let's build something together! Connect with me:</p>
