@@ -15,9 +15,14 @@ import UserPersonaScrollGroup from "./UserPersonas";
 
 // Business Analysis section
 import { Intro, Analysis, ProjReq, AddInfo } from "./TextComps";
-import ivf from "../../public/static/media/edZen_imgs/ImportanceVsFeasibility.png";
-import compLogo2 from "../../public/static/media/edZen_imgs/Comp. Logos 2.png";
-import compLogo1 from "../../public/static/media/edZen_imgs/Comp. Logos 1.png";
+
+import ivf05x from "../../public/static/media/edZen_imgs/ivfPlot/ivf@0.5x.png";
+import ivf1x from "../../public/static/media/edZen_imgs/ivfPlot/ivf@1x.png";
+import ivf2x from "../../public/static/media/edZen_imgs/ivfPlot/ivf@2x.png";
+
+import compLogos05x from "../../public/static/media/edZen_imgs/CompLogos/compLogos@0.5x.png";
+import compLogos1x from "../../public/static/media/edZen_imgs/CompLogos/compLogos@1x.png";
+import compLogos2x from "../../public/static/media/edZen_imgs/CompLogos/compLogos@2x.png";
 
 import compPage05x from "../../public/static/media/edZen_imgs/CompPages/compWebsites@0.5x.png";
 import compPage1x from "../../public/static/media/edZen_imgs/CompPages/compWebsites@1x.png";
@@ -50,8 +55,39 @@ import { prototypeData } from "../../util-data/edZen_prototypeData";
 
 export default function EdZen() {
   const history = useHistory();
+  const [anchorPositions, setAnchorPositions] = useState([]);
 
-  const [nextAnchor, setNextAnchor] = useState(null);
+  const [showLargerImage, setShowLargerImage] = useState(false);
+  const [lgImgData, setLgImgData] = useState({
+    img: null,
+    srcSet: null,
+    alt: null,
+  });
+
+  function handleImageClick(img, srcSet, alt) {
+    setLgImgData({ img: img, srcSet: srcSet, alt: alt });
+    setShowLargerImage(!showLargerImage);
+  }
+
+  console.log(lgImgData);
+
+  function ExpandedImage() {
+    if (lgImgData.img) {
+      return (
+        <div className="staticLgImg" onClick={() => handleImageClick(null, null, null)}>
+          <p>touch anywhere to close</p>
+          <img
+            srcSet={lgImgData.srcSet}
+            img={lgImgData.img}
+            alt={lgImgData.alt}
+          />
+          
+        </div>
+      );
+    } else {
+      return null;
+    }
+  }
 
   function SingleImageWithHeader({ id, hText, srcSet, img, alt }) {
     return (
@@ -60,7 +96,12 @@ export default function EdZen() {
           <h3>{hText}</h3>
         </Row>
         <Row noGutters className="imgContainer">
-          <img srcSet={srcSet} src={img} alt={alt} />
+          <img
+            srcSet={srcSet}
+            src={img}
+            alt={alt}
+            onClick={() => handleImageClick(img, srcSet, alt)}
+          />
         </Row>
       </>
     );
@@ -93,8 +134,29 @@ export default function EdZen() {
     );
   }
 
+  function handleNextScroll() {
+    const curPos = window.pageYOffset;
+    const closestSection = anchorPositions.find((sections) => {
+      return Object.values(sections) > curPos;
+    });
+
+    console.log(curPos, closestSection);
+
+    const scrollOptions = {
+      left: 0,
+      // top: Object.values(nextAnchor),
+      top: Object.values(closestSection),
+      behavior: "smooth",
+    };
+    window.scrollTo(scrollOptions);
+  }
+
+  function handleBackArrow() {
+    history.push("/home");
+  }
+
   useEffect(() => {
-    const anchorPositions = [
+    setAnchorPositions([
       { "#intro": document.querySelector("#intro").offsetTop },
       { "#analysis": document.querySelector("#analysis").offsetTop },
       { "#requirements": document.querySelector("#requirements").offsetTop },
@@ -111,48 +173,14 @@ export default function EdZen() {
       { "#wireFrame": document.querySelector("#wireFrame").offsetTop },
       { "#prototype": document.querySelector("#prototype").offsetTop },
       { "#footer": document.querySelector("#footer").offsetTop },
-    ];
-
-    function handleThis() {
-      var curPos = window.pageYOffset;
-      let closestSection = anchorPositions.find((el) => {
-        return Object.values(el) > curPos;
-      });
-
-      setNextAnchor(closestSection);
-
-      if (!closestSection) {
-        document.querySelector("#nextBtn").style.display = "none";
-      }
-    }
-
-    if (!nextAnchor) {
-      handleThis();
-    }
-
-    window.addEventListener("scroll", handleThis);
-
-    return () => {
-      window.removeEventListener("scroll", handleThis);
-    };
-  }, [nextAnchor]);
-
-  function handleNextScroll() {
-    const scrollOptions = {
-      left: 0,
-      top: Object.values(nextAnchor),
-      behavior: "smooth",
-    };
-    window.scrollTo(scrollOptions);
-  }
-
-  function handleBackArrow() {
-    history.push("/home");
-  }
+    ]);
+  }, []);
 
   return (
     <>
       <NavBtns />
+
+      <ExpandedImage />
 
       <header id="top">
         <h1>Everyday Zen: UX & UI Project</h1>
@@ -190,20 +218,18 @@ export default function EdZen() {
         <SingleImageWithHeader
           id="ivfChart"
           hText="Importance Vs. Feasibility Chart"
-          img={ivf}
+          srcSet={`${ivf05x} 960w, ${ivf1x} 1920w, ${ivf2x} 3840w`}
+          img={ivf1x}
           alt="importance vs feasibility chart"
         />
 
-        <Row noGutters id="compLogos">
-          <h3>Competitive Logo's:</h3>
-        </Row>
-        <Row noGutters className="imgContainer two">
-          <img src={compLogo2} alt="competitive logos-direct competition" />
-          <img
-            src={compLogo1}
-            alt="competitive logos-alternative competition"
-          />
-        </Row>
+        <SingleImageWithHeader
+          id="compLogos"
+          hText="Competitive Logo's:"
+          srcSet={`${compLogos05x} 960w, ${compLogos1x} 1920w, ${compLogos2x} 3840w`}
+          img={compLogos1x}
+          alt="competitive logos"
+        />
 
         <SingleImageWithHeader
           id="compWebsites"
