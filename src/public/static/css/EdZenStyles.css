@@ -136,11 +136,23 @@ header .mainHeadBack {
       align-self: flex-start;
   padding: 0 10px;
   cursor: pointer;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 header .mainHeadBack svg {
   fill: #fff;
   min-width: 50px;
+  -webkit-filter: drop-shadow(3px 4px 7px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(3px 4px 7px rgba(0, 0, 0, 0.7));
+}
+
+header .mainHeadBack:hover svg {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 #directory ul {
@@ -232,13 +244,41 @@ header .mainHeadBack svg {
 
 .scroll-x {
   width: 100%;
-  max-height: 90vh;
+  max-height: 85vh;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.scroll-x::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 6.66667px;
+}
+
+.scroll-x::-webkit-scrollbar-thumb {
+  background: #545454;
+  border-radius: 6.66667px;
+}
+
+.scroll-x::-webkit-scrollbar-track {
+  background: #a8a8a8;
+  border-radius: 6.66667px;
+  -webkit-box-shadow: 0 2px 5px #000;
+          box-shadow: 0 2px 5px #000;
+}
+
+.scroll-x {
+  scrollbar-face-color: #545454;
+  scrollbar-track-color: #a8a8a8;
 }
 
 .scroll-x .scrollItem {

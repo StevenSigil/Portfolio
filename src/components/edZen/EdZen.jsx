@@ -2,13 +2,15 @@ import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Row, Container } from "react-bootstrap";
 
+import { getUpdatedAnchorPositions } from "../../util-data/util";
+
 import "../../public/static/css/EdZenStyles.css";
 
 import { ReactComponent as BackArrow } from "../../public/static/media/logos-icons/backArrow.svg";
 
 import NavBtns from "./NavBtns";
-
 import Directory from "./Directory";
+import ScrollGroupItem from "./ScrollGroupItem";
 
 // Business Analysis section
 import { Intro, Analysis, ProjReq, AddInfo } from "./TextComps";
@@ -49,12 +51,12 @@ import logos2x from "../../public/static/media/edZen_imgs/FinalLogos/finalLogos@
 
 // Data for Mapped Components
 import { userPersonaData } from "../../util-data/UserPersonas";
-import { wireFrameData } from "../../util-data/edZen_wireFrameData";
-import { prototypeData } from "../../util-data/edZen_prototypeData";
+import { wireFrameData } from "../../util-data/wireFrameData";
+import { prototypeData } from "../../util-data/prototypeData";
 
 export default function EdZen() {
   const history = useHistory();
-  const [anchorPositions, setAnchorPositions] = useState([]);
+  // const [anchorPositions, setAnchorPositions] = useState([]);
 
   const [showLargerImage, setShowLargerImage] = useState(false);
   const [lgImgData, setLgImgData] = useState({
@@ -63,46 +65,28 @@ export default function EdZen() {
     alt: null,
   });
 
-  useEffect(() => {
-    setAnchorPositions([
-      { "#intro": document.querySelector("#intro").offsetTop },
-      { "#analysis": document.querySelector("#analysis").offsetTop },
-      { "#requirements": document.querySelector("#requirements").offsetTop },
-      { "#addInfo": document.querySelector("#addInfo").offsetTop },
-      { "#persona": document.querySelector("#persona").offsetTop },
-      { "#ivfChart": document.querySelector("#ivfChart").offsetTop },
-      { "#compLogos": document.querySelector("#compLogos").offsetTop },
-      { "#compWebsites": document.querySelector("#compWebsites").offsetTop },
-      { "#decisionPaths": document.querySelector("#decisionPaths").offsetTop },
-      { "#journeyPath": document.querySelector("#journeyPath").offsetTop },
-      { "#moodBoard": document.querySelector("#moodBoard").offsetTop },
-      { "#siteMap": document.querySelector("#siteMap").offsetTop },
-      { "#finalLogos": document.querySelector("#finalLogos").offsetTop },
-      { "#wireFrame": document.querySelector("#wireFrame").offsetTop },
-      { "#prototype": document.querySelector("#prototype").offsetTop },
-      { "#footer": document.querySelector("#footer").offsetTop },
-    ]);
-    console.log("Anchor positions have been updated");
-  }, []);
-
   function handleBackArrow() {
     history.push("/home");
   }
 
   function handleNextScrollPosition() {
     const curPos = window.pageYOffset;
+    const anchorPositions = getUpdatedAnchorPositions();
+
     const closestSection = anchorPositions.find((sections) => {
-      return Object.values(sections) > curPos;
+      return Object.values(sections) > curPos + 100;
     });
 
-    console.log(curPos, closestSection);
+    // console.log(curPos, closestSection);
 
-    const scrollOptions = {
-      left: 0,
-      top: Object.values(closestSection),
-      behavior: "smooth",
-    };
-    window.scrollTo(scrollOptions);
+    if (closestSection) {
+      const scrollOptions = {
+        left: 0,
+        top: Object.values(closestSection),
+        behavior: "smooth",
+      };
+      window.scrollTo(scrollOptions);
+    }
   }
 
   function handleImageClick(img, srcSet, alt) {
@@ -111,28 +95,6 @@ export default function EdZen() {
       : setLgImgData({ img: img, alt: alt });
     setShowLargerImage(!showLargerImage);
   }
-
-  // function updateScrollPositions() {
-  //   setAnchorPositions([
-  //     { "#intro": document.querySelector("#intro").offsetTop },
-  //     { "#analysis": document.querySelector("#analysis").offsetTop },
-  //     { "#requirements": document.querySelector("#requirements").offsetTop },
-  //     { "#addInfo": document.querySelector("#addInfo").offsetTop },
-  //     { "#persona": document.querySelector("#persona").offsetTop },
-  //     { "#ivfChart": document.querySelector("#ivfChart").offsetTop },
-  //     { "#compLogos": document.querySelector("#compLogos").offsetTop },
-  //     { "#compWebsites": document.querySelector("#compWebsites").offsetTop },
-  //     { "#decisionPaths": document.querySelector("#decisionPaths").offsetTop },
-  //     { "#journeyPath": document.querySelector("#journeyPath").offsetTop },
-  //     { "#moodBoard": document.querySelector("#moodBoard").offsetTop },
-  //     { "#siteMap": document.querySelector("#siteMap").offsetTop },
-  //     { "#finalLogos": document.querySelector("#finalLogos").offsetTop },
-  //     { "#wireFrame": document.querySelector("#wireFrame").offsetTop },
-  //     { "#prototype": document.querySelector("#prototype").offsetTop },
-  //     { "#footer": document.querySelector("#footer").offsetTop },
-  //   ]);
-  //   console.log("Anchor positions have been updated");
-  // }
 
   // ============== Sub-Components ============== //
   function ExpandedImage() {
@@ -181,19 +143,6 @@ export default function EdZen() {
     );
   }
 
-  function ScrollGroupItem({ headText, img, imgAlt }) {
-    return (
-      <div className="scrollItemWithHeading">
-        {headText ? <h4>{headText}</h4> : null}
-        <img
-          src={img}
-          alt={imgAlt}
-          onClick={() => handleImageClick(img, null, imgAlt)}
-        />
-      </div>
-    );
-  }
-
   return (
     <>
       <NavBtns handleNextScrollPosition={handleNextScrollPosition} />
@@ -237,6 +186,7 @@ export default function EdZen() {
                   headText={person.heading}
                   img={person.img}
                   imgAlt={person.alt}
+                  func={handleImageClick}
                 />
               );
             })}
@@ -332,6 +282,7 @@ export default function EdZen() {
                   headText={element.heading}
                   img={element.img}
                   imgAlt={element.alt}
+                  func={handleImageClick}
                 />
               );
             })}
@@ -351,6 +302,7 @@ export default function EdZen() {
                   headText={element.heading}
                   img={element.img}
                   imgAlt={element.alt}
+                  func={handleImageClick}
                 />
               );
             })}
