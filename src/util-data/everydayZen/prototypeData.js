@@ -1,17 +1,16 @@
-import ptHome from "../public/static/media/edZen_imgs/prototype/home.png";
-import ptMenu from "../public/static/media/edZen_imgs/prototype/home – 2.png";
-
-import ptAuthors from "../public/static/media/edZen_imgs/prototype/authors.png";
-import ptPartners from "../public/static/media/edZen_imgs/prototype/partners.png";
-import ptWriteForUs from "../public/static/media/edZen_imgs/prototype/write with us.png";
-import ptSingleBlogPost from "../public/static/media/edZen_imgs/prototype/singleArticle.png";
-import ptContact from "../public/static/media/edZen_imgs/prototype/contact us.png";
-import ptBlogMedit from "../public/static/media/edZen_imgs/prototype/blog category -  Meditation.png";
-import ptBlogSpir from "../public/static/media/edZen_imgs/prototype/blog category -  Spirituality.png";
-import ptBlogHealth from "../public/static/media/edZen_imgs/prototype/blog category - Health.png";
-import ptBlogLife from "../public/static/media/edZen_imgs/prototype/blog category - Life.png";
-import ptBlogThera from "../public/static/media/edZen_imgs/prototype/blog category - Therapeutics.png";
-import ptBlogFarOut from "../public/static/media/edZen_imgs/prototype/blog category - Far Out.png";
+import ptHome from "../../public/static/media/edZen_imgs/prototype/home.png";
+import ptMenu from "../../public/static/media/edZen_imgs/prototype/home – 2.png";
+import ptAuthors from "../../public/static/media/edZen_imgs/prototype/authors.png";
+import ptPartners from "../../public/static/media/edZen_imgs/prototype/partners.png";
+import ptWriteForUs from "../../public/static/media/edZen_imgs/prototype/write with us.png";
+import ptSingleBlogPost from "../../public/static/media/edZen_imgs/prototype/singleArticle.png";
+import ptContact from "../../public/static/media/edZen_imgs/prototype/contact us.png";
+import ptBlogMedit from "../../public/static/media/edZen_imgs/prototype/blog category -  Meditation.png";
+import ptBlogSpir from "../../public/static/media/edZen_imgs/prototype/blog category -  Spirituality.png";
+import ptBlogHealth from "../../public/static/media/edZen_imgs/prototype/blog category - Health.png";
+import ptBlogLife from "../../public/static/media/edZen_imgs/prototype/blog category - Life.png";
+import ptBlogThera from "../../public/static/media/edZen_imgs/prototype/blog category - Therapeutics.png";
+import ptBlogFarOut from "../../public/static/media/edZen_imgs/prototype/blog category - Far Out.png";
 
 export const prototypeData = [
   {

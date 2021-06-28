@@ -4,96 +4,123 @@ import { Row, Col, Container } from "react-bootstrap";
 
 export default function Directory() {
   return (
-    <Container className="outerDiv">
-      <Row noGutters>
-        <h2>Directory</h2>
-      </Row>
+    <>
+      <div id="directory">
+        <Container className="outerDiv">
+          {/* <Row noGutters> */}
+          <h2>Directory</h2>
+          {/* </Row> */}
 
-      <Row noGutters>
-        <Col xl={3} md={6} sm={12}>
-          <h3>Research</h3>
+          <Row noGutters className="bodyLinks">
+            <Col xl={3} md={6} sm={12}>
+              <h3>Research</h3>
 
-          <ul>
-            <HashLink smooth to="#intro">
-              <li>Introduction & Overview</li>
-            </HashLink>
+              <HashLink smooth to="#intro">
+                <div className="hoverExpand">
+                  <p>Intro {"&"} Overview</p>
+                </div>
+              </HashLink>
 
-            <HashLink smooth to="#analysis">
-              <li>Business Analysis</li>
-            </HashLink>
+              <HashLink smooth to="#analysis">
+                <div className="hoverExpand">
+                  <p>Business Analysis</p>
+                </div>
+              </HashLink>
 
-            <HashLink smooth to="#requirements">
-              <li>Project Requirements</li>
-            </HashLink>
+              <HashLink smooth to="#requirements">
+                <div className="hoverExpand">
+                  <p>Project Requirements</p>
+                </div>
+              </HashLink>
 
-            <HashLink smooth to="#addInfo">
-              <li>Additional Information</li>
-            </HashLink>
+              <HashLink smooth to="#addInfo">
+                <div className="hoverExpand">
+                  <p>{"Addt'l Information"}</p>
+                </div>
+              </HashLink>
 
-            <HashLink smooth to="#persona">
-              <li>User Persona's</li>
-            </HashLink>
-          </ul>
-        </Col>
+              <HashLink smooth to="#persona">
+                <div className="hoverExpand">
+                  <p>User Persona's</p>
+                </div>
+              </HashLink>
+            </Col>
 
-        <Col xl={3} md={6} sm={12}>
-          <h3>Business Analysis</h3>
+            <Col xl={3} md={6} sm={12}>
+              <h3>Business Analysis</h3>
 
-          <ul>
-            <HashLink smooth to="#ivfChart">
-              <li>Goals: Importance vs. Feasibility</li>
-            </HashLink>
+              <HashLink smooth to="#ivfChart">
+                <div className="hoverExpand">
+                  {/* <p>Importance vs. Feasibility</p> */}
+                  <p>Objective Chart</p>
+                </div>
+              </HashLink>
 
-            <HashLink smooth to="#compLogos">
-              <li>Competitive Logo's</li>
-            </HashLink>
+              <HashLink smooth to="#compLogos">
+                <div className="hoverExpand">
+                  <p>Competitive Logo's</p>
+                </div>
+              </HashLink>
 
-            <HashLink smooth to="#compWebsites">
-              <li>Competitive Websites</li>
-            </HashLink>
-          </ul>
-        </Col>
+              <HashLink smooth to="#compWebsites">
+                <div className="hoverExpand">
+                  <p>Competitive Pages</p>
+                </div>
+              </HashLink>
+            </Col>
 
-        <Col xl={3} md={6} sm={12}>
-          <h3>Pre-Project Planning</h3>
+            <Col xl={3} md={6} sm={12}>
+              <h3>Project Planning</h3>
 
-          <ul>
-            <HashLink smooth to="#decisionPaths">
-              <li>User Decision Path's</li>
-            </HashLink>
+              <HashLink smooth to="#decisionPaths">
+                <div className="hoverExpand">
+                  <p>Decision Path's</p>
+                </div>
+              </HashLink>
 
-            <HashLink smooth to="#journeyPath">
-              <li>Extended Journey Path (Initial User)</li>
-            </HashLink>
+              <HashLink smooth to="#journeyPath">
+                <div className="hoverExpand">
+                  <p>User's Journey Path</p>
+                </div>
+              </HashLink>
 
-            <HashLink smooth to="#moodBoard">
-              <li>Mood Board (Website & Logo)</li>
-            </HashLink>
+              <HashLink smooth to="#moodBoard">
+                <div className="hoverExpand">
+                  <p>Mood Board</p>
+                </div>
+              </HashLink>
 
-            <HashLink smooth to="#siteMap">
-              <li>Site Map</li>
-            </HashLink>
-          </ul>
-        </Col>
+              <HashLink smooth to="#siteMap">
+                <div className="hoverExpand">
+                  <p>Site Map</p>
+                </div>
+              </HashLink>
+            </Col>
 
-        <Col xl={3} md={6} sm={12}>
-          <h3>Final Designs</h3>
+            <Col xl={3} md={6} sm={12}>
+              <h3>Final Designs</h3>
 
-          <ul>
-            <HashLink smooth to="#finalLogos">
-              <li>Final Logo Designs</li>
-            </HashLink>
+              <HashLink smooth to="#finalLogos">
+                <div className="hoverExpand">
+                  <p>Final Logo Designs</p>
+                </div>
+              </HashLink>
 
-            <HashLink smooth to="#wireFrame">
-              <li>Website Wireframe</li>
-            </HashLink>
+              <HashLink smooth to="#wireFrame">
+                <div className="hoverExpand">
+                  <p>Website Wireframe</p>
+                </div>
+              </HashLink>
 
-            <HashLink smooth to="#prototype">
-              <li>Website Prototype</li>
-            </HashLink>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+              <HashLink smooth to="#prototype">
+                <div className="hoverExpand">
+                  <p>Website Prototype</p>
+                </div>
+              </HashLink>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </>
   );
 }

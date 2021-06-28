@@ -1,6 +1,6 @@
-import xDavidson_1x from "../public/static/media/edZen_imgs/userPersonas/X. Davidson 2.png";
-import sRichmond_1x from "../public/static/media/edZen_imgs/userPersonas/S. Richmond 2.png";
-import aAndrews_1x from "../public/static/media/edZen_imgs/userPersonas/A. Andrews 2.png";
+import xDavidson_1x from "../../public/static/media/edZen_imgs/userPersonas/X. Davidson 2.png";
+import sRichmond_1x from "../../public/static/media/edZen_imgs/userPersonas/S. Richmond 2.png";
+import aAndrews_1x from "../../public/static/media/edZen_imgs/userPersonas/A. Andrews 2.png";
 
 export const userPersonaData = [
   {

@@ -1,16 +1,16 @@
-import wfHome from "../public/static/media/edZen_imgs/wireframe/home1.png";
-import wfMenu from "../public/static/media/edZen_imgs/wireframe/menu.png";
-import wfAuthors from "../public/static/media/edZen_imgs/wireframe/authors – 1.png";
-import wfPartners from "../public/static/media/edZen_imgs/wireframe/partners.png";
-import wfWriteForUs from "../public/static/media/edZen_imgs/wireframe/write for us.png";
-import wfSingleBlogPost from "../public/static/media/edZen_imgs/wireframe/single blog post.png";
-import wfContact from "../public/static/media/edZen_imgs/wireframe/contact us.png";
-import wfBlogMedit from "../public/static/media/edZen_imgs/wireframe/blog category -  Meditation.png";
-import wfBlogSpir from "../public/static/media/edZen_imgs/wireframe/blog category -  Spirituality.png";
-import wfBlogHealth from "../public/static/media/edZen_imgs/wireframe/blog category - Health.png";
-import wfBlogLife from "../public/static/media/edZen_imgs/wireframe/blog category - Life.png";
-import wfBlogThera from "../public/static/media/edZen_imgs/wireframe/blog category - Therapeutics.png";
-import wfBlogFarOut from "../public/static/media/edZen_imgs/wireframe/blog category - Far Out– 1.png";
+import wfHome from "../../public/static/media/edZen_imgs/wireframe/home1.png";
+import wfMenu from "../../public/static/media/edZen_imgs/wireframe/menu.png";
+import wfAuthors from "../../public/static/media/edZen_imgs/wireframe/authors – 1.png";
+import wfPartners from "../../public/static/media/edZen_imgs/wireframe/partners.png";
+import wfWriteForUs from "../../public/static/media/edZen_imgs/wireframe/write for us.png";
+import wfSingleBlogPost from "../../public/static/media/edZen_imgs/wireframe/single blog post.png";
+import wfContact from "../../public/static/media/edZen_imgs/wireframe/contact us.png";
+import wfBlogMedit from "../../public/static/media/edZen_imgs/wireframe/blog category -  Meditation.png";
+import wfBlogSpir from "../../public/static/media/edZen_imgs/wireframe/blog category -  Spirituality.png";
+import wfBlogHealth from "../../public/static/media/edZen_imgs/wireframe/blog category - Health.png";
+import wfBlogLife from "../../public/static/media/edZen_imgs/wireframe/blog category - Life.png";
+import wfBlogThera from "../../public/static/media/edZen_imgs/wireframe/blog category - Therapeutics.png";
+import wfBlogFarOut from "../../public/static/media/edZen_imgs/wireframe/blog category - Far Out– 1.png";
 
 export const wireFrameData = [
   {
