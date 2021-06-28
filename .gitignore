@@ -21,3 +21,8 @@ yarn-debug.log*
 yarn-error.log*
 
 depricated/
+
+Test.jsx
+test.js
+test.css
+test.scss

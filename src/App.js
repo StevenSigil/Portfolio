@@ -7,7 +7,10 @@ import Certs from "./components/Certs";
 import Footer from "./components/Footer";
 import EdZen from "./components/edZen/EdZen";
 
+// import Test from "./components/Test";
+
 import "./public/static/css/app.css";
+
 
 export default function App() {
   return (
@@ -30,6 +33,10 @@ export default function App() {
             <EdZen />
             <Footer />
           </Route>
+
+          {/* <Route exact path="/test">
+            <Test />
+          </Route> */}
 
           <Route path="/">
             <Redirect to="/home" />

@@ -24,7 +24,7 @@ h2 {
 
 h3 {
   font: normal normal normal 2em/52px Mr Eaves Mod OT;
-  margin: 0 1rem;
+  margin: 0;
 }
 
 li {
@@ -41,36 +41,23 @@ p {
 }
 
 .navBtns {
-  --borderWidth: 3px;
-  background: #1d1f20;
-  border-radius: var(--borderWidth);
-  padding: 0;
   position: fixed;
-  bottom: 25px;
-  right: 50px;
-  z-index: 2;
-  -webkit-box-shadow: 7px 5px 20px 1px rgba(0, 0, 0, 0.7);
-          box-shadow: 7px 5px 20px 1px rgba(0, 0, 0, 0.7);
-}
-
-.navBtns:after {
-  content: "";
-  position: absolute;
-  top: calc(-1 * var(--borderWidth));
-  left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
-  width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-  opacity: 100%;
-  border-radius: calc(2 * var(--borderWidth));
-  z-index: -1;
-  -webkit-animation: animatedGradient 3s ease alternate infinite;
-          animation: animatedGradient 3s ease alternate infinite;
-  background-size: 300% 300%;
+  bottom: 2rem;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: inherit;
+  border-radius: 4px;
 }
 
 .navBtns div {
-  margin: 0;
+  margin: 0 7px;
+  padding: 7px 5px 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,12 +65,72 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #444444;
-  -webkit-box-shadow: 1px 3px 2px rgba(68, 68, 68, 0.75);
-          box-shadow: 1px 3px 2px rgba(68, 68, 68, 0.75);
-  margin-bottom: var(--borderWidth);
-  padding: 5px;
-  border-radius: calc(var(--borderWidth) + var(--borderWidth));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  min-width: 40px;
+  -webkit-box-shadow: 1px 3px 5px rgba(59, 59, 59, 0.75);
+          box-shadow: 1px 3px 5px rgba(59, 59, 59, 0.75);
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background: #47494b;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  -webkit-transition: 100ms ease-in-out;
+  transition: 100ms ease-in-out;
+  text-decoration: none;
+}
+
+.navBtns div:focus {
+  border: none;
+  outline: none;
+}
+
+.navBtns div:before {
+  content: "";
+  background: linear-gradient(45deg, #ff3535, #ff3535, #ff35ff, #ff35ff, #3535ff, #3535ff, #35ffff, #35ffff, #35ff35, #35ff35, #35ffff, #35ffff, #3535ff, #3535ff, #ff35ff, #ff35ff, #ff3535, #ff3535);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 400%;
+  z-index: -1;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  -webkit-animation: glowing 5000ms linear infinite;
+          animation: glowing 5000ms linear infinite;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+  border-radius: 10px;
+}
+
+.navBtns div:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: 1px 3px 7px rgba(95, 95, 95, 0.75);
+          box-shadow: 1px 3px 7px rgba(95, 95, 95, 0.75);
+}
+
+.navBtns div:hover:before {
+  opacity: 1;
+}
+
+.navBtns div:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #47494b;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 .navBtns div p {
@@ -98,8 +145,8 @@ p {
   fill: #fff;
 }
 
-.navBtns hr {
-  margin: 5px 0 0;
+.navBtns a {
+  text-decoration: none;
 }
 
 header {
@@ -203,11 +250,9 @@ header .mainHeadBack:hover svg {
 }
 
 #directory .outerDiv .bodyLinks a .hoverExpand {
-  padding: 1rem;
+  padding: 1rem 0;
   margin-left: 1rem;
   max-height: calc(2rem + 40px);
-  -webkit-transition: 100ms ease-in-out;
-  transition: 100ms ease-in-out;
 }
 
 #directory .outerDiv .bodyLinks a .hoverExpand p {
@@ -216,23 +261,74 @@ header .mainHeadBack:hover svg {
   width: -moz-max-content;
   width: max-content;
   border-radius: 7px;
-  padding: 0 6px 0 2px;
+  font: normal normal normal 22px/40px Mr Eaves Mod OT;
+  padding: 0 0.5rem;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
   -webkit-transition: 100ms ease-in-out;
   transition: 100ms ease-in-out;
-  font: normal normal normal 22px/40px Mr Eaves Mod OT;
+  text-decoration: none;
 }
 
-#directory .outerDiv .bodyLinks a .hoverExpand:hover {
-  max-height: calc(2rem + 40px);
+#directory .outerDiv .bodyLinks a .hoverExpand p:focus {
+  border: none;
+  outline: none;
 }
 
-#directory .outerDiv .bodyLinks a .hoverExpand:hover p {
-  -webkit-transform: 1.1;
-          transform: 1.1;
-  color: #373737;
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
-  border: 1px solid #49089c;
+#directory .outerDiv .bodyLinks a .hoverExpand p:before {
+  content: "";
+  background: linear-gradient(45deg, #ff3535, #ff3535, #ff35ff, #ff35ff, #3535ff, #3535ff, #35ffff, #35ffff, #35ff35, #35ff35, #35ffff, #35ffff, #3535ff, #3535ff, #ff35ff, #ff35ff, #ff3535, #ff3535);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 400%;
+  z-index: -1;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  -webkit-animation: glowing 5000ms linear infinite;
+          animation: glowing 5000ms linear infinite;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+  border-radius: 10px;
+}
+
+#directory .outerDiv .bodyLinks a .hoverExpand p:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 2px 5px 10px #afafaf;
+          box-shadow: 2px 5px 10px #afafaf;
+}
+
+#directory .outerDiv .bodyLinks a .hoverExpand p:hover:before {
+  opacity: 1;
+}
+
+#directory .outerDiv .bodyLinks a .hoverExpand p:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.imageWithHeader {
+  min-height: 70vh;
+  padding: 2rem 1rem;
+  margin: 3rem auto;
+  color: #1d1d1d;
+  background-color: inherit;
 }
 
 .imgContainer {
@@ -242,6 +338,9 @@ header .mainHeadBack:hover svg {
 .imgContainer img {
   max-width: 100%;
   padding: 0;
+  -webkit-box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
+          box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
+  border-radius: 10px;
 }
 
 .one {
@@ -292,12 +391,6 @@ header .mainHeadBack:hover svg {
   margin-bottom: 3px;
 }
 
-.headingWithLink {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
 .sectionContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,20 +413,22 @@ header .mainHeadBack:hover svg {
   background-color: #fff;
   -webkit-box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
           box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
-  display: block;
   padding-left: 0;
   padding-right: 0;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
 }
 
 .sectionContainer h3 {
-  margin-bottom: 1.5rem;
+  margin: 0 1rem 1.5rem;
 }
 
 .scroll-x {
-  width: 100%;
+  max-width: 100%;
   max-height: 75vh;
   min-height: 100%;
-  overflow-x: auto;
+  overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   display: -webkit-box;
@@ -408,6 +503,24 @@ header .mainHeadBack:hover svg {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400% 50%;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400% 50%;
   }
 }
 

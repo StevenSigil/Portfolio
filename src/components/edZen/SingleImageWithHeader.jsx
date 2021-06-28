@@ -10,7 +10,7 @@ export default function SingleImageWithHeader({
   handleImageClick,
 }) {
   return (
-    <>
+    <div className="imageWithHeader">
       <Row noGutters id={id}>
         <h3>{hText}</h3>
       </Row>
@@ -22,6 +22,6 @@ export default function SingleImageWithHeader({
           onClick={() => handleImageClick(img, srcSet, alt)}
         />
       </Row>
-    </>
+    </div>
   );
 }

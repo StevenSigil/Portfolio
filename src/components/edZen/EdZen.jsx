@@ -80,7 +80,6 @@ export default function EdZen() {
 
   return (
     <>
-      {/* ====================== Absolute & Fixed Components ====================== */}
       <NavBtns handleNextScrollPosition={handleNextScrollPosition} />
       <ExpandedImage data={lgImgData} handleImageClick={handleImageClick} />
 
@@ -103,25 +102,26 @@ export default function EdZen() {
         <ProjReq />
         <AddInfo />
 
-        <Row noGutters id="persona">
-          <h3>User Persona's:</h3>
-        </Row>
-
-        <Row noGutters className="imgContainer">
-          <div className="scroll-x">
-            {userPersonaData.map((person, index) => {
-              return (
-                <ScrollGroupItem
-                  key={index}
-                  headText={person.heading}
-                  img={person.img}
-                  imgAlt={person.alt}
-                  func={handleImageClick}
-                />
-              );
-            })}
-          </div>
-        </Row>
+        <div className="sectionContainer" id="persona">
+          <Row noGutters>
+            <h3>User Persona's:</h3>
+          </Row>
+          <Row noGutters className="imgContainer">
+            <div className="scroll-x">
+              {userPersonaData.map((person, index) => {
+                return (
+                  <ScrollGroupItem
+                    key={index}
+                    headText={person.heading}
+                    img={person.img}
+                    imgAlt={person.alt}
+                    func={handleImageClick}
+                  />
+                );
+              })}
+            </div>
+          </Row>
+        </div>
 
         <Row noGutters>
           <h2>Business {"&"} Competitor Analysis</h2>
@@ -207,25 +207,27 @@ export default function EdZen() {
           handleImageClick={handleImageClick}
         />
 
-        <Row noGutters className="headingWithLink" id="wireFrame">
-          <h3>Wire frames:</h3>
-          {/* <a href="#">view on XD</a> */}
-        </Row>
-        <Row noGutters className="imgContainer">
-          <div className="scroll-x">
-            {wireFrameData.map((element, index) => {
-              return (
-                <ScrollGroupItem
-                  key={index}
-                  headText={element.heading}
-                  img={element.img}
-                  imgAlt={element.alt}
-                  func={handleImageClick}
-                />
-              );
-            })}
-          </div>
-        </Row>
+        <div className="sectionContainer" id="wireFrame">
+          <Row noGutters className="headingWithLink">
+            <h3>Wire frames:</h3>
+            {/* <a href="#">view on XD</a> */}
+          </Row>
+          <Row noGutters className="imgContainer">
+            <div className="scroll-x">
+              {wireFrameData.map((element, index) => {
+                return (
+                  <ScrollGroupItem
+                    key={index}
+                    headText={element.heading}
+                    img={element.img}
+                    imgAlt={element.alt}
+                    func={handleImageClick}
+                  />
+                );
+              })}
+            </div>
+          </Row>
+        </div>
 
         <div className="sectionContainer" id="prototype">
           <Row noGutters className="headingWithLink">

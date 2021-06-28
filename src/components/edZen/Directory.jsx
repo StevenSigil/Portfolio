@@ -7,9 +7,7 @@ export default function Directory() {
     <>
       <div id="directory">
         <Container className="outerDiv">
-          {/* <Row noGutters> */}
           <h2>Directory</h2>
-          {/* </Row> */}
 
           <Row noGutters className="bodyLinks">
             <Col xl={3} md={6} sm={12}>
@@ -51,7 +49,6 @@ export default function Directory() {
 
               <HashLink smooth to="#ivfChart">
                 <div className="hoverExpand">
-                  {/* <p>Importance vs. Feasibility</p> */}
                   <p>Objective Chart</p>
                 </div>
               </HashLink>

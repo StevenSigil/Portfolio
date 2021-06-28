@@ -8,6 +8,28 @@ $lgAreaShadow: 5px 7px 10px rgba(49, 49, 49, 0.603),
   -2px -2px 5px rgba(58, 58, 58, 0.568);
 $smBoxShadow: 0 1px 5px 1px rgb(73, 73, 73);
 
+$colorGradient: linear-gradient(
+  45deg,
+  #ff3535,
+  #ff3535,
+  #ff35ff,
+  #ff35ff,
+  #3535ff,
+  #3535ff,
+  #35ffff,
+  #35ffff,
+  #35ff35,
+  #35ff35,
+  #35ffff,
+  #35ffff,
+  #3535ff,
+  #3535ff,
+  #ff35ff,
+  #ff35ff,
+  #ff3535,
+  #ff3535
+);
+
 $fastTransition: 100ms ease-in-out;
 
 $minOuterAreaHeight: 70vh;
@@ -15,7 +37,7 @@ $OuterAreaMargin: 3rem auto;
 
 // ============================================================
 // ============================ MIXIN =========================
-@mixin sectionWhite() {
+@mixin lgWhiteBgSec() {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,15 +51,67 @@ $OuterAreaMargin: 3rem auto;
   box-shadow: $lgAreaShadow;
 }
 
-@mixin linkExpandedStyle(
-  $scale: 1.1,
-  $border: 1px solid #49089c,
-  $shadow: $smBoxShadow
-) {
-  transform: $scale;
-  color: lighten($color: $blackOnWhiteColor, $amount: 10%);
-  box-shadow: $shadow;
-  border: $border;
+@mixin lgImgWithHeadingSec() {
+  min-height: $minOuterAreaHeight;
+  padding: 2rem 1rem;
+  margin: $OuterAreaMargin;
+  color: $blackOnWhiteColor;
+  background-color: inherit;
+}
+
+@mixin linkColoredCanExpand($scale: 1, $bg: #ffffff, $hovShadow: none) {
+  border: none;
+  outline: none;
+  background: $bg;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  transition: $fastTransition;
+  text-decoration: none;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  &:before {
+    content: "";
+    background: $colorGradient;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    animation: glowing 5000ms linear infinite;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+    border-radius: 10px;
+  }
+  &:active:after {
+    // background: transparent;
+  }
+  &:hover {
+    transform: scale($scale);
+    box-shadow: $hovShadow;
+
+    &:before {
+      opacity: 1;
+    }
+  }
+  &:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $bg;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
 }
 
 @mixin scrollBars(
@@ -92,7 +166,7 @@ h2 {
 }
 h3 {
   font: normal normal normal 2em/52px Mr Eaves Mod OT;
-  margin: 0 1rem;
+  margin: 0;
 }
 li {
   font: normal normal normal 22px/28px Mr Eaves Mod OT;
@@ -108,51 +182,30 @@ p {
 
 // ============================================================
 // ===================== COLOR BG BTN =========================
-.navBtns {
-  --borderWidth: 3px;
-  background: #1d1f20;
-  border-radius: var(--borderWidth);
-  padding: 0;
-  position: fixed;
-  bottom: 25px;
-  right: 50px;
-  z-index: 2;
-  box-shadow: 7px 5px 20px 1px rgba(0, 0, 0, 0.7);
 
-  &:after {
-    content: "";
-    position: absolute;
-    top: calc(-1 * var(--borderWidth));
-    left: calc(-1 * var(--borderWidth));
-    height: calc(100% + var(--borderWidth) * 2);
-    width: calc(100% + var(--borderWidth) * 2);
-    background: linear-gradient(
-      60deg,
-      #f79533,
-      #f37055,
-      #ef4e7b,
-      #a166ab,
-      #5073b8,
-      #1098ad,
-      #07b39b,
-      #6fba82
-    );
-    opacity: 100%;
-    border-radius: calc(2 * var(--borderWidth));
-    z-index: -1;
-    animation: animatedGradient 3s ease alternate infinite;
-    background-size: 300% 300%;
-  }
+.navBtns {
+  position: fixed;
+  bottom: 2rem;
+  right: 15px;
+  display: flex;
+  flex-direction: row;
+  background-color: inherit;
+  border-radius: 4px;
 
   div {
-    margin: 0;
+    margin: 0 7px;
+    padding: 7px 5px 3px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(68, 68, 68);
-    box-shadow: 1px 3px 2px rgba(68, 68, 68, 0.75);
-    margin-bottom: var(--borderWidth);
-    padding: 5px;
-    border-radius: calc(var(--borderWidth) + var(--borderWidth));
+    justify-content: space-between;
+    height: 100%;
+    min-width: 40px;
+    box-shadow: 1px 3px 5px rgba(59, 59, 59, 0.75);
+    border-radius: 4px;
+    @include linkColoredCanExpand(
+      $bg: #47494b,
+      $hovShadow: 1px 3px 7px rgba(95, 95, 95, 0.75)
+    );
 
     p {
       margin: 0;
@@ -165,8 +218,8 @@ p {
       fill: #fff;
     }
   }
-  hr {
-    margin: 5px 0 0;
+  a {
+    text-decoration: none;
   }
 }
 
@@ -212,10 +265,9 @@ header {
 // ======================== DIRECTORY =========================
 #directory {
   .outerDiv {
-    @include sectionWhite();
+    @include lgWhiteBgSec();
 
     h2 {
-      // margin: 0;
       align-self: flex-start;
     }
     .bodyLinks {
@@ -232,24 +284,21 @@ header {
         color: inherit;
 
         .hoverExpand {
-          padding: 1rem;
+          padding: 1rem 0;
           margin-left: 1rem;
           max-height: calc(2rem + 40px);
-          transition: $fastTransition;
 
           p {
             margin: 0;
             width: max-content;
             border-radius: 7px;
-            padding: 0 6px 0 2px;
-            transition: $fastTransition;
             font: normal normal normal 22px/40px Mr Eaves Mod OT;
-          }
-          &:hover {
-            max-height: calc(2rem + 40px);
-            p {
-              @include linkExpandedStyle();
-            }
+
+            padding: 0 0.5rem;
+            @include linkColoredCanExpand(
+              $scale: 1.1,
+              $hovShadow: 2px 5px 10px #afafaf
+            );
           }
         }
       }
@@ -258,13 +307,18 @@ header {
 }
 
 // ============================================================
-// ============================================================
+// ========================= IMAGE CONTAINER ==================
+.imageWithHeader {
+  @include lgImgWithHeadingSec();
+}
 .imgContainer {
   text-align: center;
 
   img {
     max-width: 100%;
     padding: 0;
+    box-shadow: $lgAreaShadow;
+    border-radius: 10px;
   }
 }
 .one {
@@ -317,26 +371,26 @@ header {
 
 // ============================================================
 // ======================= SCROLL GROUPS ======================
-.headingWithLink {
-  align-items: flex-end;
-}
+// .headingWithLink {
+//   align-items: flex-end;
+// }
 
 .sectionContainer {
-  @include sectionWhite();
-  display: block;
+  @include lgWhiteBgSec();
   padding-left: 0;
   padding-right: 0;
+  align-items: initial;
 
   h3 {
-    margin-bottom: 1.5rem;
+    margin: 0 1rem 1.5rem;
   }
 }
 
 .scroll-x {
-  width: 100%;
+  max-width: 100%;
   max-height: 75vh;
   min-height: 100%;
-  overflow-x: auto;
+  overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   display: flex;
@@ -372,6 +426,14 @@ header {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400% 50%;
   }
 }
 
