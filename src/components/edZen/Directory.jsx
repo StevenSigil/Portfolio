@@ -11,7 +11,7 @@ export default function Directory() {
 
           <Row noGutters className="bodyLinks">
             <Col xl={3} md={6} sm={12}>
-              <h3>Research</h3>
+              <h3>Research Phase</h3>
 
               <HashLink smooth to="#intro">
                 <div className="hoverExpand">

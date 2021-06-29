@@ -79,7 +79,7 @@ export default function EdZen() {
   }
 
   return (
-    <>
+    <div id="edZen">
       <NavBtns handleNextScrollPosition={handleNextScrollPosition} />
       <ExpandedImage data={lgImgData} handleImageClick={handleImageClick} />
 
@@ -94,7 +94,7 @@ export default function EdZen() {
 
       <Container className="outerDiv">
         <Row noGutters>
-          <h2>Research</h2>
+          <h2>Research Phase</h2>
         </Row>
 
         <Intro />
@@ -102,7 +102,8 @@ export default function EdZen() {
         <ProjReq />
         <AddInfo />
 
-        <div className="sectionContainer" id="persona">
+        <span className="scrollSpacing" id="persona"></span>
+        <div className="sectionContainer" id="">
           <Row noGutters>
             <h3>User Persona's:</h3>
           </Row>
@@ -207,7 +208,8 @@ export default function EdZen() {
           handleImageClick={handleImageClick}
         />
 
-        <div className="sectionContainer" id="wireFrame">
+        <div className="sectionContainer">
+          <span id="wireFrame"></span>
           <Row noGutters className="headingWithLink">
             <h3>Wire frames:</h3>
             {/* <a href="#">view on XD</a> */}
@@ -229,7 +231,8 @@ export default function EdZen() {
           </Row>
         </div>
 
-        <div className="sectionContainer" id="prototype">
+        <div className="sectionContainer" id="">
+          <span id="prototype"></span>
           <Row noGutters className="headingWithLink">
             <h3>Prototype:</h3>
             {/* <a href="#">view on XD</a> */}
@@ -251,6 +254,6 @@ export default function EdZen() {
           </Row>
         </div>
       </Container>
-    </>
+    </div>
   );
 }

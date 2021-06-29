@@ -1,25 +1,7 @@
-html {
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  font-family: mr-eaves-modern, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  max-width: 100vw;
-  overflow-x: hidden;
-  background-color: #fefefe;
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
-}
-
 h2 {
   font: normal normal bold 42px/52px Mr Eaves Mod OT;
-  margin: 2rem 0;
+  margin: 0;
+  margin-bottom: -2rem;
 }
 
 h3 {
@@ -29,7 +11,6 @@ h3 {
 
 li {
   font: normal normal normal 22px/28px Mr Eaves Mod OT;
-  color: #707070;
   margin: 0 calc(1rem + 12px) 0.75em;
 }
 
@@ -56,8 +37,8 @@ p {
 }
 
 .navBtns div {
-  margin: 0 7px;
-  padding: 7px 5px 3px;
+  margin: 0 0 0 5px;
+  padding: 5px 5px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,27 +73,26 @@ p {
 
 .navBtns div:before {
   content: "";
-  background: linear-gradient(45deg, #ff3535, #ff3535, #ff35ff, #ff35ff, #3535ff, #3535ff, #35ffff, #35ffff, #35ff35, #35ff35, #35ffff, #35ffff, #3535ff, #3535ff, #ff35ff, #ff35ff, #ff3535, #ff3535);
+  background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
   position: absolute;
   top: 0;
   left: 0;
-  background-size: 400%;
+  background-size: 300% 300%;
+  background-position: 0 50%;
   z-index: -1;
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
   width: 100%;
   height: 100%;
-  -webkit-animation: glowing 5000ms linear infinite;
-          animation: glowing 5000ms linear infinite;
   opacity: 0;
+  border-radius: 10px;
+  -webkit-animation: glowing 3000ms linear infinite;
+          animation: glowing 3000ms linear infinite;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
-  border-radius: 10px;
 }
 
 .navBtns div:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-box-shadow: 1px 3px 7px rgba(95, 95, 95, 0.75);
           box-shadow: 1px 3px 7px rgba(95, 95, 95, 0.75);
 }
@@ -125,12 +105,12 @@ p {
   z-index: -1;
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
   background: #47494b;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
+  left: 2px;
+  top: 2px;
+  border-radius: 8px;
 }
 
 .navBtns div p {
@@ -213,9 +193,8 @@ header .mainHeadBack:hover svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   min-height: 70vh;
   padding: 2rem 2rem;
   margin: 3rem auto;
@@ -224,11 +203,16 @@ header .mainHeadBack:hover svg {
   background-color: #fff;
   -webkit-box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
           box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 60vh;
 }
 
 #directory .outerDiv h2 {
   -ms-flex-item-align: start;
       align-self: flex-start;
+  margin: 0;
 }
 
 #directory .outerDiv .bodyLinks {
@@ -237,10 +221,11 @@ header .mainHeadBack:hover svg {
 
 #directory .outerDiv .bodyLinks h3 {
   margin-right: 0;
+  margin-bottom: 10px;
+  padding-right: 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding-right: 10px;
   border-bottom: 2px solid #000e8f;
 }
 
@@ -282,22 +267,21 @@ header .mainHeadBack:hover svg {
 
 #directory .outerDiv .bodyLinks a .hoverExpand p:before {
   content: "";
-  background: linear-gradient(45deg, #ff3535, #ff3535, #ff35ff, #ff35ff, #3535ff, #3535ff, #35ffff, #35ffff, #35ff35, #35ff35, #35ffff, #35ffff, #3535ff, #3535ff, #ff35ff, #ff35ff, #ff3535, #ff3535);
+  background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
   position: absolute;
   top: 0;
   left: 0;
-  background-size: 400%;
+  background-size: 300% 300%;
+  background-position: 0 50%;
   z-index: -1;
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
   width: 100%;
   height: 100%;
-  -webkit-animation: glowing 5000ms linear infinite;
-          animation: glowing 5000ms linear infinite;
   opacity: 0;
+  border-radius: 10px;
+  -webkit-animation: glowing 3000ms linear infinite;
+          animation: glowing 3000ms linear infinite;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
-  border-radius: 10px;
 }
 
 #directory .outerDiv .bodyLinks a .hoverExpand p:hover {
@@ -315,20 +299,29 @@ header .mainHeadBack:hover svg {
   z-index: -1;
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
   background: #ffffff;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
+  left: 2px;
+  top: 2px;
+  border-radius: 8px;
+}
+
+.scrollSpacing {
+  padding: 3rem;
+  visibility: hidden;
+}
+
+.sectionMargin {
+  margin: 3rem auto;
 }
 
 .imageWithHeader {
   min-height: 70vh;
+  min-height: 100%;
   padding: 2rem 1rem;
-  margin: 3rem auto;
   color: #1d1d1d;
-  background-color: inherit;
+  background-color: #fff;
 }
 
 .imgContainer {
@@ -338,8 +331,6 @@ header .mainHeadBack:hover svg {
 .imgContainer img {
   max-width: 100%;
   padding: 0;
-  -webkit-box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
-          box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
   border-radius: 10px;
 }
 
@@ -349,46 +340,6 @@ header .mainHeadBack:hover svg {
 
 .two img {
   max-width: 50%;
-}
-
-.staticLgImg {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  min-width: 100%;
-  height: 100%;
-  background-color: #000000de;
-  text-align: center;
-  overflow-y: scroll;
-  padding: 25px 10%;
-  z-index: 90;
-}
-
-.staticLgImg img {
-  max-width: 100%;
-  height: auto;
-}
-
-.staticLgImg .transparentOverlay {
-  position: fixed;
-  bottom: 10px;
-  right: 25px;
-  background-color: rgba(54, 54, 54, 0.623);
-  border-radius: 15%;
-  overflow: hidden;
-  margin: 5px 25px;
-  -webkit-box-shadow: 0px 0px 25px 25px rgba(54, 54, 54, 0.623);
-          box-shadow: 0px 0px 25px 25px rgba(54, 54, 54, 0.623);
-}
-
-.staticLgImg .transparentOverlay p {
-  color: #ffffff;
-  font-size: 1.5em;
-  -webkit-text-decoration: underline 1px solid;
-          text-decoration: underline 1px solid;
-  font-weight: 300;
-  margin: 0;
-  margin-bottom: 3px;
 }
 
 .sectionContainer {
@@ -402,9 +353,8 @@ header .mainHeadBack:hover svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   min-height: 70vh;
   padding: 2rem 2rem;
   margin: 3rem auto;
@@ -413,6 +363,7 @@ header .mainHeadBack:hover svg {
   background-color: #fff;
   -webkit-box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
           box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
+  position: relative;
   padding-left: 0;
   padding-right: 0;
   -webkit-box-align: initial;
@@ -422,6 +373,13 @@ header .mainHeadBack:hover svg {
 
 .sectionContainer h3 {
   margin: 0 1rem 1.5rem;
+}
+
+.sectionContainer span {
+  height: 2rem;
+  width: 100%;
+  position: absolute;
+  top: -2rem;
 }
 
 .scroll-x {
@@ -434,6 +392,7 @@ header .mainHeadBack:hover svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 1.5rem;
 }
 
 .scroll-x::-webkit-scrollbar {
@@ -482,45 +441,55 @@ header .mainHeadBack:hover svg {
   border-radius: 10px;
 }
 
-@-webkit-keyframes animatedGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.staticLgImg {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  height: 100%;
+  background-color: #000000de;
+  text-align: center;
+  overflow-y: scroll;
+  padding: 25px 10%;
+  z-index: 90;
 }
 
-@keyframes animatedGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.staticLgImg img {
+  max-width: 100%;
+  height: auto;
+}
+
+.staticLgImg .transparentOverlay {
+  position: fixed;
+  bottom: 10px;
+  right: 25px;
+  background-color: rgba(54, 54, 54, 0.623);
+  border-radius: 15%;
+  overflow: hidden;
+  margin: 5px 25px;
+  -webkit-box-shadow: 0px 0px 25px 25px rgba(54, 54, 54, 0.623);
+          box-shadow: 0px 0px 25px 25px rgba(54, 54, 54, 0.623);
+}
+
+.staticLgImg .transparentOverlay p {
+  color: #ffffff;
+  font-size: 1.5em;
+  -webkit-text-decoration: underline 1px solid;
+          text-decoration: underline 1px solid;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 3px;
 }
 
 @-webkit-keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 400% 50%;
+  50% {
+    background-position: 100% 50%;
   }
 }
 
 @keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 400% 50%;
+  50% {
+    background-position: 100% 50%;
   }
 }
 
