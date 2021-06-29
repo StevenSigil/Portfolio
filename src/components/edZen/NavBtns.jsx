@@ -1,10 +1,12 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 
+import { handleNextScrollPosition } from "../../util-data/everydayZen/util";
+
 import { ReactComponent as DownFillIcon } from "../../public/static/media/logos-icons/down-fill.svg";
 import { ReactComponent as UpFillIcon } from "../../public/static/media/logos-icons/up-fill.svg";
 
-export default function NavBtns({ handleNextScrollPosition }) {
+export default function NavBtns() {
   return (
     <div className="navBtns">
       <HashLink smooth to="#top">

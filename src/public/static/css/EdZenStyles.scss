@@ -20,7 +20,7 @@ $colorGradient: linear-gradient(
 );
 
 $fastTransition: 100ms ease-in-out;
-$minOuterAreaHeight: 70vh;
+$minOuterAreaHeight: 60vh;
 $OuterAreaMargin: 3rem auto;
 
 // ============================================================
@@ -29,7 +29,7 @@ $OuterAreaMargin: 3rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   min-height: $minOuterAreaHeight;
   padding: 2rem 2rem;
   margin: $OuterAreaMargin;
@@ -43,12 +43,10 @@ $OuterAreaMargin: 3rem auto;
 @mixin lgImgWithHeadingSec() {
   min-height: $minOuterAreaHeight;
   min-height: 100%;
-  padding: 2rem 1rem;
-  // margin: $OuterAreaMargin;
+  padding: 1.5rem 1rem 2.5rem;
   color: $blackOnWhiteColor;
   background-color: #fff;
 }
-
 
 @mixin linkColoredCanExpand(
   $scale: 1,
@@ -144,25 +142,9 @@ $OuterAreaMargin: 3rem auto;
 }
 
 // ============================================================
-// ============================================================
-// html {
-//   scroll-snap-type: y proximity;
-//   max-width: 100vw;
-//   overflow-x: hidden;
-// }
-// body {
-//   font-family: mr-eaves-modern, sans-serif;
-//   font-weight: 400;
-//   font-style: normal;
-//   font-display: swap;
-//   max-width: 100vw;
-//   overflow-x: hidden;
-//   background-color: #fefefe;
-//   scroll-snap-type: y proximity;
-// }
+// ========================== GENERAL =========================
 h2 {
   font: normal normal bold 42px/52px Mr Eaves Mod OT;
-  // margin: 2rem 0 1rem;
   margin: 0;
   margin-bottom: -2rem;
 }
@@ -172,7 +154,6 @@ h3 {
 }
 li {
   font: normal normal normal 22px/28px Mr Eaves Mod OT;
-  // color: #707070;
   margin: 0 calc(1rem + 12px) 0.75em;
 }
 p {
@@ -271,7 +252,6 @@ header {
     @include lgWhiteBgSec();
     padding-top: 0;
     padding-bottom: 0;
-    min-height: 60vh;
 
     h2 {
       align-self: flex-start;
@@ -314,34 +294,57 @@ header {
 }
 
 // ============================================================
+// ====================== TEXT SECTIONS =======================
+.textOuterSection {
+  margin: $OuterAreaMargin;
+}
+
+// ============================================================
 // ===================== IMAGE CONTAINER ======================
 .scrollSpacing {
-  padding: 3rem;
+  display: block;
+  min-height: 1rem;
   visibility: hidden;
+}
+.spacingAlt {
+  min-height: 1rem;
+  margin-bottom: -1.5rem;
 }
 
 .sectionMargin {
   margin: $OuterAreaMargin;
+  border-radius: 10px !important;
+
+  &::after {
+    border-radius: 10px !important;
+  }
+  .imageWithHeader {
+    @include lgImgWithHeadingSec();
+    border-radius: 8px;
+
+    h3 {
+      margin-bottom: 1.25rem;
+      border-bottom: $underlineBorder;
+    }
+  }
 }
-.imageWithHeader {
-  @include lgImgWithHeadingSec();
-}
+
+// Shared with SCROLL GROUPS elements
 .imgContainer {
   text-align: center;
+  border-radius: 10px;
 
   img {
     max-width: 100%;
     padding: 0;
-    // box-shadow: $lgAreaShadow;
-    border-radius: 10px;
-  }
-}
-.one {
-  margin-bottom: 1rem;
-}
-.two {
-  img {
-    max-width: 50%;
+    box-shadow: 0 0 7px rgb(126, 126, 126);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 200ms ease-out;
+
+    &:hover {
+      transform: scale(1.04);
+    }
   }
 }
 
@@ -356,15 +359,11 @@ header {
   padding-left: 0;
   padding-right: 0;
   align-items: initial;
+  box-shadow: $lgAreaShadow, inset 0 0 3px black;
 
   h3 {
     margin: 0 1rem 1.5rem;
-  }
-  span {
-    height: 2rem;
-    width: 100%;
-    position: absolute;
-    top: -2rem;
+    border-bottom: $underlineBorder;
   }
 }
 
@@ -391,7 +390,7 @@ header {
     }
     img {
       width: auto;
-      height: 90%;
+      height: 80%;
       box-shadow: 1px 5px 15px 1px #000000de;
       border-radius: 10px;
     }
@@ -453,6 +452,7 @@ header {
     margin-bottom: 1em;
   }
 }
+
 @media only screen and (max-width: 576px) {
   #directory ul li {
     line-height: 35px;

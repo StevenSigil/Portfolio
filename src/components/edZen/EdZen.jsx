@@ -2,8 +2,6 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Row, Container } from "react-bootstrap";
 
-import { handleNextScrollPosition } from "../../util-data/everydayZen/util";
-
 import "../../public/static/css/EdZenStyles.css";
 
 import { ReactComponent as BackArrow } from "../../public/static/media/logos-icons/backArrow.svg";
@@ -80,7 +78,7 @@ export default function EdZen() {
 
   return (
     <div id="edZen">
-      <NavBtns handleNextScrollPosition={handleNextScrollPosition} />
+      <NavBtns />
       <ExpandedImage data={lgImgData} handleImageClick={handleImageClick} />
 
       <header id="top">
@@ -97,10 +95,12 @@ export default function EdZen() {
           <h2>Research Phase</h2>
         </Row>
 
-        <Intro />
-        <Analysis />
-        <ProjReq />
-        <AddInfo />
+        <div className="textOuterSection">
+          <Intro />
+          <Analysis />
+          <ProjReq />
+          <AddInfo />
+        </div>
 
         <span className="scrollSpacing" id="persona"></span>
         <div className="sectionContainer" id="">
@@ -182,7 +182,7 @@ export default function EdZen() {
           hText="Mood Board:"
           srcSet={`${moodBoard05x} 960w, ${moodBoard1x} 1920w, ${moodBoard2x} 3840w`}
           img={moodBoard05x}
-          alt="Everyday Zen Website & Logo Mood Board"
+          alt={"Everyday Zen Website & Logo Mood Board"}
           handleImageClick={handleImageClick}
         />
 
@@ -201,15 +201,15 @@ export default function EdZen() {
 
         <SingleImageWithHeader
           id="finalLogos"
-          hText="Illustrated Logo's:"
+          hText="Illustrated Logo's"
           srcSet={`${logos05x} 960w, ${logos1x} 1920w, ${logos2x} 3840w`}
           img={logos05x}
           alt="Final logos for review by client"
           handleImageClick={handleImageClick}
         />
 
+        <span id="wireFrame" className="scrollSpacing spacingAlt"></span>
         <div className="sectionContainer">
-          <span id="wireFrame"></span>
           <Row noGutters className="headingWithLink">
             <h3>Wire frames:</h3>
             {/* <a href="#">view on XD</a> */}
@@ -231,8 +231,8 @@ export default function EdZen() {
           </Row>
         </div>
 
-        <div className="sectionContainer" id="">
-          <span id="prototype"></span>
+        <span id="prototype" className="scrollSpacing spacingAlt"></span>
+        <div className="sectionContainer">
           <Row noGutters className="headingWithLink">
             <h3>Prototype:</h3>
             {/* <a href="#">view on XD</a> */}
