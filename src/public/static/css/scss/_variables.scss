@@ -1,0 +1,24 @@
+// =============================================================
+// ======================== VARIABLES ==========================
+$blackOnWhiteColor: rgb(29, 29, 29);
+$underlineBorder: 2px solid rgb(0, 14, 143);
+
+$lgAreaShadow: 5px 7px 10px rgba(49, 49, 49, 0.603),
+  -2px -2px 5px rgba(58, 58, 58, 0.568);
+$smBoxShadow: 0 1px 5px 1px rgb(73, 73, 73);
+
+$colorGradient: linear-gradient(
+  60deg,
+  hsl(224, 85%, 66%),
+  hsl(269, 85%, 66%),
+  hsl(314, 85%, 66%),
+  hsl(359, 85%, 66%),
+  hsl(44, 85%, 66%),
+  hsl(89, 85%, 66%),
+  hsl(134, 85%, 66%),
+  hsl(179, 85%, 66%)
+);
+
+$fastTransition: 100ms ease-in-out;
+$minOuterAreaHeight: 60vh;
+$OuterAreaMargin: 3rem auto;

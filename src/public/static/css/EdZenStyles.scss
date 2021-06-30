@@ -1,145 +1,4 @@
-// =============================================================
-// ======================== VARIABLES ==========================
-$blackOnWhiteColor: rgb(29, 29, 29);
-$underlineBorder: 2px solid rgb(0, 14, 143);
-
-$lgAreaShadow: 5px 7px 10px rgba(49, 49, 49, 0.603),
-  -2px -2px 5px rgba(58, 58, 58, 0.568);
-$smBoxShadow: 0 1px 5px 1px rgb(73, 73, 73);
-
-$colorGradient: linear-gradient(
-  60deg,
-  hsl(224, 85%, 66%),
-  hsl(269, 85%, 66%),
-  hsl(314, 85%, 66%),
-  hsl(359, 85%, 66%),
-  hsl(44, 85%, 66%),
-  hsl(89, 85%, 66%),
-  hsl(134, 85%, 66%),
-  hsl(179, 85%, 66%)
-);
-
-$fastTransition: 100ms ease-in-out;
-$minOuterAreaHeight: 60vh;
-$OuterAreaMargin: 3rem auto;
-
-// ============================================================
-// ============================ MIXIN =========================
-@mixin lgWhiteBgSec() {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  min-height: $minOuterAreaHeight;
-  padding: 2rem 2rem;
-  margin: $OuterAreaMargin;
-  color: $blackOnWhiteColor;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: $lgAreaShadow;
-  position: relative;
-}
-
-@mixin lgImgWithHeadingSec() {
-  min-height: $minOuterAreaHeight;
-  min-height: 100%;
-  padding: 1.5rem 1rem 2.5rem;
-  color: $blackOnWhiteColor;
-  background-color: #fff;
-}
-
-@mixin linkColoredCanExpand(
-  $scale: 1,
-  $bg: #ffffff,
-  $hovShadow: none,
-  $outerBorderRadius: 10px,
-  $pxOfBgShowing: 2px
-) {
-  border: none;
-  outline: none;
-  background: $bg;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: $outerBorderRadius;
-  transition: $fastTransition;
-  text-decoration: none;
-
-  &:focus {
-    border: none;
-    outline: none;
-  }
-  &:before {
-    content: "";
-    background: $colorGradient;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: 300% 300%;
-    background-position: 0 50%;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    border-radius: $outerBorderRadius;
-    // filter: blur(5px);
-    animation: glowing 3000ms linear infinite;
-    transition: opacity 300ms ease-in-out;
-  }
-  // &:active:after {
-  //   background: transparent;
-  // }
-  &:hover {
-    transform: scale($scale);
-    box-shadow: $hovShadow;
-
-    &:before {
-      opacity: 1;
-    }
-  }
-  &:after {
-    z-index: -1;
-    content: "";
-    position: absolute;
-
-    // 100% - $pxOfBgShowing * 2 => for each side
-    width: calc(100% - 4px);
-    height: calc(100% - 4px);
-    background: $bg;
-    left: $pxOfBgShowing;
-    top: $pxOfBgShowing;
-    border-radius: $outerBorderRadius - $pxOfBgShowing;
-  }
-}
-
-@mixin scrollBars(
-  $size,
-  $foreground-color,
-  $background-color: mix($foreground-color, white, 50%),
-  $border-radius: $size / 1.5
-) {
-  // Chrome
-  &::-webkit-scrollbar {
-    width: $size;
-    height: $size;
-    border-radius: $border-radius;
-  }
-  &::-webkit-scrollbar-thumb {
-    background: $foreground-color;
-    border-radius: $border-radius;
-  }
-  &::-webkit-scrollbar-track {
-    background: $background-color;
-    border-radius: $border-radius;
-    box-shadow: 0 2px 5px #000;
-    margin: 0 5vw;
-  }
-  // IE
-  & {
-    scrollbar-face-color: $foreground-color;
-    scrollbar-track-color: $background-color;
-  }
-}
+@import "scss/variables", "scss/mixin";
 
 // ============================================================
 // ========================== GENERAL =========================
@@ -153,14 +12,16 @@ h3 {
   margin: 0;
 }
 li {
-  font: normal normal normal 22px/28px Mr Eaves Mod OT;
+  font: normal normal normal 20px Mr Eaves Mod OT;
   margin: 0 calc(1rem + 12px) 0.75em;
 }
-p {
-  font: normal normal normal 20px/28px Mr Eaves Mod OT;
-  letter-spacing: 0px;
-  margin: 0 calc(1rem + 12px) 0.75em;
-  width: 100%;
+.edZen {
+  p {
+    font: normal normal normal 20px/28px Mr Eaves Mod OT;
+    letter-spacing: 0px;
+    margin: 0 calc(1rem + 12px) 0.75em;
+    width: 100%;
+  }
 }
 
 // ============================================================
@@ -295,8 +156,15 @@ header {
 
 // ============================================================
 // ====================== TEXT SECTIONS =======================
-.textOuterSection {
-  margin: $OuterAreaMargin;
+// .textOuterSection {
+//   margin: $OuterAreaMargin;
+// }
+.textOuterDiv {
+  @include coloredBg;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
 }
 
 // ============================================================
@@ -312,33 +180,24 @@ header {
 }
 
 .sectionMargin {
-  margin: $OuterAreaMargin;
-  border-radius: 10px !important;
+  @include coloredBg;
 
-  &::after {
-    border-radius: 10px !important;
-  }
-  .imageWithHeader {
-    @include lgImgWithHeadingSec();
-    border-radius: 8px;
-
-    h3 {
-      margin-bottom: 1.25rem;
-      border-bottom: $underlineBorder;
-    }
+  h3 {
+    margin-bottom: 1.25rem;
+    border-bottom: $underlineBorder;
   }
 }
 
 // Shared with SCROLL GROUPS elements
 .imgContainer {
   text-align: center;
-  border-radius: 10px;
+  border-radius: inherit;
 
   img {
     max-width: 100%;
     padding: 0;
     box-shadow: 0 0 7px rgb(126, 126, 126);
-    border-radius: 8px;
+    border-radius: inherit;
     cursor: pointer;
     transition: transform 200ms ease-out;
 

@@ -1,33 +1,30 @@
 import { Container } from "react-bootstrap";
+import { HashLink } from "react-router-hash-link";
 
 export default function ProjectsHeading() {
   return (
     <Container className="projectsHeadingSection">
-      <div className="innerDiv">
-        <Container className="title">
-          <h1>Recent projects</h1>
-          {/* <h3> */}
-          {/* Some of the more interesting projects recently created */}
-          {/* A collection of the more <em>fun/cool/large</em> projects recently
-            created */}
-          {/* </h3> */}
-        </Container>
+      <h2>Recent projects</h2>
 
-        <Container className="outer-list-group">
-          <h2>Skip to:</h2>
-          <ul className="custom-list-group">
-            <li>
-              <a href="#web-design">Full Stack Web Applications</a>
-            </li>
-            <li>
-              <a href="#javascript">Javascript, HTML & CSS Pages</a>
-            </li>
-            <li>
-              <a href="#python-programming">Misc. Python Projects</a>
-            </li>
-          </ul>
-        </Container>
-      </div>
+      {/* Some of the more interesting projects recently created */}
+      {/* A collection of the more <em>fun/cool/large</em> projects recently
+            created */}
+
+      <Container className="outer-list-group">
+        <h3>Skip to:</h3>
+
+        <HashLink smooth to="#web-design">
+          <p>Full Stack Web Applications</p>
+        </HashLink>
+
+        <HashLink smooth to="#javascript">
+          <p>Javascript, HTML & CSS Pages</p>
+        </HashLink>
+
+        <HashLink smooth to="#python-programming">
+          <p>Misc. Python Projects</p>
+        </HashLink>
+      </Container>
     </Container>
   );
 }

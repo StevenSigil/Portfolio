@@ -2,7 +2,12 @@ import { Container } from "react-bootstrap";
 import { Col, Row } from "react-bootstrap";
 
 import { CryptographyApp, KivyApp, LifeApp } from "./ProjectCards";
-import { MedTrackApp, MedTrackApp2, TodoApp, KeeperApp } from "./ProjectCards";
+import {
+  MedTrackApp,
+  ReactMessenger,
+  TodoApp,
+  KeeperApp,
+} from "./ProjectCards";
 import { SimonApp, TinDogApp, DiceApp } from "./ProjectCards";
 
 import ProjectsHeading from "./ProjectsHeading";
@@ -15,8 +20,10 @@ export default function Projects() {
 
         <Row id="web-design" className="projectsSubsectionRow">
           <Col xl={2} lg={12}>
-            <div className="subsectionHeading coloredBorderDiv">
-              <h3>Full-stack web apps</h3>
+            <div className="subsectionHeading">
+              <div>
+                <h3>Full-stack web apps</h3>
+              </div>
             </div>
           </Col>
 
@@ -24,7 +31,7 @@ export default function Projects() {
             <MedTrackApp />
           </Col>
           <Col xl={3} lg={5}>
-            <MedTrackApp2 />
+            <ReactMessenger />
           </Col>
           <Col xl={3} lg={5}>
             <TodoApp />
@@ -38,8 +45,10 @@ export default function Projects() {
 
         <Row id="javascript" className="projectsSubsectionRow">
           <Col xl={2} lg={12}>
-            <div className="subsectionHeading coloredBorderDiv">
-              <h3>JavaScript - Html - CSS</h3>
+            <div className="subsectionHeading">
+              <div>
+                <h3>JavaScript - Html - CSS</h3>
+              </div>
             </div>
           </Col>
 
@@ -56,8 +65,10 @@ export default function Projects() {
 
         <Row id="python-programming" className="projectsSubsectionRow">
           <Col xl={2} lg={12}>
-            <div className="subsectionHeading coloredBorderDiv">
-              <h3>Misc. Python</h3>
+            <div className="subsectionHeading">
+              <div>
+                <h3>Misc. Python</h3>
+              </div>
             </div>
           </Col>
 

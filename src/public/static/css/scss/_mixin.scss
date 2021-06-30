@@ -1,0 +1,198 @@
+// ============================================================
+// ============================ MIXIN =========================
+@mixin lgWhiteBgSec() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: $minOuterAreaHeight;
+  padding: 2rem 2rem;
+  margin: $OuterAreaMargin;
+  color: $blackOnWhiteColor;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: $lgAreaShadow;
+  position: relative;
+}
+
+@mixin lgImgWithHeadingSec() {
+  // min-height: $minOuterAreaHeight;
+  // min-height: 100%;
+  padding: 1.5rem 1rem 2.5rem;
+  color: $blackOnWhiteColor;
+  // background-color: #fff;
+}
+
+@mixin linkColoredCanExpand(
+  $scale: 1,
+  $bg: #ffffff,
+  $hovShadow: none,
+  $outerBorderRadius: 10px,
+  $pxOfBgShowing: 2px
+) {
+  border: none;
+  outline: none;
+  background: $bg;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: $outerBorderRadius;
+  transition: $fastTransition;
+  text-decoration: none;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  &:before {
+    content: "";
+    background: $colorGradient;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: $outerBorderRadius;
+    // filter: blur(5px);
+    animation: glowing 3000ms linear infinite;
+    transition: opacity 300ms ease-in-out;
+  }
+  // &:active:after {
+  //   background: transparent;
+  // }
+  &:hover {
+    transform: scale($scale);
+    box-shadow: $hovShadow;
+
+    &:before {
+      opacity: 1;
+    }
+  }
+  &:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+
+    // 100% - $pxOfBgShowing * 2 => for each side
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background: $bg;
+    left: $pxOfBgShowing;
+    top: $pxOfBgShowing;
+    border-radius: $outerBorderRadius - $pxOfBgShowing;
+  }
+}
+
+// ============================================================
+// ============================================================
+
+@mixin scrollBars(
+  $size,
+  $foreground-color,
+  $background-color: mix($foreground-color, white, 50%),
+  $border-radius: $size / 1.5
+) {
+  // Chrome
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+    border-radius: $border-radius;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: $border-radius;
+  }
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+    border-radius: $border-radius;
+    box-shadow: 0 2px 5px #000;
+    margin: 0 5vw;
+  }
+  // IE
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+// ============================================================
+// ============================================================
+@mixin coloredBg($outerMargin: 3rem 0, $border-width: 2px) {
+  // replaces "coloredBorderDiv" and children.
+  // Requires a (direct) child div before content elements
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  border-radius: $border-width;
+  box-shadow: $lgAreaShadow;
+  margin: $outerMargin;
+  background: none;
+  min-height: $minOuterAreaHeight;
+  width: 100%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: $border-width;
+    background: $colorGradient;
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    animation: moveGradient 4s linear infinite;
+  }
+  > div {
+    margin: $border-width;
+    padding: 1rem;
+    background-color: #fff;
+    z-index: 1;
+    border-radius: $border-width;
+  }
+}
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@mixin singleContentSection {
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin sectionHeader {
+  text-align: center;
+  margin: 1rem auto 5rem;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: $lgAreaShadow;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  font-style: normal;
+  line-height: initial;
+}
+
+@mixin btnImageInvert {
+  padding: 0;
+
+  img {
+    padding: 10px 12px;
+    transition: all 250ms;
+
+    &:hover {
+      filter: invert(50);
+    }
+  }
+}

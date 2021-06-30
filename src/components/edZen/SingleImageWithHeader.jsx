@@ -12,7 +12,7 @@ export default function SingleImageWithHeader({
   return (
     <>
       <span className="scrollSpacing" id={id}></span>
-      <div className="sectionMargin coloredBorderDiv">
+      <div className="sectionMargin">
         <div className="imageWithHeader">
           <Row noGutters>
             <h3>{hText}</h3>

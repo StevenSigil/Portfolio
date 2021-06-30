@@ -110,7 +110,7 @@ export function MedTrackApp() {
   );
 }
 
-export function MedTrackApp2() {
+export function ReactMessenger() {
   return (
     <Card>
       <Card.Img
@@ -130,7 +130,10 @@ export function MedTrackApp2() {
         </Card.Text>
       </Card.Body>
 
-      <ProjectCardFooter btnName="R. Messenger" links={projectLinks.ReactMessenger} />
+      <ProjectCardFooter
+        btnName="R. Messenger"
+        links={projectLinks.ReactMessenger}
+      />
     </Card>
   );
 }

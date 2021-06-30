@@ -1,0 +1,52 @@
+@media (min-width: 1200px) {
+  .sectionHeading {
+    width: 60%;
+  }
+  .projectsHeadingSection {
+    max-width: 45vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sectionHeading {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .smallerCol2 {
+    margin-bottom: 1.5rem;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: baseline !important;
+
+    h2 {
+      margin: 1.5rem 0 !important;
+    }
+    svg {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 0 !important;
+      filter: blur(3px);
+      fill: lighten($color: #000000, $amount: 87%);
+    }
+  }
+  .projectsSubsectionRow .card-body {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .linkCol {
+    text-align: start !important;
+  }
+}
+
+@media (min-width: 992px) {
+  footer > .container {
+    max-width: 30% !important;
+  }
+}

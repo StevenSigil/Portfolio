@@ -77,7 +77,7 @@ export default function EdZen() {
   }
 
   return (
-    <div id="edZen">
+    <div className="edZen">
       <NavBtns />
       <ExpandedImage data={lgImgData} handleImageClick={handleImageClick} />
 
@@ -91,16 +91,14 @@ export default function EdZen() {
       <Directory />
 
       <Container className="outerDiv">
-        <Row noGutters>
-          <h2>Research Phase</h2>
-        </Row>
+        <h2>Research Phase</h2>
 
-        <div className="textOuterSection">
-          <Intro />
-          <Analysis />
-          <ProjReq />
-          <AddInfo />
-        </div>
+        {/* <div className="textOuterSection"> */}
+        <Intro />
+        <Analysis />
+        <ProjReq />
+        <AddInfo />
+        {/* </div> */}
 
         <span className="scrollSpacing" id="persona"></span>
         <div className="sectionContainer" id="">
