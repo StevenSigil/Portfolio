@@ -1,5 +1,5 @@
 import { Container, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import PDF from "../public/static/media/stevenE_publicResume.pdf";
 
 function HomeHeading() {
@@ -22,9 +22,9 @@ function HomeHeading() {
             <a href={PDF}>Resume</a>
           </Col>
 
-          <Col sm={3} xs={6} className="">
+          {/* <Col sm={3} xs={6} className="">
             <Link to="/EdZen2">EdZ</Link>
-          </Col>
+          </Col> */}
         </div>
       </Container>
     </>

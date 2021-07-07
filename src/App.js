@@ -34,9 +34,9 @@ export default function App() {
             <Footer />
           </Route> */}
 
-          {/* <Route exact path="/EdZen2">
+          <Route exact path="/EdZen2">
             <EdZen2 />
-          </Route> */}
+          </Route>
 
           {/* <Route exact path="/test">
             <Test />
