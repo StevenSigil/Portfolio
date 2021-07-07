@@ -37,7 +37,9 @@ function Heading({ imgClickFunc }) {
     <div className="imgTextHeading">
       <Col lg={3} className="textButtonOuter">
         <h2 className="sectionTitle">Final Mockups</h2>
-        <Button>View Interactive Prototype</Button>
+        <Button href="https://xd.adobe.com/view/d4155688-0edc-460a-9a10-0f1ae6d83d83-8146/?fullscreen">
+          View Prototype on XD
+        </Button>
       </Col>
 
       <Col lg={9} className="headImg">
@@ -177,19 +179,27 @@ function ProtoScrollSec({ imgClickFunc }) {
   }
 
   return (
-    <Container className="protoScrollOuter">
-      <div className="ScrollHead">
-        <h3>Key Wireframe Pages</h3>
-        <Button>View on XD</Button>
+    <>
+      <div className="resultsSec">
+        <h2 className="sectionTitle">Results</h2>
+        <Button href="https://xd.adobe.com/view/d4155688-0edc-460a-9a10-0f1ae6d83d83-8146/?fullscreen">
+          View Prototype on XD
+        </Button>
       </div>
 
-      <div className="ScrollInner">
-        <div className="protoScroll">
-          {prototypeData.map((el, index) => {
-            return <ScrollItem key={index} element={el} />;
-          })}
+      <Container className="protoScrollOuter">
+        <div className="ScrollHead">
+          <h3>Key Pages</h3>
         </div>
-      </div>
-    </Container>
+
+        <div className="ScrollInner">
+          <div className="protoScroll">
+            {prototypeData.map((el, index) => {
+              return <ScrollItem key={index} element={el} />;
+            })}
+          </div>
+        </div>
+      </Container>
+    </>
   );
 }

@@ -64,7 +64,9 @@ export default function IntroSection() {
           {/* <p>(Self-Directed Project)</p> */}
         </div>
 
-        <Button>View Final Prototype</Button>
+        <Button href="https://xd.adobe.com/view/d4155688-0edc-460a-9a10-0f1ae6d83d83-8146/?fullscreen">
+          View Prototype on XD
+        </Button>
       </Col>
     </Container>
   );
