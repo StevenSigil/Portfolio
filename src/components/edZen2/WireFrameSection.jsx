@@ -65,7 +65,7 @@ function Sec1({ imgClickFunc }) {
           src={wireframe1}
           alt="Wireframe - Basic Layout"
           onClick={() =>
-            imgClickFunc(wireframe1, null, "Wireframe - Basic Layout")
+            imgClickFunc(wireframe1, null, "Wireframe - Basic Layout", true)
           }
         />
       </Col>
@@ -95,7 +95,12 @@ function Sec2({ imgClickFunc }) {
           src={wireframe2}
           alt="Wireframe - 100% Height Layout"
           onClick={() =>
-            imgClickFunc(wireframe2, null, "Wireframe - 100% Height Layout")
+            imgClickFunc(
+              wireframe2,
+              null,
+              "Wireframe - 100% Height Layout",
+              true
+            )
           }
         />
       </Col>
@@ -143,7 +148,11 @@ function WfScrollSec({ imgClickFunc }) {
     return (
       <div>
         <h4>{element.heading}</h4>
-        <img src={element.img} alt={element.alt} />
+        <img
+          src={element.img}
+          alt={element.alt}
+          onClick={() => imgClickFunc(element.img, null, element.alt, false)}
+        />
       </div>
     );
   }

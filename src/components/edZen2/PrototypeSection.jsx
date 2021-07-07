@@ -1,29 +1,35 @@
 import React from "react";
 import { Container, Col, Button } from "react-bootstrap";
 
-import protoAll05x from "../../public/static/media/edZen_imgs/Prototype2/allPages@0.5x.png";
+import protoAll05x from "../../public/static/media/edZen_imgs/Prototype2/allPages/allPages@0.5x.png";
+import protoAll075x from "../../public/static/media/edZen_imgs/Prototype2/allPages/allPages@0.75x.png";
+import protoAll1x from "../../public/static/media/edZen_imgs/Prototype2/allPages/allPages@1x.png";
 
 import { ReactComponent as ColorPallet } from "../../public/static/media/edZen_imgs/Prototype2/ColorPallet.svg";
 
-import subscribeForm05x from "../../public/static/media/edZen_imgs/Prototype2/subscriptionSignup@0.5x.png";
+import subscribeForm05x from "../../public/static/media/edZen_imgs/Prototype2/subForm/subscriptionSignup@0.5x.png";
+import subscribeForm1x from "../../public/static/media/edZen_imgs/Prototype2/subForm/subscriptionSignup@1x.png";
 
 import scrollDemo from "../../public/static/media/edZen_imgs/Prototype2/scrollGroupDemo.gif";
 
+import imgGradientDemo05x from "../../public/static/media/edZen_imgs/Prototype2/imgGradientDemo@0.5x.png";
 import imgGradientDemo1x from "../../public/static/media/edZen_imgs/Prototype2/imgGradientDemo@1x.png";
 
-export default function PrototypeSection() {
+export default function PrototypeSection({ handleImageClick }) {
   return (
     <Container className="finalProto">
-      <Heading />
-      <ColorsSection />
-      <EmailSection />
-      <ScrollGroupSec />
-      <ArticlesSection />
+      <Heading imgClickFunc={handleImageClick} />
+      <ColorsSection imgClickFunc={handleImageClick} />
+      <EmailSection imgClickFunc={handleImageClick} />
+      <ScrollGroupSec imgClickFunc={handleImageClick} />
+      <ArticlesSection imgClickFunc={handleImageClick} />
     </Container>
   );
 }
 
-function Heading() {
+function Heading({ imgClickFunc }) {
+  const imgSrcSet = `${protoAll05x} 961w, ${protoAll075x} 1440w, ${protoAll1x} 1921 w`;
+
   return (
     <div className="imgTextHeading">
       <Col lg={3}>
@@ -32,7 +38,14 @@ function Heading() {
       </Col>
 
       <Col lg={9}>
-        <img src={protoAll05x} alt="t" />
+        <img
+          srcSet={imgSrcSet}
+          src={protoAll05x}
+          alt="Key Prototype Pages"
+          onClick={() =>
+            imgClickFunc(protoAll05x, imgSrcSet, "Key Prototype Pages")
+          }
+        />
       </Col>
     </div>
   );
@@ -62,7 +75,9 @@ function ColorsSection() {
   );
 }
 
-function EmailSection() {
+function EmailSection({ imgClickFunc }) {
+  const imgSrcSet = `${subscribeForm05x} 641w, ${subscribeForm1x} 1281w`;
+
   return (
     <div className="subscriptArea">
       <Col lg={5} className="protoTextArea2">
@@ -80,7 +95,14 @@ function EmailSection() {
         </p>
       </Col>
       <Col lg={6} className="subsImgContainer">
-        <img src={subscribeForm05x} alt="Email Subscription Form" />
+        <img
+          srcset={imgSrcSet}
+          src={subscribeForm05x}
+          alt="Email Subscription Form"
+          onClick={() =>
+            imgClickFunc(subscribeForm05x, imgSrcSet, "Email Subscription Form")
+          }
+        />
       </Col>
     </div>
   );
@@ -100,11 +122,25 @@ function ScrollGroupSec() {
   );
 }
 
-function ArticlesSection() {
+function ArticlesSection({ imgClickFunc }) {
+  const imgSrcSet = `${imgGradientDemo05x} 445w, ${imgGradientDemo1x} 890w`;
+
   return (
     <div className="imgGradients">
       <Col lg={7}>
-        <img src={imgGradientDemo1x} alt="Gradients added to article images" />
+        <img
+          srcSet={imgSrcSet}
+          src={imgGradientDemo1x}
+          alt="Gradients added to article images"
+          onClick={() =>
+            imgClickFunc(
+              imgGradientDemo1x,
+              imgSrcSet,
+              "Gradients added to article images",
+              true
+            )
+          }
+        />
       </Col>
 
       <Col lg={4} className="protoTextArea1">

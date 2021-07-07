@@ -17,12 +17,13 @@ export default function EdZen2() {
     img: null,
     srcSet: null,
     alt: null,
+    bg: false,
   });
 
-  function handleImageClick(img, srcSet, alt) {
+  function handleImageClick(img, srcSet, alt, bg) {
     srcSet
-      ? setLgImgData({ img: img, srcSet: srcSet, alt: alt })
-      : setLgImgData({ img: img, alt: alt });
+      ? setLgImgData({ img: img, srcSet: srcSet, alt: alt, bg: bg })
+      : setLgImgData({ img: img, alt: alt, bg: bg });
     setShowLargerImage(!showLargerImage);
   }
 

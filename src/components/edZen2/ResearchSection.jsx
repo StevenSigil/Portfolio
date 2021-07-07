@@ -9,7 +9,9 @@ import persona1 from "../../public/static/media/edZen_imgs/userPersonas/persona1
 import persona2 from "../../public/static/media/edZen_imgs/userPersonas/persona2.svg";
 import persona3 from "../../public/static/media/edZen_imgs/userPersonas/persona3.svg";
 
-import compPages from "../../public/static/media/edZen_imgs/CompPages/compPages@0.5x.png";
+import compPages05x from "../../public/static/media/edZen_imgs/CompPages/compPages@0.5x.png";
+import compPages075x from "../../public/static/media/edZen_imgs/CompPages/compPages@0.75x.png";
+import compPages1x from "../../public/static/media/edZen_imgs/CompPages/compPages@1x.png";
 
 import journeyMap2 from "../../public/static/media/edZen_imgs/JourneyMap/newJourneyMap.svg";
 
@@ -132,17 +134,17 @@ function UsersSection({ imgClickFunc }) {
           <img
             src={persona2}
             alt="User Persona 1"
-            onClick={() => imgClickFunc(persona2)}
+            onClick={() => imgClickFunc(persona2, null, "User Persona 1")}
           />
           <img
             src={persona1}
             alt="User Persona 2"
-            onClick={() => imgClickFunc(persona1)}
+            onClick={() => imgClickFunc(persona1, null, "User Persona 2")}
           />
           <img
             src={persona3}
             alt="User Persona 3"
-            onClick={() => imgClickFunc(persona3)}
+            onClick={() => imgClickFunc(persona3, null, "User Persona 3")}
           />
         </div>
       </Col>
@@ -151,6 +153,8 @@ function UsersSection({ imgClickFunc }) {
 }
 
 function CompetitorSection({ imgClickFunc }) {
+  const imgSrcSet = `${compPages05x} 688w, ${compPages075x} 1032w, ${compPages1x} 1377w`;
+
   return (
     <Container className="competitiveAnalysis">
       <Col lg={7} className="compAnalysisImgArea">
@@ -160,11 +164,13 @@ function CompetitorSection({ imgClickFunc }) {
         </h3>
 
         <img
-          src={compPages}
+          srcSet={imgSrcSet}
+          src={compPages05x}
           alt="Everyday Zen - Competitive Websites"
-          onClick={() => imgClickFunc(compPages)}
+          onClick={() =>
+            imgClickFunc(compPages05x, imgSrcSet, "Competitive Websites")
+          }
         />
-        {/* <p>Examples of competitive pages</p> */}
       </Col>
 
       <Col lg={5} className="compAnalysisTextArea">
@@ -225,7 +231,7 @@ function JourneyMapSection({ imgClickFunc }) {
         <img
           src={journeyMap2}
           alt="Users Journey Map"
-          onClick={() => imgClickFunc(journeyMap2)}
+          onClick={() => imgClickFunc(journeyMap2, null, "Journey Map", true)}
         />
       </div>
     </Container>
@@ -244,7 +250,7 @@ function SiteMapSection({ imgClickFunc }) {
           src={siteMap}
           alt="Everyday Zen's new site map"
           onClick={() =>
-            imgClickFunc(siteMap, null, "Everyday Zen's new site map")
+            imgClickFunc(siteMap, null, "Everyday Zen's new site map", true)
           }
         />
       </Col>

@@ -196,3 +196,9 @@
     }
   }
 }
+
+
+@mixin fullWidthImg {
+  max-width: 100%;
+  height: auto;
+}
