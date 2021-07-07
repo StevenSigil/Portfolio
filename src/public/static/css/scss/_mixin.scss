@@ -93,7 +93,7 @@
 @mixin scrollBars(
   $size,
   $foreground-color,
-  $background-color: mix($foreground-color, white, 50%),
+  $background-color: mix($foreground-color, white, 60%),
   $border-radius: $size / 1.5
 ) {
   // Chrome

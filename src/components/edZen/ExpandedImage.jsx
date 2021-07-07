@@ -1,6 +1,7 @@
 export default function ExpandedImage({ data, handleImageClick }) {
   if (data.img) {
     document.querySelector("html").style.overflowY = "hidden";
+
     return (
       <div
         className="staticLgImg"

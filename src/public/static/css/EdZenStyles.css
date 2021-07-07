@@ -10,18 +10,18 @@
   }
 }
 
-h2 {
+.edZen h2 {
   font: normal normal bold 42px/52px Mr Eaves Mod OT;
   margin: 0;
   margin-bottom: -2rem;
 }
 
-h3 {
+.edZen h3 {
   font: normal normal normal 2em/52px Mr Eaves Mod OT;
   margin: 0;
 }
 
-li {
+.edZen li {
   font: normal normal normal 20px Mr Eaves Mod OT;
   margin: 0 calc(1rem + 12px) 0.75em;
 }

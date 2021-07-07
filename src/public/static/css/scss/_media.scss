@@ -13,40 +13,156 @@
   }
 }
 
-@media (max-width: 768px) {
-  .smallerCol2 {
-    margin-bottom: 1.5rem;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    align-items: baseline !important;
+@media (max-width: 992px) {
+  .eHead4 .container > div p {
+    margin: 2rem auto 0;
+  }
 
-    h2 {
-      margin: 1.5rem 0 !important;
+  .userResearch {
+    .usersHeading {
+      padding: 0 1rem 0.5rem;
     }
-    svg {
-      position: absolute !important;
-      top: 0 !important;
-      left: 0 !important;
-      width: 100% !important;
-      height: 100% !important;
-      z-index: 0 !important;
-      filter: blur(3px);
-      fill: lighten($color: #000000, $amount: 87%);
+    .hScrollGroup {
+      @include scrollBars(0.5rem, #333333);
+      padding: 1rem 0 2rem;
+      margin: 0.5rem auto;
     }
   }
-  .projectsSubsectionRow .card-body {
-    padding: 1rem;
+
+  .competitiveAnalysis {
+    .compAnalysisImgArea {
+      h3 {
+        text-align: justify;
+        hyphens: auto;
+        margin-bottom: 2rem;
+      }
+      img {
+        margin: 0;
+      }
+    }
+    .compAnalysisTextArea {
+      margin-top: 2rem;
+      h4 {
+        margin-bottom: 1.2rem;
+      }
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .journeyMap {
+    h3 {
+      text-align: justify;
+      hyphens: auto;
+    }
+    img {
+      margin-top: 1rem;
+    }
+  }
+
+  .siteMap .siteMapHead h3 {
+    box-shadow: none;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .wireframe > div > div {
+    margin-bottom: 1rem;
+  }
+
+  .finalProto {
+    .imgTextHeading button {
+      margin-bottom: 4rem;
+    }
+    .colorScheme {
+      flex-direction: column-reverse;
+
+      > div p {
+        margin: 0 auto 1.5rem;
+      }
+    }
+    .proto3 .protoTextArea1 {
+      padding: 0 1rem;
+      margin: 2rem auto;
+    }
   }
 }
 
-@media (min-width: 768px) {
-  .linkCol {
-    text-align: start !important;
+@media (max-width: 768px) {
+  .eHead4 .container {
+    justify-content: center;
+
+    > div svg {
+      margin: auto;
+    }
+  }
+
+  .projectsSubsectionRow .card-body {
+    padding: 1rem;
+  }
+  .introSection > div {
+    padding: 1rem;
+  }
+
+  .siteMap {
+    min-height: auto;
+
+    .siteMapHead h3 {
+      padding: initial;
+    }
+  }
+
+  // .smallerCol2 {
+  //   margin-bottom: 1.5rem;
+  //   flex-direction: row !important;
+  //   flex-wrap: wrap !important;
+  //   align-items: baseline !important;
+
+  //   h2 {
+  //     margin: 1.5rem 0 !important;
+  //   }
+  //   svg {
+  //     position: absolute !important;
+  //     top: 0 !important;
+  //     left: 0 !important;
+  //     width: 100% !important;
+  //     height: 100% !important;
+  //     z-index: 0 !important;
+  //     filter: blur(3px);
+  //     fill: lighten($color: #000000, $amount: 87%);
+  //   }
+  // }
+}
+
+@media (max-width: 576px) {
+  .eHead4 .container > div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sectionTitle {
+    margin: $sectionTopMargin 0 $sectionTopMargin / 2 !important;
+  }
+  .siteMap {
+    .siteMapImgOuter {
+      padding: 0 0.25rem;
+    }
+    .siteMapHead h3 {
+      text-align: initial;
+      hyphens: initial;
+    }
   }
 }
 
 @media (min-width: 992px) {
   footer > .container {
     max-width: 30% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .linkCol {
+    text-align: start !important;
   }
 }

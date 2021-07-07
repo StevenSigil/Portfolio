@@ -26,3 +26,6 @@ Test.jsx
 test.js
 test.css
 test.scss
+
+ignoredImgs/
+*.ai

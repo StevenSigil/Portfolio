@@ -7,10 +7,6 @@ import wfSingleBlogPost from "../../public/static/media/edZen_imgs/wireframe/sin
 import wfContact from "../../public/static/media/edZen_imgs/wireframe/contact us.png";
 import wfBlogMedit from "../../public/static/media/edZen_imgs/wireframe/blog category -  Meditation.png";
 import wfBlogSpir from "../../public/static/media/edZen_imgs/wireframe/blog category -  Spirituality.png";
-import wfBlogHealth from "../../public/static/media/edZen_imgs/wireframe/blog category - Health.png";
-import wfBlogLife from "../../public/static/media/edZen_imgs/wireframe/blog category - Life.png";
-import wfBlogThera from "../../public/static/media/edZen_imgs/wireframe/blog category - Therapeutics.png";
-import wfBlogFarOut from "../../public/static/media/edZen_imgs/wireframe/blog category - Far Out– 1.png";
 
 export const wireFrameData = [
   {
@@ -19,7 +15,7 @@ export const wireFrameData = [
     alt: "wire frame - home",
   },
   {
-    heading: "Home w/ Expanded Menu",
+    heading: "Expanded Menu",
     img: wfMenu,
     alt: "wire frame - home & menu",
   },
@@ -57,25 +53,5 @@ export const wireFrameData = [
     heading: "Spirituality - Blog Page",
     img: wfBlogSpir,
     alt: "wire frame - spirituality blog page",
-  },
-  {
-    heading: "Health - Blog Page",
-    img: wfBlogHealth,
-    alt: "wire frame - health blog page",
-  },
-  {
-    heading: "Life - Blog Page",
-    img: wfBlogLife,
-    alt: "wire frame - life blog page",
-  },
-  {
-    heading: "Therapeutics - Blog Page",
-    img: wfBlogThera,
-    alt: "wire frame - therapeutics blog page",
-  },
-  {
-    heading: "Far Out There - Blog Page",
-    img: wfBlogFarOut,
-    alt: "wire frame - far out there blog page",
   },
 ];
