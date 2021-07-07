@@ -14,8 +14,8 @@ import subscribeForm1x from "../../public/static/media/edZen_imgs/Prototype2/sub
 
 import scrollDemo from "../../public/static/media/edZen_imgs/Prototype2/scrollGroupDemo.gif";
 
-import imgGradientDemo05x from "../../public/static/media/edZen_imgs/Prototype2/imgGradientDemo@0.5x.png";
-import imgGradientDemo1x from "../../public/static/media/edZen_imgs/Prototype2/imgGradientDemo@1x.png";
+import imgGradientDemo05x from "../../public/static/media/edZen_imgs/Prototype2/imgGradientDemo/imgGradientDemo@0.5x.png";
+import imgGradientDemo1x from "../../public/static/media/edZen_imgs/Prototype2/imgGradientDemo/imgGradientDemo@1x.png";
 
 export default function PrototypeSection({ handleImageClick }) {
   return (
