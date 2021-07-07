@@ -34,33 +34,34 @@
   }
   .userResearch .hScrollGroup {
     padding: 1rem 0 2rem;
-    margin: 0.5rem auto;
+    margin: 0.5rem 0;
+    max-width: 100%;
   }
-  .userResearch .hScrollGroup::-webkit-scrollbar {
+  .userResearch .hScrollGroup .innerWrapper::-webkit-scrollbar {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 0.33333rem;
   }
-  .userResearch .hScrollGroup::-webkit-scrollbar-thumb {
+  .userResearch .hScrollGroup .innerWrapper::-webkit-scrollbar-thumb {
     background: #333333;
     border-radius: 0.33333rem;
   }
-  .userResearch .hScrollGroup::-webkit-scrollbar-track {
+  .userResearch .hScrollGroup .innerWrapper::-webkit-scrollbar-track {
     background: #858585;
     border-radius: 0.33333rem;
     -webkit-box-shadow: 0 2px 5px #000;
             box-shadow: 0 2px 5px #000;
     margin: 0 5vw;
   }
-  .userResearch .hScrollGroup {
+  .userResearch .hScrollGroup .innerWrapper {
     scrollbar-face-color: #333333;
     scrollbar-track-color: #858585;
   }
+  .userResearch .hScrollGroup .innerWrapper img {
+    margin: 0.5rem 1.5rem 2rem;
+  }
   .competitiveAnalysis .compAnalysisImgArea h3 {
     text-align: justify;
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
     margin-bottom: 2rem;
   }
   .competitiveAnalysis .compAnalysisImgArea img {
@@ -77,12 +78,14 @@
   }
   .journeyMap h3 {
     text-align: justify;
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
+    -webkit-hyphens: none;
+        -ms-hyphens: none;
+            hyphens: none;
+    margin-bottom: 1rem;
   }
-  .journeyMap img {
+  .journeyMap .journeyImgOuter {
     margin-top: 1rem;
+    padding: 0.75rem 0.5rem;
   }
   .siteMap .siteMapHead h3 {
     -webkit-box-shadow: none;
@@ -92,20 +95,17 @@
         -ms-hyphens: auto;
             hyphens: auto;
   }
-  .wireframe > div > div {
-    margin-bottom: 1rem;
+  .moodBoard .moodTextArea {
+    padding: 0.5rem 1rem;
+    border-radius: 6px 6px 0 0;
   }
-  .finalProto .imgTextHeading button {
-    margin-bottom: 4rem;
+  .moodBoard .moodBoardImgCont {
+    padding: 0 3.7% 3.7%;
+    border-radius: 0 0 6px 6px;
   }
-  .finalProto .colorScheme {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .finalProto .colorScheme > div p {
-    margin: 0 auto 1.5rem;
+  .finalProto .colorScheme .colorsTextArea {
+    padding-left: 2rem;
+    padding-right: 0;
   }
   .finalProto .proto3 .protoTextArea1 {
     padding: 0 1rem;
@@ -113,7 +113,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .eHead4 .container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -121,6 +121,40 @@
   }
   .eHead4 .container > div svg {
     margin: auto;
+  }
+  .edZ2Body h3 {
+    font-size: 1.75em;
+  }
+  .edZ2Body h4 {
+    font-size: 1.25em;
+  }
+  .finalProto .imgTextHeading .textButtonOuter {
+    margin: 1rem 0;
+  }
+  .finalProto .imgTextHeading .textButtonOuter h2 {
+    margin-bottom: 1rem;
+  }
+  .finalProto .imgTextHeading .textButtonOuter button {
+    margin-top: 1rem;
+  }
+  .finalProto .imgTextHeading .headImg {
+    margin-top: 1rem;
+  }
+  .finalProto .colorScheme {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .finalProto .colorScheme .svgOuter {
+    max-height: 60vh;
+    padding: 0 1rem;
+  }
+  .finalProto .colorScheme .svgOuter svg {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .finalProto .colorScheme .colorsTextArea {
+    padding: 0 1rem;
   }
   .projectsSubsectionRow .card-body {
     padding: 1rem;
@@ -142,7 +176,14 @@
     padding-right: 0;
   }
   .sectionTitle {
-    margin: 4rem 0 2rem !important;
+    margin-left: initial !important;
+    margin-right: initial !important;
+  }
+  .competitiveAnalysis .compAnalysisImgArea h3 {
+    text-align: start;
+  }
+  .journeyMap h3 {
+    text-align: start;
   }
   .siteMap .siteMapImgOuter {
     padding: 0 0.25rem;
@@ -152,6 +193,15 @@
     -webkit-hyphens: initial;
         -ms-hyphens: initial;
             hyphens: initial;
+  }
+  .moodBoard .moodTextArea {
+    text-align: start;
+  }
+  .finalProto .colorScheme .svgOuter svg {
+    margin: 5% auto 0;
+  }
+  .finalProto .scrollGroupsDemo div {
+    padding: 0;
   }
 }
 

@@ -23,9 +23,17 @@
       padding: 0 1rem 0.5rem;
     }
     .hScrollGroup {
-      @include scrollBars(0.5rem, #333333);
       padding: 1rem 0 2rem;
-      margin: 0.5rem auto;
+      margin: 0.5rem 0;
+      max-width: 100%;
+
+      .innerWrapper {
+        @include scrollBars(0.5rem, #333333);
+
+        img {
+          margin: 0.5rem 1.5rem 2rem;
+        }
+      }
     }
   }
 
@@ -33,7 +41,6 @@
     .compAnalysisImgArea {
       h3 {
         text-align: justify;
-        hyphens: auto;
         margin-bottom: 2rem;
       }
       img {
@@ -54,10 +61,12 @@
   .journeyMap {
     h3 {
       text-align: justify;
-      hyphens: auto;
+      hyphens: none;
+      margin-bottom: 1rem;
     }
-    img {
+    .journeyImgOuter {
       margin-top: 1rem;
+      padding: 0.75rem 0.5rem;
     }
   }
 
@@ -67,20 +76,21 @@
     hyphens: auto;
   }
 
-  .wireframe > div > div {
-    margin-bottom: 1rem;
+  .moodBoard {
+    .moodTextArea {
+      padding: 0.5rem 1rem;
+      border-radius: 6px 6px 0 0;
+    }
+    .moodBoardImgCont {
+      padding: 0 3.7% 3.7%;
+      border-radius: 0 0 6px 6px;
+    }
   }
 
   .finalProto {
-    .imgTextHeading button {
-      margin-bottom: 4rem;
-    }
-    .colorScheme {
-      flex-direction: column-reverse;
-
-      > div p {
-        margin: 0 auto 1.5rem;
-      }
+    .colorScheme .colorsTextArea {
+      padding-left: 2rem;
+      padding-right: 0;
     }
     .proto3 .protoTextArea1 {
       padding: 0 1rem;
@@ -89,12 +99,55 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .eHead4 .container {
     justify-content: center;
 
     > div svg {
       margin: auto;
+    }
+  }
+
+  .edZ2Body {
+    h3 {
+      font-size: 1.75em;
+    }
+    h4 {
+      font-size: 1.25em;
+    }
+  }
+
+  .finalProto {
+    .imgTextHeading {
+      .textButtonOuter {
+        margin: 1rem 0;
+
+        h2 {
+          margin-bottom: 1rem;
+        }
+        button {
+          margin-top: 1rem;
+        }
+      }
+      .headImg {
+        margin-top: 1rem;
+      }
+    }
+
+    .colorScheme {
+      flex-wrap: wrap-reverse;
+
+      .svgOuter {
+        max-height: 60vh;
+        padding: 0 1rem;
+
+        svg {
+          width: fit-content;
+        }
+      }
+      .colorsTextArea {
+        padding: 0 1rem;
+      }
     }
   }
 
@@ -142,8 +195,18 @@
   }
 
   .sectionTitle {
-    margin: $sectionTopMargin 0 $sectionTopMargin / 2 !important;
+    margin-left: initial !important;
+    margin-right: initial !important;
   }
+
+  .competitiveAnalysis .compAnalysisImgArea h3 {
+    text-align: start;
+  }
+
+  .journeyMap h3 {
+    text-align: start;
+  }
+
   .siteMap {
     .siteMapImgOuter {
       padding: 0 0.25rem;
@@ -151,6 +214,19 @@
     .siteMapHead h3 {
       text-align: initial;
       hyphens: initial;
+    }
+  }
+
+  .moodBoard .moodTextArea {
+    text-align: start;
+  }
+
+  .finalProto {
+    .colorScheme .svgOuter svg {
+      margin: 5% auto 0;
+    }
+    .scrollGroupsDemo div {
+      padding: 0;
     }
   }
 }

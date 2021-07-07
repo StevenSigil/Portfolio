@@ -27,7 +27,7 @@
     border-radius: 10px;
     background-color: #ffffff;
   }
-  .transparentOverlay {
+  .textOverlay {
     position: fixed;
     bottom: 10px;
     right: 25px;
@@ -54,7 +54,7 @@
   .container {
     display: flex;
     padding: 0;
-    min-height: 50vh;
+    min-height: $sectionHeight;
     align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -95,7 +95,7 @@
 }
 
 .sectionTitle {
-  margin: $sectionTopMargin -1rem $sectionTopMargin / 2;
+  margin: 0 -1rem 0;
   font-size: 3em;
   font-weight: 300;
 }
@@ -140,6 +140,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: $sectionTopMargin;
+  min-height: $sectionHeight;
 
   > div {
     margin: 1rem auto;
@@ -163,40 +164,62 @@
   }
 }
 
-.businessResearch {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  .textArea1 {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.researchSection {
+  h2 {
+    margin-top: $sectionTopMargin;
+    margin-bottom: $sectionTopMargin / 2;
   }
-  .nonTextArea1 {
-    padding: 1rem;
-    margin: 1rem auto;
-    background-color: #333333;
-    box-shadow: $smBoxShadow;
 
-    .img1 {
-      margin: 0.5rem 0 1rem;
-      @include fullWidthImg;
-    }
-    .img2 {
-      margin-left: 0;
-      margin-right: 0;
-      background-color: #fff;
+  .businessResearch {
+    // margin: auto;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: $sectionHeight;
+
+    .textArea1 {
       padding: 1rem;
-      @include fullWidthImg;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .nonTextArea1 {
+      padding: 2rem 1rem;
+      margin: 1rem auto;
+      background-color: #333333;
+      box-shadow: $smBoxShadow;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      // max-width: min-content;
+
+      .img1 {
+        margin-bottom: 2rem;
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        // @include fullWidthImg;
+      }
+      .img2 {
+        // margin: 0 auto 1rem;
+        background-color: #fff;
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        // @include fullWidthImg;
+      }
     }
   }
 }
 
 .userResearch {
-  margin-top: $sectionTopMargin * 2;
+  margin-top: $sectionTopMargin;
+  padding-bottom: $sectionTopMargin;
+  min-height: $sectionHeight;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -206,11 +229,16 @@
     align-items: center;
     padding: 0 2rem 0 1rem;
   }
+  .userTextArea,
+  .usersHeading {
+    margin-bottom: 2rem;
+  }
   .hScrollGroup {
     padding: 1.5rem 0 3rem;
-    margin: 1rem auto;
+    margin: 0 1rem;
     box-shadow: $smBoxShadow;
     max-width: calc(100% - 2rem);
+    border-radius: 12px;
 
     .innerWrapper {
       overflow-x: scroll;
@@ -230,10 +258,11 @@
 }
 
 .competitiveAnalysis {
-  margin-top: $sectionTopMargin * 2;
+  margin-top: $sectionTopMargin;
+  min-height: $sectionHeight;
+  padding: 0 1rem $sectionTopMargin;
   display: flex;
   flex-wrap: wrap;
-  min-height: 60vh;
 
   .compAnalysisImgArea {
     padding: 1rem 0 0;
@@ -242,8 +271,9 @@
     justify-content: space-between;
 
     h3 {
-      margin-bottom: $sectionTopMargin;
+      margin-bottom: $sectionTopMargin / 2;
       margin-right: 1rem;
+      hyphens: none;
     }
     img {
       @include fullWidthImg;
@@ -275,19 +305,25 @@
 }
 
 .journeyMap {
-  margin-top: $sectionTopMargin * 2.5;
-  min-height: 60vh;
+  margin-top: $sectionTopMargin;
+  min-height: $sectionHeight;
+  padding-bottom: $sectionTopMargin;
 
   h3 {
-    margin-bottom: $sectionTopMargin / 2;
+    margin-bottom: $sectionTopMargin / 3;
   }
   .journeyTextArea {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+    > div {
+      padding: 0;
+    }
   }
   .journeyImgOuter {
-    margin-top: $sectionTopMargin / 2;
+    margin-top: 2rem;
     padding: 1rem calc(1rem - 2px);
     box-shadow: $smBoxShadow;
     background-color: #ffffff;
@@ -301,8 +337,9 @@
 }
 
 .siteMap {
-  margin-top: $sectionTopMargin * 2;
-  padding: 1rem 0;
+  margin-top: $sectionTopMargin;
+  min-height: $sectionHeight;
+  padding: 0 0 $sectionTopMargin;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -329,12 +366,17 @@
 }
 
 .moodBoard {
-  margin-top: $sectionTopMargin * 2;
+  margin-top: $sectionTopMargin;
+  min-height: $sectionHeight;
 
   .moodTextArea {
-    margin-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
     text-align: justify;
     text-justify: auto;
+    background-color: #333333;
+    color: #ffffff;
+    box-shadow: $lgAreaShadow;
+    border-radius: 6px 6px 0 6px;
   }
   .moodBoardImgCont {
     background-color: #333333;
@@ -342,11 +384,12 @@
     margin-right: 0;
     margin-left: auto;
     box-shadow: $lgAreaShadow;
-    border-radius: 6px;
+    border-radius: 0 6px 6px 6px;
 
     img {
       max-width: 100%;
       height: auto;
+      cursor: pointer;
     }
   }
 }
@@ -354,19 +397,19 @@
 .wireframe {
   background-color: #222222;
   color: #ffffff;
-  margin-top: $sectionTopMargin * 2;
+  margin-top: $sectionTopMargin;
+  padding-top: $sectionTopMargin;
   padding-bottom: $sectionTopMargin * 2;
 
   .wfPre {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 60vh;
+    min-height: $sectionHeight;
 
     h2 {
-      margin-top: $sectionTopMargin * 2;
-      margin-bottom: $sectionTopMargin * 2;
-      flex-basis: 100%;
+      margin-top: $sectionTopMargin / 2;
+      width: 100%;
     }
     h3 {
       hyphens: none;
@@ -378,12 +421,12 @@
   }
 
   .wf1 {
-    margin-top: $sectionTopMargin * 2;
+    margin-top: $sectionTopMargin;
+    min-height: $sectionHeight;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    min-height: 60vh;
     justify-content: space-between;
 
     .wfImgOuter {
@@ -419,11 +462,28 @@
   }
 
   .wfScrollOuter {
-    margin-top: $sectionTopMargin * 2;
-    margin-bottom: $sectionTopMargin * 2;
+    margin-top: $sectionTopMargin;
+    min-height: $sectionHeight;
+
+    .wfScrollHead {
+      min-height: $sectionTopMargin;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      h3 {
+        margin-bottom: 2rem;
+      }
+      button {
+        margin: 2rem 0 0;
+        padding: 0.5rem 1rem;
+        box-shadow: 0px 1px 10px #fff;
+      }
+    }
 
     .wfScrollInner {
-      margin-top: $sectionTopMargin;
+      margin-top: 4rem;
       box-shadow: $smBoxShadowWhite;
       border-radius: 6px;
       padding: 1rem 0;
@@ -432,8 +492,8 @@
         display: flex;
         flex-direction: row;
         overflow-x: auto;
+        overflow-y: hidden;
         max-height: 75vh;
-
         @include scrollBars(1rem, #353535);
 
         > div {
@@ -467,14 +527,10 @@
   img {
     cursor: pointer;
   }
-  button {
-    margin: 2rem auto 0;
-    box-shadow: 0px 1px 5px #fff;
-  }
 }
 
 .finalProto {
-  margin-top: $sectionTopMargin * 2;
+  margin-top: $sectionTopMargin;
   padding-bottom: $sectionTopMargin * 3;
 
   .imgTextHeading {
@@ -482,102 +538,132 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    min-height: $sectionHeight;
 
     > div {
       padding: 0;
     }
-    .col-lg-3 {
+    .textButtonOuter {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      margin: 2rem 0;
 
       h2 {
+        margin-top: 0;
+        margin-bottom: 2rem;
         @extend .sectionTitle;
       }
       button {
+        margin-top: 2rem;
+        margin-bottom: 0;
         box-shadow: $smBoxShadow;
       }
     }
-    img {
-      max-width: 100%;
-      height: auto;
+    .headImg {
+      margin-top: 2rem;
+
+      img {
+        @include fullWidthImg;
+      }
     }
   }
 
   .colorScheme {
-    margin-top: $sectionTopMargin * 2.5;
+    margin-top: $sectionTopMargin;
+    min-height: $sectionHeight;
     min-height: 60vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
 
     > div {
       display: flex;
       flex-direction: column;
       text-align: justify;
       text-justify: auto;
+    }
+    .svgOuter {
+      padding: 0;
 
       svg {
         box-shadow: $lgAreaShadow;
+        @include fullWidthImg;
+        margin-top: 5%;
       }
+    }
+    .colorsTextArea {
+      height: fit-content;
 
+      h3 {
+        margin: 5% 0;
+      }
       p {
-        min-height: 30%;
-        margin: 5% 0 0;
+        margin: 5% 0;
       }
     }
   }
 
   .subscriptArea {
-    margin-top: $sectionTopMargin * 2.5;
+    margin-top: $sectionTopMargin;
+    min-height: $sectionHeight;
     padding: 2rem 0;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
     .protoTextArea2 {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
 
       h3,
       p {
         margin-bottom: 2rem;
       }
-
       p {
         text-align: justify;
         text-justify: auto;
       }
     }
-    .subsImgContainer {
-      margin: 0 auto;
-
-      img {
-        max-width: 100%;
-        height: auto;
-        box-shadow: $lgAreaShadow;
-      }
+    .subsImgContainer img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: $lgAreaShadow;
     }
   }
 
   .scrollGroupsDemo {
-    margin-top: $sectionTopMargin * 3;
+    margin-top: $sectionTopMargin;
+    min-height: $sectionHeight;
     text-align: end;
+    padding: 2rem 0;
 
     h3 {
       text-align: start;
       height: 50%;
-      margin-bottom: 2rem;
+      margin-bottom: 5%;
     }
     img {
       max-width: 100%;
       height: auto;
+      cursor: initial;
     }
   }
 
   .imgGradients {
-    margin-top: $sectionTopMargin * 3;
+    margin-top: $sectionTopMargin;
+    min-height: $sectionHeight;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+
+    h3 {
+      margin-bottom: 5%;
+    }
 
     .protoTextArea1 {
       display: flex;
@@ -585,16 +671,24 @@
       justify-content: space-evenly;
       text-align: justify;
       text-justify: auto;
+      padding: 2rem 1.5rem 0;
       margin: 0 auto;
       box-shadow: $smBoxShadow;
       margin-bottom: 2rem;
-      padding-top: 1rem;
+
+      p {
+        margin-bottom: 2rem;
+      }
     }
     img {
       max-width: 100%;
       height: auto;
       margin-bottom: 2rem;
     }
+  }
+
+  img {
+    cursor: pointer;
   }
 }
 

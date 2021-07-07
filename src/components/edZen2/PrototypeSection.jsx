@@ -22,7 +22,7 @@ export default function PrototypeSection({ handleImageClick }) {
       <ColorsSection imgClickFunc={handleImageClick} />
       <EmailSection imgClickFunc={handleImageClick} />
       <ScrollGroupSec imgClickFunc={handleImageClick} />
-      <ArticlesSection imgClickFunc={handleImageClick} />
+      <ImgGradientsSec imgClickFunc={handleImageClick} />
     </Container>
   );
 }
@@ -32,12 +32,12 @@ function Heading({ imgClickFunc }) {
 
   return (
     <div className="imgTextHeading">
-      <Col lg={3}>
+      <Col lg={3} className="textButtonOuter">
         <h2 className="sectionTitle">Final Mockups</h2>
         <Button>View Interactive Prototype</Button>
       </Col>
 
-      <Col lg={9}>
+      <Col lg={9} className="headImg">
         <img
           srcSet={imgSrcSet}
           src={protoAll05x}
@@ -51,13 +51,13 @@ function Heading({ imgClickFunc }) {
   );
 }
 
-function ColorsSection() {
+function ColorsSection({ imgClickFunc }) {
   return (
     <div className="colorScheme">
-      <Col lg={5}>
+      <Col lg={4} md={5} className="svgOuter">
         <ColorPallet />
       </Col>
-      <Col lg={7}>
+      <Col lg={6} md={7} className="colorsTextArea">
         <h3>Color Scheme</h3>
         <p>
           To keep with earthy tones, a (mostly) monotone color scheme was
@@ -80,7 +80,7 @@ function EmailSection({ imgClickFunc }) {
 
   return (
     <div className="subscriptArea">
-      <Col lg={5} className="protoTextArea2">
+      <Col xl={5} lg={6} className="protoTextArea2">
         <h3>
           The "Join our Email Subscription" form was given extra attention
         </h3>
@@ -122,11 +122,12 @@ function ScrollGroupSec() {
   );
 }
 
-function ArticlesSection({ imgClickFunc }) {
+function ImgGradientsSec({ imgClickFunc }) {
   const imgSrcSet = `${imgGradientDemo05x} 445w, ${imgGradientDemo1x} 890w`;
 
   return (
     <div className="imgGradients">
+      <h3>Components Made with Universality and Reusability in Mind</h3>
       <Col lg={7}>
         <img
           srcSet={imgSrcSet}

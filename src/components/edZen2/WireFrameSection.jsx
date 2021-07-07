@@ -159,8 +159,10 @@ function WfScrollSec({ imgClickFunc }) {
 
   return (
     <Container className="wfScrollOuter">
-      <h3>Key Wireframe Pages</h3>
-      <Button variant="outline-light">View on XD</Button>
+      <div className="wfScrollHead">
+        <h3>Key Wireframe Pages</h3>
+        <Button variant="outline-light">View on XD</Button>
+      </div>
 
       <div className="wfScrollInner">
         <div className="wireframeScroll">

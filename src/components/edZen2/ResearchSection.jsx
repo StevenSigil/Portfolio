@@ -34,7 +34,7 @@ export default function ResearchSection({ handleImageClick }) {
 
 function Business() {
   return (
-    <Container>
+    <Container className="researchSection">
       <h2 className="sectionTitle">Research</h2>
       <div className="businessResearch">
         <Col lg={7} className="textArea1">
@@ -93,7 +93,7 @@ function UsersSection({ imgClickFunc }) {
           experienced a sense of positive emotion
         </h3>
       </Col>
-      <Col lg={8}>
+      <Col lg={8} className="userTextArea">
         <p>
           A series of user surveys were sent out to randomly selected visitors
           of Everyday Zen, generating a mixture of loyal customers as well as
@@ -217,8 +217,8 @@ function JourneyMapSection({ imgClickFunc }) {
             research.
           </p>
         </Col>
-        <Col lg={1} md={0}></Col>
-        <Col lg={6}>
+
+        <Col lg={5}>
           <p>
             A user's primary goal is inferred to be getting to an article. This
             shows the company's idea of prioritizing content over pushing

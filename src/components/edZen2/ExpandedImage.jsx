@@ -24,7 +24,7 @@ export default function ExpandedImage({ data, handleImageClick }) {
           />
         )}
 
-        <div className="transparentOverlay">
+        <div className="textOverlay">
           <p>touch anywhere to close</p>
         </div>
       </div>
