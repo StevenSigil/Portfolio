@@ -5,6 +5,8 @@ import protoAll05x from "../../public/static/media/edZen_imgs/Prototype2/allPage
 import protoAll075x from "../../public/static/media/edZen_imgs/Prototype2/allPages/allPages@0.75x.png";
 import protoAll1x from "../../public/static/media/edZen_imgs/Prototype2/allPages/allPages@1x.png";
 
+import { prototypeData } from "../../util-data/everydayZen/prototypeData";
+
 import { ReactComponent as ColorPallet } from "../../public/static/media/edZen_imgs/Prototype2/ColorPallet.svg";
 
 import subscribeForm05x from "../../public/static/media/edZen_imgs/Prototype2/subForm/subscriptionSignup@0.5x.png";
@@ -23,6 +25,7 @@ export default function PrototypeSection({ handleImageClick }) {
       <EmailSection imgClickFunc={handleImageClick} />
       <ScrollGroupSec imgClickFunc={handleImageClick} />
       <ImgGradientsSec imgClickFunc={handleImageClick} />
+      <ProtoScrollSec imgClickFunc={handleImageClick} />
     </Container>
   );
 }
@@ -156,5 +159,37 @@ function ImgGradientsSec({ imgClickFunc }) {
         </p>
       </Col>
     </div>
+  );
+}
+
+function ProtoScrollSec({ imgClickFunc }) {
+  function ScrollItem({ element }) {
+    return (
+      <div>
+        <h4>{element.heading}</h4>
+        <img
+          src={element.img}
+          alt={element.alt}
+          onClick={() => imgClickFunc(element.img, null, element.alt, false)}
+        />
+      </div>
+    );
+  }
+
+  return (
+    <Container className="protoScrollOuter">
+      <div className="ScrollHead">
+        <h3>Key Wireframe Pages</h3>
+        <Button>View on XD</Button>
+      </div>
+
+      <div className="ScrollInner">
+        <div className="protoScroll">
+          {prototypeData.map((el, index) => {
+            return <ScrollItem key={index} element={el} />;
+          })}
+        </div>
+      </div>
+    </Container>
   );
 }

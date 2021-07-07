@@ -32,7 +32,7 @@ export default function EdZen2() {
       <ExpandedImage data={lgImgData} handleImageClick={handleImageClick} />
 
       <span className="edZ2Body">
-        <PageHeading />
+        <PageHeading handleImageClick={handleImageClick} />
 
         <IntroSection />
 

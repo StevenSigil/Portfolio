@@ -17,18 +17,18 @@
   width: 100%;
   height: 100%;
   background-color: #000000de;
+  text-align: center;
   overflow-y: auto;
   padding: 25px 5%;
   z-index: 90;
   display: block;
+  cursor: pointer;
 }
 
 .staticLgImg img {
   max-width: 100%;
   height: auto;
   margin: auto;
-  max-width: 100%;
-  height: auto;
 }
 
 .staticLgImg .imgWithBg {
@@ -116,6 +116,7 @@
 
 .eHead4 .container > div img {
   max-width: 100%;
+  cursor: pointer;
 }
 
 .needsCenteredAll {
@@ -976,6 +977,116 @@
   max-width: 100%;
   height: auto;
   margin-bottom: 2rem;
+}
+
+.finalProto .protoScrollOuter {
+  margin-top: 15vh;
+  min-height: 60vh;
+}
+
+.finalProto .protoScrollOuter .ScrollHead {
+  min-height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.finalProto .protoScrollOuter .ScrollHead h3 {
+  margin-bottom: 2rem;
+}
+
+.finalProto .protoScrollOuter .ScrollHead button {
+  margin: 2rem 0 0;
+  padding: 0.5rem 1rem;
+  -webkit-box-shadow: 0 1px 5px 1px #494949;
+          box-shadow: 0 1px 5px 1px #494949;
+}
+
+.finalProto .protoScrollOuter .ScrollInner {
+  margin-top: 4rem;
+  -webkit-box-shadow: 0 1px 5px 1px #494949;
+          box-shadow: 0 1px 5px 1px #494949;
+  border-radius: 6px;
+  padding: 2rem 0 3rem;
+}
+
+.finalProto .protoScrollOuter .ScrollInner .protoScroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-height: 75vh;
+  padding-bottom: 2rem;
+}
+
+.finalProto .protoScrollOuter .ScrollInner .protoScroll::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.66667rem;
+}
+
+.finalProto .protoScrollOuter .ScrollInner .protoScroll::-webkit-scrollbar-thumb {
+  background: #353535;
+  border-radius: 0.66667rem;
+}
+
+.finalProto .protoScrollOuter .ScrollInner .protoScroll::-webkit-scrollbar-track {
+  background: #868686;
+  border-radius: 0.66667rem;
+  -webkit-box-shadow: 0 2px 5px #000;
+          box-shadow: 0 2px 5px #000;
+  margin: 0 5vw;
+}
+
+.finalProto .protoScrollOuter .ScrollInner .protoScroll {
+  scrollbar-face-color: #353535;
+  scrollbar-track-color: #868686;
+}
+
+.finalProto .protoScrollOuter .ScrollInner .protoScroll > div {
+  max-height: 100%;
+  min-width: 35%;
+  max-width: 70%;
+  text-align: center;
+  margin: 0 2rem 1rem;
+}
+
+.finalProto .protoScrollOuter .ScrollInner .protoScroll > div:first-child {
+  margin-left: 4rem;
+}
+
+.finalProto .protoScrollOuter .ScrollInner .protoScroll > div:last-child {
+  margin-right: 4rem;
+}
+
+.finalProto .protoScrollOuter .ScrollInner .protoScroll > div h4 {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.finalProto .protoScrollOuter .ScrollInner .protoScroll > div img {
+  max-height: 95%;
+  max-width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 1px 5px 1px #494949;
+          box-shadow: 0 1px 5px 1px #494949;
+  margin-bottom: 0;
+  margin-top: auto;
 }
 
 .finalProto img {
