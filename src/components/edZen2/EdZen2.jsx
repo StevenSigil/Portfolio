@@ -10,6 +10,7 @@ import PrototypeSection from "./PrototypeSection";
 import Footer from "../Footer";
 
 import ExpandedImage from "./ExpandedImage";
+import TopOfPageBtn from "./TopOfPageBtn";
 
 export default function EdZen2() {
   const [showLargerImage, setShowLargerImage] = useState(false);
@@ -29,6 +30,7 @@ export default function EdZen2() {
 
   return (
     <>
+      <TopOfPageBtn />
       <ExpandedImage data={lgImgData} handleImageClick={handleImageClick} />
 
       <span className="edZ2Body">

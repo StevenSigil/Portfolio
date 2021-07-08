@@ -1,4 +1,13 @@
 @media (max-width: 1200px) {
+  .fixedTopBtn {
+    right: 10px;
+    bottom: 10px;
+
+    p {
+      font-size: 1em;
+    }
+  }
+
   .sectionHeading {
     width: 100%;
   }
@@ -9,6 +18,16 @@
 }
 
 @media (max-width: 992px) {
+  .fixedTopBtn {
+    right: 5px;
+    bottom: 7px;
+    padding: 5px;
+
+    p {
+      font-size: 1em;
+    }
+  }
+
   .eHead4 .container > div p {
     margin: 2rem auto 0;
   }
@@ -166,6 +185,10 @@
 }
 
 @media (max-width: 576px) {
+  .fixedTopBtn {
+    display: none;
+  }
+
   .eHead4 .container > div {
     padding-left: 0;
     padding-right: 0;

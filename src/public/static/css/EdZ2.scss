@@ -1,5 +1,40 @@
 @import "scss/variables", "scss/mixin";
 
+.fixedTopBtn {
+  @include linkColoredCanExpand(
+    $scale: 1.1,
+    $bg: #333333,
+    $hovShadow: $lgAreaShadow
+  );
+
+  display: block;
+  text-align: center;
+  box-shadow: $smBoxShadow;
+  position: fixed;
+  z-index: 1;
+  bottom: 25px;
+  right: 20px;
+  padding: 10px 10px;
+  // border: 2px solid #000;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  svg {
+    @include fullWidthImg;
+    fill: #ffffff;
+  }
+  p {
+    font-size: 1em;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 0;
+    color: #ffffff;
+    font-weight: 300;
+  }
+}
+
 .staticLgImg {
   position: fixed;
   top: 0px;

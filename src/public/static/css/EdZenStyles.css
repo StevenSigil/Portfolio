@@ -1,3 +1,15 @@
+@-webkit-keyframes glowing {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes glowing {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
 @-webkit-keyframes moveGradient {
   50% {
     background-position: 100% 50%;
@@ -544,12 +556,6 @@ header .mainHeadBack:hover svg {
   -webkit-box-shadow: 1px 5px 15px 1px #000000de;
           box-shadow: 1px 5px 15px 1px #000000de;
   border-radius: 10px;
-}
-
-@-webkit-keyframes glowing {
-  50% {
-    background-position: 100% 50%;
-  }
 }
 
 @keyframes glowing {
