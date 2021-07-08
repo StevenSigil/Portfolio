@@ -78,7 +78,7 @@
       img {
         max-width: 100%;
         cursor: pointer;
-        box-shadow: 0px 0px 10px #ffffff;
+        box-shadow: $smBoxShadowWhite, $smBoxShadowWhite;
         border-radius: 10px;
       }
     }
@@ -92,7 +92,8 @@
 }
 
 .sectionTitle {
-  margin: 0 -1rem 0;
+  margin-left: -1rem;
+  margin-bottom: 0;
   font-size: 3em;
   font-weight: 300;
 }
@@ -136,8 +137,8 @@
 .introSection {
   display: flex;
   flex-wrap: wrap;
-  margin-top: $sectionTopMargin;
-  min-height: $sectionHeight;
+  padding: $sectionPadding;
+  // min-height: $sectionHeight;
 
   > div {
     margin: 1rem auto;
@@ -167,23 +168,33 @@
 }
 
 .researchSection {
+  padding: $sectionPadding;
+
   h2 {
-    margin-top: $sectionTopMargin;
-    margin-bottom: $sectionTopMargin / 2;
+    margin-bottom: 3rem;
+    @extend .sectionTitle;
   }
 
   .businessResearch {
-    padding-bottom: 2rem;
+    // padding-bottom: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: $sectionHeight;
+    align-items: flex-start;
+    // min-height: $sectionHeight;
 
     .textArea1 {
       padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between;
+
+      h3 {
+        font-weight: 600;
+      }
+      p {
+        margin: 3rem 0;
+      }
     }
     .nonTextArea1 {
       padding: 2rem 1rem;
@@ -191,18 +202,22 @@
       background-color: #333333;
       box-shadow: $smBoxShadow;
 
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between;
+      // align-items: center;
+      text-align: center;
+      max-height: fit-content;
+      max-width: calc(500px + 4rem);
 
       .img1 {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         max-width: 500px;
         width: 100%;
         height: auto;
       }
       .img2 {
+        // margin-bottom: 3rem;
         background-color: #fff;
         max-width: 500px;
         width: 100%;
@@ -214,9 +229,10 @@
 }
 
 .userResearch {
-  margin-top: $sectionTopMargin;
-  padding-bottom: $sectionTopMargin;
-  min-height: $sectionHeight;
+  // margin-top: $sectionTopMargin;
+  // padding-bottom: $sectionTopMargin;
+  // min-height: $sectionHeight;
+  padding: $sectionPadding;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -225,13 +241,23 @@
     display: flex;
     align-items: center;
     padding: 0 2rem 0 1rem;
+
+    h3 {
+      margin: 0;
+      font-weight: 600;
+    }
   }
-  .userTextArea,
+
   .usersHeading {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
+  .userTextArea p,
+  ul {
+    margin-bottom: 3rem;
+  }
+
   .hScrollGroup {
-    padding: 1.5rem 0 3rem;
+    padding: 1rem 0 1rem;
     margin: 0 1rem;
     box-shadow: $smBoxShadow;
     max-width: calc(100% - 2rem);
@@ -255,21 +281,24 @@
 }
 
 .competitiveAnalysis {
-  margin-top: $sectionTopMargin;
-  min-height: $sectionHeight;
-  padding: 0 1rem $sectionTopMargin;
+  // margin-top: $sectionTopMargin;
+  // min-height: $sectionHeight;
+  // padding: 0 1rem $sectionTopMargin;
+  padding: $sectionPadding;
   display: flex;
   flex-wrap: wrap;
 
   .compAnalysisImgArea {
-    padding: 1rem 0 0;
+    // padding: 1rem 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     h3 {
-      margin-bottom: $sectionTopMargin / 2;
-      margin-right: 1rem;
+      margin: 1rem 1rem 3rem 0;
+      font-weight: 600;
+      // margin-bottom: 3rem;
+      // margin-right: 1rem;
       hyphens: none;
     }
     img {
@@ -281,14 +310,15 @@
     }
   }
   .compAnalysisTextArea {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
     box-shadow: $smBoxShadow;
     padding-top: 1rem;
 
     h4 {
-      margin-bottom: 0.5rem;
+      // margin-bottom: 0.5rem;
+      margin-bottom: 3rem;
       border-bottom: 1px solid;
       width: fit-content;
       padding-top: 0.2em;
@@ -296,18 +326,21 @@
     li {
       text-align: justify;
       text-justify: auto;
-      margin-bottom: 1.2em;
+      // margin-bottom: 1.2em;
+      margin-bottom: 3rem;
     }
   }
 }
 
 .journeyMap {
-  margin-top: $sectionTopMargin;
-  min-height: $sectionHeight;
-  padding-bottom: $sectionTopMargin;
+  // margin-top: $sectionTopMargin;
+  // min-height: $sectionHeight;
+  // padding-bottom: $sectionTopMargin;
+  padding: $sectionPadding;
 
   h3 {
-    margin-bottom: $sectionTopMargin / 3;
+    margin-bottom: 3rem;
+    font-weight: 600;
   }
   .journeyTextArea {
     display: flex;
@@ -317,11 +350,14 @@
 
     > div {
       padding: 0;
+
+      p {
+        margin-bottom: 3rem;
+      }
     }
   }
   .journeyImgOuter {
-    margin-top: 2rem;
-    padding: 1rem calc(1rem - 2px);
+    padding: 0.5rem;
     box-shadow: $smBoxShadow;
     background-color: #ffffff;
     border-radius: 10px;
@@ -329,14 +365,13 @@
 
     img {
       background-color: inherit;
+      border-radius: inherit;
     }
   }
 }
 
 .siteMap {
-  margin-top: $sectionTopMargin;
-  min-height: $sectionHeight;
-  padding: 0 0 $sectionTopMargin;
+  padding: $sectionPadding;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -346,11 +381,12 @@
     padding: 0;
 
     h3 {
-      margin: 0 auto 2rem 1rem;
+      font-weight: 600;
       max-width: 90%;
       padding: 1rem;
       box-shadow: $smBoxShadow;
       border-radius: 6px;
+      hyphens: none;
     }
   }
   .siteMapImgOuter {
@@ -363,8 +399,7 @@
 }
 
 .moodBoard {
-  margin-top: $sectionTopMargin;
-  min-height: $sectionHeight;
+  padding: $sectionPadding;
 
   .moodTextArea {
     padding: 1rem 1.5rem;
@@ -374,14 +409,21 @@
     color: #ffffff;
     box-shadow: $lgAreaShadow;
     border-radius: 6px 6px 0 6px;
+    z-index: 1;
+
+    h3 {
+      margin: 0;
+    }
   }
   .moodBoardImgCont {
-    background-color: #333333;
+    background-color: #333333e0;
     padding: 3.7% 3.7%;
     margin-right: 0;
     margin-left: auto;
-    box-shadow: $lgAreaShadow;
+    margin-top: -1rem;
+    box-shadow: $smBoxShadow;
     border-radius: 0 6px 6px 6px;
+    z-index: 0;
 
     img {
       max-width: 100%;
@@ -394,32 +436,35 @@
 .wireframe {
   background-color: #222222;
   color: #ffffff;
-  margin-top: $sectionTopMargin;
-  padding-top: $sectionTopMargin;
-  padding-bottom: $sectionTopMargin * 2;
+  margin-top: 3rem;
+  padding: $sectionPadding;
 
   .wfPre {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: $sectionHeight;
+    padding: $sectionPadding;
 
     h2 {
-      margin-top: $sectionTopMargin / 2;
-      width: 100%;
+      flex-basis: 100%;
+      margin-bottom: 3rem;
+      @extend .sectionTitle;
     }
     h3 {
       hyphens: none;
+      font-weight: 600;
+    }
+    h3,
+    p {
+      margin-bottom: 3rem;
     }
     > div {
-      margin-top: $sectionTopMargin / 2;
       padding: 0;
     }
   }
 
   .wf1 {
-    margin-top: $sectionTopMargin;
-    min-height: $sectionHeight;
+    padding: $sectionPadding;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -434,6 +479,7 @@
       img {
         background-color: inherit;
         border-radius: inherit;
+        box-shadow: $smBoxShadowWhite;
       }
     }
 
@@ -441,7 +487,7 @@
       padding: 0;
     }
     p {
-      margin-bottom: 1.5rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -459,8 +505,7 @@
   }
 
   .wfScrollOuter {
-    margin-top: $sectionTopMargin * 1;
-    min-height: $sectionHeight;
+    padding: $sectionPadding;
 
     .wfScrollHead {
       display: flex;
@@ -469,12 +514,12 @@
       align-items: flex-start;
 
       h3 {
-        margin: 0;
+        margin-bottom: 3rem;
+        font-weight: 600;
       }
     }
 
     .wfScrollInner {
-      margin-top: $sectionTopMargin / 2;
       box-shadow: $smBoxShadowWhite;
       border-radius: 6px;
       padding: 1rem 0;
@@ -502,8 +547,8 @@
           }
           h4 {
             white-space: nowrap;
-            text-overflow: fade;
             overflow: hidden;
+            font-weight: 300;
           }
           img {
             max-height: 95%;
@@ -521,15 +566,14 @@
 }
 
 .finalProto {
-  margin-top: $sectionTopMargin;
-  padding-bottom: $sectionTopMargin * 3;
+  padding: $sectionPadding;
 
   .imgTextHeading {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    min-height: $sectionHeight;
+    padding: $sectionPadding;
 
     > div {
       padding: 0;
@@ -538,23 +582,19 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      margin: 2rem 0;
 
       h2 {
         margin-top: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         @extend .sectionTitle;
       }
       button,
       a {
-        margin-top: 2rem;
-        margin-bottom: 0;
+        margin-bottom: 3rem;
         box-shadow: $smBoxShadow;
       }
     }
     .headImg {
-      margin-top: 2rem;
-
       img {
         @include fullWidthImg;
       }
@@ -562,45 +602,34 @@
   }
 
   .colorScheme {
-    margin-top: $sectionTopMargin;
-    min-height: $sectionHeight;
+    padding: $sectionPadding;
     min-height: 60vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 
-    > div {
-      display: flex;
-      flex-direction: column;
-      text-align: justify;
-      text-justify: auto;
-    }
     .svgOuter {
       padding: 0;
 
       svg {
         box-shadow: $lgAreaShadow;
         @include fullWidthImg;
-        margin-top: 5%;
       }
     }
     .colorsTextArea {
-      height: fit-content;
-
       h3 {
-        margin: 5% 0;
+        margin-bottom: 3rem;
+        font-weight: 600;
       }
       p {
-        margin: 5% 0;
+        margin-bottom: 3rem;
       }
     }
   }
 
   .subscriptArea {
-    margin-top: $sectionTopMargin;
-    min-height: $sectionHeight;
-    padding: 2rem 0;
+    padding: $sectionPadding;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -612,104 +641,115 @@
       flex-direction: column;
       justify-content: space-between;
 
-      h3,
-      p {
-        margin-bottom: 2rem;
+      h3 {
+        font-weight: 600;
       }
       p {
         text-align: justify;
         text-justify: auto;
       }
+      h3,
+      p {
+        margin-bottom: 3rem;
+      }
     }
-    .subsImgContainer img {
-      max-width: 100%;
-      height: auto;
-      box-shadow: $lgAreaShadow;
+    .subsImgContainer {
+      padding: 0;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        box-shadow: $lgAreaShadow;
+      }
     }
   }
 
   .scrollGroupsDemo {
-    margin-top: $sectionTopMargin;
-    min-height: $sectionHeight;
-    text-align: end;
-    padding: 2rem 0;
+    padding: 5rem 0;
 
-    h3 {
-      text-align: start;
-      height: 50%;
-      margin-bottom: 5%;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      cursor: initial;
+    .outer {
+      padding: 1rem;
+      box-shadow: $smBoxShadow;
+      border-radius: 6px;
+
+      .col1 {
+        margin-left: 0;
+        margin-right: auto;
+
+        h3 {
+          margin-bottom: 3rem;
+          font-weight: 600;
+        }
+      }
+      .col2 {
+        margin-left: auto;
+        margin-right: 0;
+        padding: 0;
+
+        img {
+          width: 100%;
+          height: auto;
+          cursor: initial;
+        }
+      }
     }
   }
 
   .imgGradients {
-    margin-top: $sectionTopMargin;
-    min-height: $sectionHeight;
+    padding: $sectionPadding;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 
     h3 {
-      margin-bottom: 5%;
+      margin-bottom: 3rem;
+      font-weight: 600;
+    }
+
+    .imgGradImgOuter {
+      margin-bottom: 3rem;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
     }
 
     .protoTextArea1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      text-align: justify;
-      text-justify: auto;
-      padding: 2rem 1.5rem 0;
-      margin: 0 auto;
       box-shadow: $smBoxShadow;
-      margin-bottom: 2rem;
+      padding-top: 3rem;
+      border-radius: 6px;
+      margin: 0 auto 3rem auto;
 
       p {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 2rem;
-    }
-  }
-
-  .resultsSec {
-    margin-top: $sectionTopMargin * 1.5;
-    margin-bottom: $sectionTopMargin;
-
-    h2 {
-      margin-bottom: 2rem;
-    }
-    button,
-    a {
-      margin: 1rem 0;
-      padding: 0.5rem 1rem;
-      box-shadow: $smBoxShadow;
     }
   }
 
   .protoScrollOuter {
-    margin-top: $sectionTopMargin;
-    min-height: $sectionHeight;
+    padding: $sectionPadding;
 
-    .ScrollHead {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-start;
+    .resultsHead {
+      h2 {
+        margin-bottom: 3rem;
+        @extend .sectionTitle;
+      }
+      button,
+      a {
+        margin-bottom: 3rem;
+        box-shadow: $smBoxShadow;
+      }
+    }
+
+    h3 {
+      font-weight: 600;
+      margin-bottom: 3rem;
     }
 
     .ScrollInner {
-      margin-top: 1rem;
       box-shadow: $smBoxShadow;
       border-radius: 6px;
-      padding: 2rem 0 3rem;
+      padding: 3rem 0;
 
       .protoScroll {
         display: flex;
@@ -725,13 +765,13 @@
           min-width: 35%;
           max-width: 70%;
           text-align: center;
-          margin: 0 2rem 1rem;
+          margin: 0 3rem;
 
           &:first-child {
-            margin-left: 4rem;
+            margin-left: 6rem;
           }
           &:last-child {
-            margin-right: 4rem;
+            margin-right: 6rem;
           }
           h4 {
             white-space: nowrap;

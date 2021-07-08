@@ -31,12 +31,13 @@ export default function PrototypeSection({ handleImageClick }) {
 }
 
 function Heading({ imgClickFunc }) {
-  const imgSrcSet = `${protoAll05x} 961w, ${protoAll075x} 1440w, ${protoAll1x} 1921 w`;
+  const imgSrcSet = `${protoAll05x} 961w, ${protoAll075x} 1440w, ${protoAll1x} 1921w`;
 
   return (
     <div className="imgTextHeading">
       <Col lg={3} className="textButtonOuter">
-        <h2 className="sectionTitle">Final Mockups</h2>
+        <h2 className="">Final Mockups</h2>
+
         <Button href="https://xd.adobe.com/view/d4155688-0edc-460a-9a10-0f1ae6d83d83-8146/?fullscreen">
           View Prototype on XD
         </Button>
@@ -101,7 +102,7 @@ function EmailSection({ imgClickFunc }) {
       </Col>
       <Col lg={6} className="subsImgContainer">
         <img
-          srcset={imgSrcSet}
+          srcSet={imgSrcSet}
           src={subscribeForm05x}
           alt="Email Subscription Form"
           onClick={() =>
@@ -116,13 +117,17 @@ function EmailSection({ imgClickFunc }) {
 function ScrollGroupSec() {
   return (
     <div className="scrollGroupsDemo">
-      <Col lg={6}>
-        <h3>
-          Scroll groups were used to display lists of article previews and
-          product images.
-        </h3>
-      </Col>
-      <img src={scrollDemo} alt="Scroll Group Demo" />
+      <div className="outer">
+        <Col lg={7} md={12} className="col1">
+          <h3>
+            Scroll groups were used to display lists of article previews and
+            product images.
+          </h3>
+        </Col>
+        <Col sm={12} className="col2">
+          <img src={scrollDemo} alt="Scroll Group Demo" />
+        </Col>
+      </div>
     </div>
   );
 }
@@ -132,8 +137,10 @@ function ImgGradientsSec({ imgClickFunc }) {
 
   return (
     <div className="imgGradients">
-      <h3>Components Made with Universality and Reusability in Mind</h3>
-      <Col lg={7}>
+      <Col xl={7} lg={12}>
+        <h3>Components Made with Universality and Reusability in Mind</h3>
+      </Col>
+      <Col lg={7} className="imgGradImgOuter">
         <img
           srcSet={imgSrcSet}
           src={imgGradientDemo1x}
@@ -180,17 +187,15 @@ function ProtoScrollSec({ imgClickFunc }) {
 
   return (
     <>
-      <div className="resultsSec">
-        <h2 className="sectionTitle">Results</h2>
-        <Button href="https://xd.adobe.com/view/d4155688-0edc-460a-9a10-0f1ae6d83d83-8146/?fullscreen">
-          View Prototype on XD
-        </Button>
-      </div>
-
       <Container className="protoScrollOuter">
-        <div className="ScrollHead">
-          <h3>Key Pages</h3>
+        <div className="resultsHead">
+          <h2>Results</h2>
+          <Button href="https://xd.adobe.com/view/d4155688-0edc-460a-9a10-0f1ae6d83d83-8146/?fullscreen">
+            View Prototype on XD
+          </Button>
         </div>
+
+        <h3>Key Pages</h3>
 
         <div className="ScrollInner">
           <div className="protoScroll">

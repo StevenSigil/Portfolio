@@ -10,18 +10,12 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .sectionHeading {
-    width: 60%;
-  }
-  .projectsHeadingSection {
-    max-width: 45vw;
-  }
-}
-
 @media (max-width: 1200px) {
   .sectionHeading {
     width: 100%;
+  }
+  .moodBoard .moodTextArea {
+    padding: 1rem;
   }
 }
 
@@ -29,12 +23,15 @@
   .eHead4 .container > div p {
     margin: 2rem auto 0;
   }
-  .userResearch .usersHeading {
-    padding: 0 1rem 0.5rem;
+  .researchSection .businessResearch .textArea1 {
+    padding: 0;
+  }
+  .userResearch .usersHeading,
+  .userResearch .userTextArea {
+    padding: 0;
   }
   .userResearch .hScrollGroup {
-    padding: 1rem 0 2rem;
-    margin: 0.5rem 0;
+    margin: 0;
     max-width: 100%;
   }
   .userResearch .hScrollGroup .innerWrapper::-webkit-scrollbar {
@@ -60,6 +57,9 @@
   .userResearch .hScrollGroup .innerWrapper img {
     margin: 0.5rem 1.5rem 2rem;
   }
+  .competitiveAnalysis .compAnalysisImgArea {
+    padding: 0;
+  }
   .competitiveAnalysis .compAnalysisImgArea h3 {
     text-align: justify;
     margin-bottom: 2rem;
@@ -71,45 +71,61 @@
     margin-top: 2rem;
   }
   .competitiveAnalysis .compAnalysisTextArea h4 {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
   }
   .competitiveAnalysis .compAnalysisTextArea li {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   .journeyMap h3 {
     text-align: justify;
     -webkit-hyphens: none;
         -ms-hyphens: none;
             hyphens: none;
-    margin-bottom: 1rem;
   }
   .journeyMap .journeyImgOuter {
-    margin-top: 1rem;
-    padding: 0.75rem 0.5rem;
+    padding: 0.25rem;
   }
   .siteMap .siteMapHead h3 {
     -webkit-box-shadow: none;
             box-shadow: none;
-    text-align: justify;
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+  .siteMap .siteMapImgOuter {
+    padding: 0;
   }
   .moodBoard .moodTextArea {
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     border-radius: 6px 6px 0 0;
+    background-color: #333333;
+    -webkit-box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
+            box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
+    z-index: 1;
   }
   .moodBoard .moodBoardImgCont {
-    padding: 0 3.7% 3.7%;
+    padding: 0.5rem 3.7% 3.7%;
     border-radius: 0 0 6px 6px;
+    margin-top: 0px;
+    z-index: 0;
+    -webkit-box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
+            box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
+    background-color: #333333;
+  }
+  .finalProto .colorScheme {
+    padding-left: 0;
+    padding-right: 0;
   }
   .finalProto .colorScheme .colorsTextArea {
     padding-left: 2rem;
     padding-right: 0;
   }
-  .finalProto .proto3 .protoTextArea1 {
+  .finalProto .colorScheme .proto3 .protoTextArea1 {
     padding: 0 1rem;
     margin: 2rem auto;
+  }
+  .finalProto .subscriptArea .subsImgContainer {
+    padding: 0 1rem;
   }
 }
 
@@ -128,25 +144,15 @@
   .edZ2Body h4 {
     font-size: 1.25em;
   }
-  .finalProto .imgTextHeading .textButtonOuter {
-    margin: 1rem 0;
-  }
-  .finalProto .imgTextHeading .textButtonOuter h2 {
-    margin-bottom: 1rem;
-  }
-  .finalProto .imgTextHeading .textButtonOuter button {
-    margin-top: 1rem;
-  }
-  .finalProto .imgTextHeading .headImg {
-    margin-top: 1rem;
-  }
   .finalProto .colorScheme {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
   }
   .finalProto .colorScheme .svgOuter {
-    max-height: 60vh;
     padding: 0 1rem;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
   .finalProto .colorScheme .svgOuter svg {
     width: -webkit-fit-content;
@@ -162,12 +168,6 @@
   .introSection > div {
     padding: 1rem;
   }
-  .siteMap {
-    min-height: auto;
-  }
-  .siteMap .siteMapHead h3 {
-    padding: initial;
-  }
 }
 
 @media (max-width: 576px) {
@@ -179,29 +179,58 @@
     margin-left: initial !important;
     margin-right: initial !important;
   }
+  .researchSection h2 {
+    margin-left: initial;
+  }
+  .wireframe .wfPre h2 {
+    margin-left: initial;
+  }
   .competitiveAnalysis .compAnalysisImgArea h3 {
     text-align: start;
   }
   .journeyMap h3 {
     text-align: start;
   }
-  .siteMap .siteMapImgOuter {
-    padding: 0 0.25rem;
-  }
-  .siteMap .siteMapHead h3 {
-    text-align: initial;
-    -webkit-hyphens: initial;
-        -ms-hyphens: initial;
-            hyphens: initial;
-  }
   .moodBoard .moodTextArea {
     text-align: start;
+  }
+  .finalProto .imgTextHeading {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .finalProto .imgTextHeading .textButtonOuter h2 {
+    margin-left: 0;
   }
   .finalProto .colorScheme .svgOuter svg {
     margin: 5% auto 0;
   }
+  .finalProto .subscriptArea .subsImgContainer,
+  .finalProto .protoTextArea2 {
+    padding: 0;
+  }
   .finalProto .scrollGroupsDemo div {
     padding: 0;
+  }
+  .finalProto .imgGradients .protoTextArea1 {
+    padding: 3rem 0.5rem 0;
+  }
+  .finalProto .imgGradients > div {
+    padding: 0;
+  }
+  .finalProto .protoScrollOuter {
+    padding: 0;
+  }
+  .finalProto .protoScrollOuter .resultsHead h2 {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sectionHeading {
+    width: 60%;
+  }
+  .projectsHeadingSection {
+    max-width: 45vw;
   }
 }
 

@@ -22,7 +22,7 @@ export default function WireFrameSection({ handleImageClick }) {
 function WfHead() {
   return (
     <Container className="wfPre">
-      <h2 className="sectionTitle">Wireframe</h2>
+      <h2>Wireframe</h2>
 
       <Col lg={6}>
         <h3>

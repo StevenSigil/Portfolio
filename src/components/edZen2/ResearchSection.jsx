@@ -35,16 +35,19 @@ export default function ResearchSection({ handleImageClick }) {
 function Business() {
   return (
     <Container className="researchSection">
-      <h2 className="sectionTitle">Research</h2>
+      <h2>Research</h2>
+
       <div className="businessResearch">
         <Col lg={7} className="textArea1">
-          <h3>Getting everyone on the same page clarified our objective</h3>
+          <h3>Getting everyone on the same page clarified our objectives</h3>
+
           <p>
             At this early stage of development, it was crucial to declare what
             exactly the goals of Everyday Zen were in regards to this project.
             After a large list of wants and needs was produced, an overall theme
             was agreed upon.{" "}
           </p>
+
           <p>
             That theme was to
             <strong>
@@ -53,10 +56,12 @@ function Business() {
               the authors, and sharing content on third party sites.{" "}
             </strong>{" "}
           </p>
+
           <p>
             Doing this, it is expected to see an increase in email subscriptions
             and sales naturally given an efficient route to get there.
           </p>
+
           <p>
             To further increase specificity of project needs, four main
             objectives were concluded, then ranked to compare the importance of
@@ -72,6 +77,7 @@ function Business() {
             src={ivfTable}
             alt="Importance Vs. Feasibility Table"
           />
+
           <img
             className="img2"
             srcSet={`${ivfPlot05x} 330w, ${ivfPlot075x} 495w`}
@@ -99,7 +105,7 @@ function UsersSection({ imgClickFunc }) {
           of Everyday Zen, generating a mixture of loyal customers as well as
           first time visitors.{" "}
         </p>
-        <p>
+        <p style={{ marginBottom: "1rem" }}>
           Aggregating the user's responses, four consistent themes were noticed:
         </p>
 
@@ -241,11 +247,11 @@ function JourneyMapSection({ imgClickFunc }) {
 function SiteMapSection({ imgClickFunc }) {
   return (
     <Container className="siteMap">
-      <Col lg={3} className="siteMapHead">
+      <Col xl={3} lg={4} className="siteMapHead">
         <h3>Key Navigation Paths and Most Important Content were Defined</h3>
       </Col>
 
-      <Col lg={9} className="siteMapImgOuter">
+      <Col xl={9} lg={8} className="siteMapImgOuter">
         <img
           src={siteMap}
           alt="Everyday Zen's new site map"
@@ -261,7 +267,7 @@ function SiteMapSection({ imgClickFunc }) {
 function MoodBoardSection({ imgClickFunc }) {
   return (
     <Container className="moodBoard">
-      <Col lg={6} className="moodTextArea">
+      <Col xl={6} lg={8} className="moodTextArea">
         <h3>
           A Mood Board was Created to Define the Style of the Websites as
           Minimalistic, Earthy Toned and High Contrast
