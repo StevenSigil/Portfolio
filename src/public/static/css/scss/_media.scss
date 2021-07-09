@@ -140,11 +140,16 @@
 }
 
 @media (max-width: 767px) {
-  .eHead4 .container {
-    justify-content: center;
+  .eHead4 {
+    .absoluteHomeArrow {
+      top: 15%;
+    }
+    .container {
+      justify-content: center;
 
-    > div svg {
-      margin: auto;
+      > div svg {
+        margin: auto;
+      }
     }
   }
 
@@ -189,9 +194,15 @@
     display: none;
   }
 
-  .eHead4 .container > div {
-    padding-left: 0;
-    padding-right: 0;
+  .eHead4 {
+    .absoluteHomeArrow {
+      top: 0.25rem;
+      right: 0;
+    }
+    .container > div {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   .sectionTitle {

@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Col } from "react-bootstrap";
 
+import { ReactComponent as BackArrow } from "../../public/static/media/logos-icons/backArrow.svg";
 import { ReactComponent as EdZenLogo } from "../../public/static/media/edZen_imgs/edZenLogo.svg";
 
 import exProtoHome05x from "../../public/static/media/edZen_imgs/Prototype2/fullVhHome/100vhHome@0.5x.png";
@@ -11,11 +13,18 @@ export default function PageHeading({ handleImageClick }) {
 
   return (
     <div className="eHead4">
+      <Link to="/home">
+        <div className="absoluteHomeArrow">
+          <BackArrow />
+        </div>
+      </Link>
+
       <Container>
         <Col lg={5}>
           <EdZenLogo />
           <p>A concept project for a blog grown beyond Wordpress</p>
         </Col>
+
         <Col lg={7}>
           <img
             srcSet={imgSrcSet}

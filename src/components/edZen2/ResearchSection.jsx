@@ -182,30 +182,32 @@ function CompetitorSection({ imgClickFunc }) {
       <Col lg={5} className="compAnalysisTextArea">
         <h4>Key Takeaways from Competitive Webpages:</h4>
 
-        <li>
-          Most competitive websites follow a rigid structure based around{" "}
-          <strong>
-            compacting elements to the middle of the page, without clearly
-            defined section spacing
-          </strong>
-          .
-        </li>
+        <ul>
+          <li>
+            Most competitive websites follow a rigid structure based around{" "}
+            <strong>
+              compacting elements to the middle of the page, without clearly
+              defined section spacing
+            </strong>
+            .
+          </li>
 
-        <li>
-          General <strong>styles</strong> of websites were close to or exactly{" "}
-          <strong>identical in terms of colors, fonts, etc...</strong>
-        </li>
+          <li>
+            General <strong>styles</strong> of websites were close to or exactly{" "}
+            <strong>identical in terms of colors, fonts, etc...</strong>
+          </li>
 
-        <li>
-          <strong>Images are prominently displayed</strong> on home pages and
-          often consume 100% of the screen in articles.
-        </li>
+          <li>
+            <strong>Images are prominently displayed</strong> on home pages and
+            often consume 100% of the screen in articles.
+          </li>
 
-        <li>
-          Articles should <strong>drive traffic</strong> to Everyday Zen's
-          <strong> social media channels </strong> to further engage the
-          audience and further solidify brand identity.
-        </li>
+          <li>
+            Articles should <strong>drive traffic</strong> to Everyday Zen's
+            <strong> social media channels </strong> to further engage the
+            audience and further solidify brand identity.
+          </li>
+        </ul>
       </Col>
     </Container>
   );

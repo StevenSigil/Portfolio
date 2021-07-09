@@ -12,7 +12,8 @@ import { ReactComponent as ColorPallet } from "../../public/static/media/edZen_i
 import subscribeForm05x from "../../public/static/media/edZen_imgs/Prototype2/subForm/subscriptionSignup@0.5x.png";
 import subscribeForm1x from "../../public/static/media/edZen_imgs/Prototype2/subForm/subscriptionSignup@1x.png";
 
-import scrollDemo from "../../public/static/media/edZen_imgs/Prototype2/scrollGroupDemo.gif";
+import scrollDemoMP4 from "../../public/static/media/edZen_imgs/Prototype2/scrollGroupDemo.mp4";
+import scrollDemoWEBM from "../../public/static/media/edZen_imgs/Prototype2/scrollGroupDemo.webm";
 
 import imgGradientDemo05x from "../../public/static/media/edZen_imgs/Prototype2/imgGradientDemo/imgGradientDemo@0.5x.png";
 import imgGradientDemo1x from "../../public/static/media/edZen_imgs/Prototype2/imgGradientDemo/imgGradientDemo@1x.png";
@@ -125,7 +126,10 @@ function ScrollGroupSec() {
           </h3>
         </Col>
         <Col sm={12} className="col2">
-          <img src={scrollDemo} alt="Scroll Group Demo" />
+          <video width="992" height="348" playsInline autoPlay loop muted>
+            <source src={scrollDemoWEBM} type="video/webm" />
+            <source src={scrollDemoMP4} type="video/mp4" />
+          </video>
         </Col>
       </div>
     </div>

@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 
 import "../../public/static/css/EdZ2.css";
 
-import PageHeading from "./PageHeading";
-import IntroSection from "./IntroSection";
-import ResearchSection from "./ResearchSection";
-import WireFrameSection from "./WireFrameSection";
-import PrototypeSection from "./PrototypeSection";
-import Footer from "../Footer";
+const ExpandedImage = lazy(() => import("./ExpandedImage"));
+const TopOfPageBtn = lazy(() => import("./TopOfPageBtn"));
 
-import ExpandedImage from "./ExpandedImage";
-import TopOfPageBtn from "./TopOfPageBtn";
+const PageHeading = lazy(() => import("./PageHeading"));
+const IntroSection = lazy(() => import("./IntroSection"));
+const ResearchSection = lazy(() => import("./ResearchSection"));
+const WireFrameSection = lazy(() => import("./WireFrameSection"));
+const PrototypeSection = lazy(() => import("./PrototypeSection"));
+const Footer = lazy(() => import("../Footer"));
 
 export default function EdZen2() {
   const [showLargerImage, setShowLargerImage] = useState(false);
@@ -28,24 +28,28 @@ export default function EdZen2() {
     setShowLargerImage(!showLargerImage);
   }
 
+  const renderLoader = () => <h1>Loading...</h1>;
+
   return (
     <>
-      <TopOfPageBtn />
-      <ExpandedImage data={lgImgData} handleImageClick={handleImageClick} />
+      <Suspense fallback={renderLoader()}>
+        <TopOfPageBtn />
+        <ExpandedImage data={lgImgData} handleImageClick={handleImageClick} />
 
-      <span className="edZ2Body">
-        <PageHeading handleImageClick={handleImageClick} />
+        <span className="edZ2Body">
+          <PageHeading handleImageClick={handleImageClick} />
 
-        <IntroSection />
+          <IntroSection />
 
-        <ResearchSection handleImageClick={handleImageClick} />
+          <ResearchSection handleImageClick={handleImageClick} />
 
-        <WireFrameSection handleImageClick={handleImageClick} />
+          <WireFrameSection handleImageClick={handleImageClick} />
 
-        <PrototypeSection handleImageClick={handleImageClick} />
+          <PrototypeSection handleImageClick={handleImageClick} />
 
-        <Footer />
-      </span>
+          <Footer />
+        </span>
+      </Suspense>
     </>
   );
 }

@@ -1,9 +1,11 @@
 import React from "react";
-import { Container, Col, Button } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
 
 import wireframe1 from "../../public/static/media/edZen_imgs/WireFrame2/wireframe1.svg";
 import wireframe2 from "../../public/static/media/edZen_imgs/WireFrame2/wireframe2.svg";
-import wireframe3 from "../../public/static/media/edZen_imgs/WireFrame2/wireframe3.gif";
+
+import wireframe3MP4 from "../../public/static/media/edZen_imgs/WireFrame2/wireframe3.mp4";
+import wireframe3WEBM from "../../public/static/media/edZen_imgs/WireFrame2/wireframe3.webm";
 
 import { wireFrameData } from "../../util-data/everydayZen/wireFrameData";
 
@@ -108,7 +110,7 @@ function Sec2({ imgClickFunc }) {
   );
 }
 
-function Sec3({ imgClickFunc }) {
+function Sec3() {
   return (
     <Container className="wf3">
       <Col lg={4}>
@@ -131,13 +133,10 @@ function Sec3({ imgClickFunc }) {
       </Col>
 
       <Col lg={7} className="wfImgOuter">
-        <img
-          src={wireframe3}
-          alt="Wireframe - 100% Height Layout"
-          onClick={() =>
-            imgClickFunc(wireframe3, null, "Wireframe - 100% Height Layout")
-          }
-        />
+        <video width="1228" height="720" playsInline autoPlay loop muted>
+          <source src={wireframe3WEBM} type="video/webm" />
+          <source src={wireframe3MP4} type="video/mp4" />
+        </video>
       </Col>
     </Container>
   );
@@ -161,7 +160,6 @@ function WfScrollSec({ imgClickFunc }) {
     <Container className="wfScrollOuter">
       <div className="wfScrollHead">
         <h3>Key Wireframe Pages</h3>
-        {/* <Button variant="outline-light">View on XD</Button> */}
       </div>
 
       <div className="wfScrollInner">

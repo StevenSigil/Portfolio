@@ -161,6 +161,27 @@
 
 .eHead4 {
   background-color: #333;
+  position: relative;
+}
+
+.eHead4 .absoluteHomeArrow {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  bottom: 10px;
+  left: 10px;
+}
+
+.eHead4 .absoluteHomeArrow svg {
+  fill: #ffffff;
+  margin: auto 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.eHead4 .absoluteHomeArrow svg .cls-1 {
+  fill: #ffffff;
+  stroke: none;
 }
 
 .eHead4 .container {
@@ -527,7 +548,12 @@
   padding-top: 0.2em;
 }
 
-.competitiveAnalysis .compAnalysisTextArea li {
+.competitiveAnalysis .compAnalysisTextArea ul {
+  margin: 0;
+  padding: inherit;
+}
+
+.competitiveAnalysis .compAnalysisTextArea ul li {
   text-align: justify;
   text-justify: auto;
   margin-bottom: 3rem;
@@ -724,11 +750,16 @@
   border-radius: 6px;
 }
 
-.wireframe .wf1 .wfImgOuter img, .wireframe .wf2 .wfImgOuter img, .wireframe .wf3 .wfImgOuter img {
+.wireframe .wf1 .wfImgOuter img, .wireframe .wf2 .wfImgOuter img, .wireframe .wf3 .wfImgOuter img,
+.wireframe .wf1 .wfImgOuter video,
+.wireframe .wf2 .wfImgOuter video,
+.wireframe .wf3 .wfImgOuter video {
   background-color: inherit;
   border-radius: inherit;
   -webkit-box-shadow: 0px 0px 5px 2px #ffffff70;
           box-shadow: 0px 0px 5px 2px #ffffff70;
+  max-width: 100%;
+  height: auto;
 }
 
 .wireframe .wf1 > div, .wireframe .wf2 > div, .wireframe .wf3 > div {
@@ -1026,10 +1057,12 @@
   padding: 0;
 }
 
-.finalProto .scrollGroupsDemo .outer .col2 img {
+.finalProto .scrollGroupsDemo .outer .col2 img,
+.finalProto .scrollGroupsDemo .outer .col2 video {
   width: 100%;
   height: auto;
   cursor: initial;
+  background-color: inherit;
 }
 
 .finalProto .imgGradients {
