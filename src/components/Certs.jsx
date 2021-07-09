@@ -2,15 +2,7 @@ import { Container, Image, Row, Col } from "react-bootstrap";
 
 import { certificationData } from "../util-data/certificationData";
 
-function SingleCert({
-  hText,
-  iSrc,
-  iAlt,
-  iWidth,
-  iHeight,
-  link,
-  linkSecondary,
-}) {
+function SingleCert({ hText, iSrc, iSrcSet, iAlt, link, linkSecondary }) {
   return (
     <Col lg={6} className="singleCertOuter">
       <Row className="singleCertInner">
@@ -19,7 +11,7 @@ function SingleCert({
         </Col>
 
         <Col className="imgCol">
-          <Image src={iSrc} alt={iAlt} width={iWidth} height={iHeight} />
+          <Image srcSet={iSrcSet} src={iSrc} alt={iAlt} />
         </Col>
 
         <Col xs={12} className="linkCol">
@@ -40,8 +32,7 @@ export default function Certs() {
         <Container>
           <h1 className="sectionHeading">Certifications</h1>
         </Container>
-        {/* <div className="contentSection"> */}
-        {/* <Col> */}
+
         <Row className="cert-row">
           {certificationData.map((d, index) => {
             return (
@@ -49,17 +40,14 @@ export default function Certs() {
                 key={index}
                 hText={d.hText}
                 iSrc={d.iSrc}
+                iSrcSet={d.iSrcSet}
                 iAlt={d.iAlt}
-                iWidth={d.iWidth}
-                iHeight={d.iHeight}
                 link={d.link}
                 linkSecondary={d.linkSecondary ? d.linkSecondary : null}
               />
             );
           })}
         </Row>
-        {/* </Col> */}
-        {/* </div> */}
       </Container>
     </>
   );

@@ -12,7 +12,7 @@ import Todo from "../public/static/media/project_imgs/todo-djreact.png";
 
 import Encrypted from "../public/static/media/project_imgs/encryption.png";
 import Life from "../public/static/media/project_imgs/glider-static.png";
-import Kivy from "../public/static/media/project_imgs/kivy.webp";
+import Kivy from "../public/static/media/project_imgs/kivy.png";
 
 // Card Button Footer
 import ProjectCardFooter from "./ProjectCardFooter";

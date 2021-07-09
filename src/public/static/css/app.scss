@@ -25,49 +25,57 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-image: url("../media/background.webp");
+  background-image: image-set(
+    url("../media/mainBg/16x9/Main@0.25x.png") 0.25x,
+    url("../media/mainBg/16x9/Main@0.5x.png") 0.5x,
+    url("../media/mainBg/16x9/Main@0.75x.png") 0.75x,
+    url("../media/mainBg/16x9/Main@1x.png") 1x,
+    url("../media/mainBg/16x9/Main@1.25x.png") 1.25x
+  );
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
-}
-.topRow-container h1 {
-  font-size: calc(100% + 2vw + 2vh);
-  letter-spacing: $headingLetterSpacing;
-  font-family: fira-sans, sans-serif;
-  font-weight: 700;
-  text-align: center;
-  font-style: normal;
-  margin: 0;
-}
-.linkDiv {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-width: 90vw;
-  width: fit-content;
-}
-.linkDiv > .col-6 {
-  display: flex;
-  align-items: center;
-  min-height: 10vh;
-  justify-content: center;
-}
-.linkDiv a {
-  color: inherit;
-  min-width: max-content;
-  font-family: mr-eaves-modern, sans-serif;
-  font-weight: 300;
-  font-size: 1.5em;
-  letter-spacing: 2px;
-  font-style: normal;
-  text-align: center;
-  transition: all 1000ms;
-}
-.linkDiv a:hover {
-  color: rgba(255, 255, 255, 0.753);
-  text-decoration: none;
-  letter-spacing: 5px;
+
+  h1 {
+    font-size: calc(100% + 2vw + 2vh);
+    letter-spacing: $headingLetterSpacing;
+    font-family: fira-sans, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-style: normal;
+    margin: 0;
+  }
+  .linkDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 90vw;
+    width: fit-content;
+  }
+  .linkDiv > .col-6 {
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    justify-content: center;
+  }
+  .linkDiv a {
+    color: inherit;
+    min-width: max-content;
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-style: normal;
+    text-align: center;
+    transition: all 1000ms;
+  }
+  .linkDiv a:hover {
+    color: rgba(255, 255, 255, 0.753);
+    text-decoration: none;
+    letter-spacing: 5px;
+  }
 }
 
 // ============================================================
@@ -361,13 +369,14 @@ body {
           }
         }
         .imgCol {
-          display: flex;
-          justify-content: center;
+          text-align: center;
 
           img {
-            height: 100%;
+            height: auto;
             width: 100%;
-            margin-bottom: -0.5rem;
+            max-width: 500px;
+            max-height: 372px;
+            margin: 0 auto -0.5rem auto;
             box-shadow: 8px 7px 15px 2px #2c2c2cc7, -3px 0px 18px 1px #2c2c2cc7;
           }
         }

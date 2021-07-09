@@ -320,7 +320,8 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-image: url("../media/background.webp");
+  background-image: -webkit-image-set(url("../media/mainBg/16x9/Main@0.25x.png") 0.25x, url("../media/mainBg/16x9/Main@0.5x.png") 0.5x, url("../media/mainBg/16x9/Main@0.75x.png") 0.75x, url("../media/mainBg/16x9/Main@1x.png") 1x, url("../media/mainBg/16x9/Main@1.25x.png") 1.25x);
+  background-image: image-set(url("../media/mainBg/16x9/Main@0.25x.png") 0.25x, url("../media/mainBg/16x9/Main@0.5x.png") 0.5x, url("../media/mainBg/16x9/Main@0.75x.png") 0.75x, url("../media/mainBg/16x9/Main@1x.png") 1x, url("../media/mainBg/16x9/Main@1.25x.png") 1.25x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -337,7 +338,7 @@ body {
   margin: 0;
 }
 
-.linkDiv {
+.topRow-container .linkDiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,7 +354,7 @@ body {
   width: fit-content;
 }
 
-.linkDiv > .col-6 {
+.topRow-container .linkDiv > .col-6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,7 +367,7 @@ body {
           justify-content: center;
 }
 
-.linkDiv a {
+.topRow-container .linkDiv a {
   color: inherit;
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
@@ -381,7 +382,7 @@ body {
   transition: all 1000ms;
 }
 
-.linkDiv a:hover {
+.topRow-container .linkDiv a:hover {
   color: rgba(255, 255, 255, 0.753);
   text-decoration: none;
   letter-spacing: 5px;
@@ -919,18 +920,15 @@ body {
 }
 
 .certs-main-container .cert-row .singleCertOuter .singleCertInner .imgCol {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
 .certs-main-container .cert-row .singleCertOuter .singleCertInner .imgCol img {
-  height: 100%;
+  height: auto;
   width: 100%;
-  margin-bottom: -0.5rem;
+  max-width: 500px;
+  max-height: 372px;
+  margin: 0 auto -0.5rem auto;
   -webkit-box-shadow: 8px 7px 15px 2px #2c2c2cc7, -3px 0px 18px 1px #2c2c2cc7;
           box-shadow: 8px 7px 15px 2px #2c2c2cc7, -3px 0px 18px 1px #2c2c2cc7;
 }
