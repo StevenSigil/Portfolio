@@ -11,12 +11,21 @@ import {
 import { SimonApp, TinDogApp, DiceApp } from "./ProjectCards";
 
 import ProjectsHeading from "./ProjectsHeading";
+import UXCards from "./UXCards";
 
 export default function Projects() {
   return (
     <>
       <Container fluid className="row3-main-container" id="projects-heading">
         <ProjectsHeading />
+
+        {/* ==================================================================
+        ======================================================================
+        UNCOMMENT BELOW COMPONENTS WHEN READY TO PUBLISH UX SECTION!! 
+
+        <UXCards />
+        ======================================================================
+        ================================================================== */}
 
         <Row id="web-design" className="projectsSubsectionRow">
           <Col xl={2} lg={12}>

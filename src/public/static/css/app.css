@@ -799,6 +799,59 @@ body {
           filter: invert(50);
 }
 
+.uxCards .card {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  background: none;
+}
+
+.uxCards .card:hover .card-img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: 0 1px 5px 1px #494949;
+          box-shadow: 0 1px 5px 1px #494949;
+}
+
+.uxCards .card .card-img {
+  padding: 0.5rem;
+  border-bottom: none;
+  background: none;
+  border-radius: 0.25rem;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: -webkit-transform 200ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+  transition: transform 200ms ease-in-out, box-shadow 150ms ease-in-out;
+  transition: transform 200ms ease-in-out, box-shadow 150ms ease-in-out, -webkit-transform 200ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+}
+
+.uxCards .card .card-body {
+  margin-top: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: 0 1px 5px 1px #494949;
+          box-shadow: 0 1px 5px 1px #494949;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.uxCards .card .card-body .card-title {
+  margin-bottom: 0.25rem;
+}
+
+.uxCards .card .card-body .card-subtitle {
+  margin-bottom: 1.5rem;
+  font-size: 1.1em;
+}
+
+.uxCards .card .card-body .projectCard-footer {
+  background: inherit;
+}
+
+.uxCards .card .card-body .projectCard-footer .btn {
+  font-size: 1.1em;
+}
+
 .certs-main-container {
   padding: 2rem 15px 0;
 }

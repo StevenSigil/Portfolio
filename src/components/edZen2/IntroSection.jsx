@@ -26,7 +26,7 @@ export default function IntroSection() {
           <strong> draws attention to key growth sections</strong>, and is
           styled with a<strong> unique {"&"} consistent theme </strong>
           that
-          <strong> solidifies brand identity </strong>
+          <strong> solidifies brand identity.</strong>
         </p>
       </Col>
 
