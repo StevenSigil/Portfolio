@@ -1,0 +1,380 @@
+@import "scss/variables", "scss/mixin", "scss/media";
+
+.topRow-container {
+  position: relative;
+  min-height: 100vh;
+  color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  img {
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: calc(100% + 2vw + 2vh);
+    letter-spacing: $headingLetterSpacing;
+    font-family: fira-sans, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-style: normal;
+    margin: 0;
+    z-index: 1;
+  }
+  .linkDiv {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 90vw;
+    width: fit-content;
+  }
+  .linkDiv > .col-6 {
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    justify-content: center;
+  }
+  .linkDiv a {
+    color: inherit;
+    min-width: max-content;
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-style: normal;
+    text-align: center;
+    transition: all 1000ms;
+  }
+  .linkDiv a:hover {
+    color: rgba(255, 255, 255, 0.753);
+    text-decoration: none;
+    letter-spacing: 5px;
+  }
+}
+
+// ============================================================
+// ====================== SUMMARY SECTION =====================
+.r2-main-container {
+  @include singleContentSection;
+
+  .sectionHeading {
+    @include sectionHeader;
+  }
+
+  .coloredOuterDiv {
+    @include coloredBg;
+    min-height: max-content;
+
+    .smallerCol2 {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1rem;
+      position: static;
+
+      h2 {
+        font-family: mr-eaves-modern, sans-serif;
+        font-weight: 500;
+        font-size: 2.5em;
+        letter-spacing: 10px;
+        margin: 0 auto;
+      }
+      svg {
+        width: 150px;
+        height: 150px;
+        transform: scale(1, 1.1);
+        margin: auto;
+      }
+    }
+    .textArea {
+      margin: 0;
+      line-height: 1.15em;
+      font-size: 1.15em;
+      z-index: 1;
+
+      p {
+        margin-bottom: 1.2em;
+        text-indent: 1.5em;
+        text-align: justify;
+        text-justify: auto;
+      }
+    }
+  }
+}
+
+// ============================================================
+// ===================== PROJECTS SECTION =====================
+.row3-main-container {
+  @include singleContentSection;
+  padding-top: 2rem;
+  // background-image: url("../media/translucent-fibres.png");
+}
+
+.projectsHeadingSection {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: $minOuterAreaHeight + 20;
+  color: $blackOnWhiteColor;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603),
+    -2px -2px 5px rgba(58, 58, 58, 0.568);
+
+  // background-image: url("../media/dotnoise-light-grey.png");
+
+  h2 {
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    font-style: normal;
+    text-decoration: underline solid black 2px;
+  }
+  .outer-list-group {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    h3 {
+      margin: 0 3rem;
+      font-family: mr-eaves-modern, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.5em;
+      letter-spacing: 2px;
+    }
+    a {
+      color: inherit;
+      width: 100%;
+      height: max-content;
+      margin: 2rem 0 0;
+      padding: 0 3rem;
+
+      &:hover {
+        text-decoration: none;
+      }
+      p {
+        @include linkColoredCanExpand(
+          $scale: 1.1,
+          $hovShadow: 2px 5px 10px #afafaf
+        );
+        padding: 1rem;
+        margin: 0;
+        font-family: mr-eaves-modern, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        text-decoration: 1px underline;
+
+        &:hover {
+          color: lighten($blackOnWhiteColor, 30%);
+        }
+      }
+    }
+  }
+}
+
+// ============================================================
+// ======================== Projects ==========================
+.projectsSubsectionRow {
+  justify-content: space-evenly;
+  padding: 6rem 0;
+
+  .subsectionHeading {
+    @include coloredBg;
+    min-height: 20vh;
+    max-height: 90%;
+    max-width: 90%;
+    margin: 3rem auto;
+
+    > div {
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      h3 {
+        font-weight: 500;
+        font-size: 2.25em;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: auto;
+      }
+    }
+  }
+
+  // Individual Cards - not incl. left heading
+  .card {
+    max-width: 90%;
+    min-width: 10vw;
+    min-height: 85%;
+    margin: 3rem auto;
+    box-shadow: 15px 10px 17px rgba(49, 49, 49, 0.603),
+      -2px -2px 15px rgba(58, 58, 58, 0.568);
+
+    .card-img {
+      height: auto;
+      width: 100%;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom: 1px solid rgba(55, 64, 77, 0.329);
+    }
+    .card-body {
+      font-size: 1.15em;
+      line-height: 1.5em;
+      padding: 1.5rem;
+
+      .card-title {
+        font-size: 1.5em;
+        margin-bottom: 1.5rem;
+      }
+    }
+    .projectCard-footer {
+      display: flex;
+      justify-content: space-evenly;
+
+      .btn {
+        font-size: 1.5em;
+        color: inherit;
+        transition: all 200ms;
+
+        &:hover {
+          color: #eeeeee;
+        }
+      }
+
+      .github-btn {
+        @include btnImageInvert;
+      }
+    }
+  }
+}
+
+.uxCards {
+  .card {
+    box-shadow: none;
+    border: none;
+    background: none;
+
+    &:hover {
+      .card-img {
+        transform: scale(1);
+        box-shadow: $smBoxShadow;
+      }
+    }
+    .card-img {
+      padding: 0.5rem;
+      border-bottom: none;
+      background: none;
+      border-radius: 0.25rem;
+      transform: scale(0.95);
+      transition: transform 200ms ease-in-out, box-shadow 150ms ease-in-out;
+    }
+    .card-body {
+      margin-top: 1rem;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      box-shadow: $smBoxShadow;
+      border-radius: 0.25rem;
+      border: none;
+
+      .card-title {
+        margin-bottom: 0.25rem;
+      }
+      .card-subtitle {
+        margin-bottom: 1.5rem;
+        font-size: 1.1em;
+      }
+
+      .projectCard-footer {
+        background: inherit;
+
+        .btn {
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+}
+
+// ============================================================
+// ======================== CERTIFICATIONS ====================
+.certs-main-container {
+  padding: 2rem 15px 0;
+
+  .sectionHeading {
+    @include sectionHeader;
+  }
+
+  .cert-row {
+    padding: 0 1rem;
+    margin: 2rem 0;
+
+    .singleCertOuter {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      padding: 0;
+
+      .singleCertInner {
+        min-width: 95%;
+        padding: 1rem 0 0;
+        margin: 1rem;
+        border: 2px solid #000;
+        border-radius: 3px;
+        background-color: #fff;
+
+        .leftCol {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          h2 {
+            margin-bottom: 2rem;
+            font-weight: 500;
+            font-size: 2.25em;
+            letter-spacing: 2px;
+            text-align: center;
+          }
+        }
+        .imgCol {
+          text-align: center;
+
+          img {
+            height: auto;
+            width: 100%;
+            max-width: 500px;
+            max-height: 372px;
+            margin: 0 auto -0.5rem auto;
+            box-shadow: 8px 7px 15px 2px #2c2c2cc7, -3px 0px 18px 1px #2c2c2cc7;
+          }
+        }
+        .linkCol {
+          margin: 1rem 0 0;
+          padding: 0 12px;
+          text-align: center;
+
+          a {
+            color: #0062cc;
+            margin: 0;
+          }
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

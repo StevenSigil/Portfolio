@@ -1,22 +1,41 @@
 import React from "react";
 import { Container, Col } from "react-bootstrap";
 
-import ivfTable from "../../public/static/media/edZen_imgs/ivfPlot/ivfTable.svg";
+import ivfTable05x from "../../public/static/media/edZen_imgs/ivfPlot/ivfTable@0.5x.png";
+import ivfTable075x from "../../public/static/media/edZen_imgs/ivfPlot/ivfTable@0.75x.png";
+
 import ivfPlot05x from "../../public/static/media/edZen_imgs/ivfPlot/ivfPlot@0.5x.png";
 import ivfPlot075x from "../../public/static/media/edZen_imgs/ivfPlot/ivfPlot@0.75x.png";
 
-import persona1 from "../../public/static/media/edZen_imgs/userPersonas/persona1.svg";
-import persona2 from "../../public/static/media/edZen_imgs/userPersonas/persona2.svg";
-import persona3 from "../../public/static/media/edZen_imgs/userPersonas/persona3.svg";
+import persona1_05x from "../../public/static/media/edZen_imgs/userPersonas/persona1@0.5x.png";
+import persona1_075x from "../../public/static/media/edZen_imgs/userPersonas/persona1@0.75x.png";
+import persona1_1x from "../../public/static/media/edZen_imgs/userPersonas/persona1@1x.png";
+import persona1_3x from "../../public/static/media/edZen_imgs/userPersonas/persona1@3x.png";
+
+import persona2_05x from "../../public/static/media/edZen_imgs/userPersonas/persona2@0.5x.png";
+import persona2_075x from "../../public/static/media/edZen_imgs/userPersonas/persona2@0.75x.png";
+import persona2_1x from "../../public/static/media/edZen_imgs/userPersonas/persona2@1x.png";
+import persona2_3x from "../../public/static/media/edZen_imgs/userPersonas/persona2@3x.png";
+
+import persona3_05x from "../../public/static/media/edZen_imgs/userPersonas/persona3@0.5x.png";
+import persona3_075x from "../../public/static/media/edZen_imgs/userPersonas/persona3@0.75x.png";
+import persona3_1x from "../../public/static/media/edZen_imgs/userPersonas/persona3@1x.png";
+import persona3_3x from "../../public/static/media/edZen_imgs/userPersonas/persona3@3x.png";
 
 import compPages05x from "../../public/static/media/edZen_imgs/CompPages/compPages@0.5x.png";
 import compPages075x from "../../public/static/media/edZen_imgs/CompPages/compPages@0.75x.png";
 import compPages1x from "../../public/static/media/edZen_imgs/CompPages/compPages@1x.png";
 
-import journeyMap2 from "../../public/static/media/edZen_imgs/JourneyMap/newJourneyMap.svg";
+import journeyMap05x from "../../public/static/media/edZen_imgs/JourneyMap/journeyMapWithBg@0.5x.png";
+import journeyMap075x from "../../public/static/media/edZen_imgs/JourneyMap/journeyMapWithBg@0.75x.png";
+import journeyMap1x from "../../public/static/media/edZen_imgs/JourneyMap/journeyMapWithBg@1x.png";
 
-import siteMap from "../../public/static/media/edZen_imgs/SiteMap/newSiteMap.svg";
+import siteMap05x from "../../public/static/media/edZen_imgs/SiteMap/siteMap@0.5x.png";
+import siteMap075x from "../../public/static/media/edZen_imgs/SiteMap/siteMap@0.75x.png";
+import siteMap1x from "../../public/static/media/edZen_imgs/SiteMap/siteMap@1x.png";
 
+import moodBoard05x from "../../public/static/media/edZen_imgs/MoodBoard/newMoodBoard@0.5x.png";
+import moodBoard075x from "../../public/static/media/edZen_imgs/MoodBoard/newMoodBoard@0.75x.png";
 import moodBoard1x from "../../public/static/media/edZen_imgs/MoodBoard/newMoodBoard@1x.png";
 
 export default function ResearchSection({ handleImageClick }) {
@@ -74,7 +93,8 @@ function Business() {
         <Col lg={4} className="nonTextArea1">
           <img
             className="img1"
-            src={ivfTable}
+            srcSet={`${ivfTable05x} 311w, ${ivfTable075x} 466w`}
+            src={ivfTable05x}
             alt="Importance Vs. Feasibility Table"
           />
 
@@ -91,6 +111,10 @@ function Business() {
 }
 
 function UsersSection({ imgClickFunc }) {
+  const p1_SrcSet = `${persona1_05x} 430w, ${persona1_075x} 644w, ${persona1_1x} 860w, ${persona1_3x} 2576w`;
+  const p2_SrcSet = `${persona2_05x} 430w, ${persona2_075x} 644w, ${persona2_1x} 860w, ${persona2_3x} 2576w`;
+  const p3_SrcSet = `${persona3_05x} 430w, ${persona3_075x} 644w, ${persona3_1x} 860w, ${persona3_3x} 2576w`;
+
   return (
     <Container className="userResearch">
       <Col lg={4} className="usersHeading">
@@ -138,19 +162,30 @@ function UsersSection({ imgClickFunc }) {
       <Col lg={12} className="hScrollGroup">
         <div className="innerWrapper">
           <img
-            src={persona2}
+            srcSet={p2_SrcSet}
+            src={persona2_05x}
             alt="User Persona 1"
-            onClick={() => imgClickFunc(persona2, null, "User Persona 1")}
+            onClick={() =>
+              imgClickFunc(persona2_05x, p2_SrcSet, "User Persona 1")
+            }
           />
           <img
-            src={persona1}
+            srcSet={p3_SrcSet}
+            src={persona3_05x}
             alt="User Persona 2"
-            onClick={() => imgClickFunc(persona1, null, "User Persona 2")}
+            onClick={() =>
+              imgClickFunc(persona3_05x, p3_SrcSet, "User Persona 2")
+            }
           />
           <img
-            src={persona3}
+            srcSet={p1_SrcSet}
+            src={persona1_05x}
+            width="485px"
+            height="245px"
             alt="User Persona 3"
-            onClick={() => imgClickFunc(persona3, null, "User Persona 3")}
+            onClick={() =>
+              imgClickFunc(persona1_05x, p1_SrcSet, "User Persona 3")
+            }
           />
         </div>
       </Col>
@@ -214,6 +249,8 @@ function CompetitorSection({ imgClickFunc }) {
 }
 
 function JourneyMapSection({ imgClickFunc }) {
+  const imgSrcSet = `${journeyMap05x} 886w, ${journeyMap075x} 1329w, ${journeyMap1x} 1772w`;
+
   return (
     <Container className="journeyMap">
       <h3>KPI's Show New Audience Members Arrive from Third Party Links</h3>
@@ -235,18 +272,21 @@ function JourneyMapSection({ imgClickFunc }) {
           </p>
         </Col>
       </div>
-      <div className="journeyImgOuter">
-        <img
-          src={journeyMap2}
-          alt="Users Journey Map"
-          onClick={() => imgClickFunc(journeyMap2, null, "Journey Map", true)}
-        />
-      </div>
+
+      <img
+        srcSet={imgSrcSet}
+        src={journeyMap05x}
+        alt="Users Journey Map"
+        onClick={() => imgClickFunc(journeyMap05x, imgSrcSet, "Journey Map")}
+        className="journeyImgOuter"
+      />
     </Container>
   );
 }
 
 function SiteMapSection({ imgClickFunc }) {
+  const imgSrcSet = `${siteMap05x} 813w, ${siteMap075x} 1220w, ${siteMap1x} 1626w`;
+
   return (
     <Container className="siteMap">
       <Col xl={3} lg={4} className="siteMapHead">
@@ -255,10 +295,16 @@ function SiteMapSection({ imgClickFunc }) {
 
       <Col xl={9} lg={8} className="siteMapImgOuter">
         <img
-          src={siteMap}
+          srcSet={imgSrcSet}
+          src={siteMap05x}
           alt="Everyday Zen's new site map"
           onClick={() =>
-            imgClickFunc(siteMap, null, "Everyday Zen's new site map", true)
+            imgClickFunc(
+              siteMap05x,
+              imgSrcSet,
+              "Everyday Zen's new site map",
+              true
+            )
           }
         />
       </Col>
@@ -267,6 +313,8 @@ function SiteMapSection({ imgClickFunc }) {
 }
 
 function MoodBoardSection({ imgClickFunc }) {
+  const imgSrcSet = `${moodBoard05x} 813w, ${moodBoard075x} 1220w, ${moodBoard1x} 1626w`;
+
   return (
     <Container className="moodBoard">
       <Col xl={6} lg={8} className="moodTextArea">
@@ -278,10 +326,15 @@ function MoodBoardSection({ imgClickFunc }) {
 
       <Col lg={10} className="moodBoardImgCont">
         <img
-          src={moodBoard1x}
+          srcSet={imgSrcSet}
+          src={moodBoard05x}
           alt="Everyday Zen's new Mood Board"
           onClick={() =>
-            imgClickFunc(moodBoard1x, null, "Everyday Zen's new Mood Board")
+            imgClickFunc(
+              moodBoard05x,
+              imgSrcSet,
+              "Everyday Zen's new Mood Board"
+            )
           }
         />
       </Col>

@@ -1,8 +1,11 @@
 import React from "react";
 import { Container, Col } from "react-bootstrap";
 
-import wireframe1 from "../../public/static/media/edZen_imgs/WireFrame2/wireframe1.svg";
-import wireframe2 from "../../public/static/media/edZen_imgs/WireFrame2/wireframe2.svg";
+import wireframe1_05x from "../../public/static/media/edZen_imgs/WireFrame2/wireframe1@0.5x.png";
+import wireframe1_075x from "../../public/static/media/edZen_imgs/WireFrame2/wireframe1@0.75x.png";
+
+import wireframe2_05x from "../../public/static/media/edZen_imgs/WireFrame2/wireframe2@0.5x.png";
+import wireframe2_1x from "../../public/static/media/edZen_imgs/WireFrame2/wireframe2@1x.png";
 
 import wireframe3MP4 from "../../public/static/media/edZen_imgs/WireFrame2/wireframe3.mp4";
 import wireframe3WEBM from "../../public/static/media/edZen_imgs/WireFrame2/wireframe3.webm";
@@ -48,6 +51,8 @@ function WfHead() {
 }
 
 function Sec1({ imgClickFunc }) {
+  const imgSrcSet = `${wireframe1_05x} 960w, ${wireframe1_075x} 1440w`;
+
   return (
     <Container className="wf1">
       <Col lg={4}>
@@ -64,10 +69,16 @@ function Sec1({ imgClickFunc }) {
 
       <Col lg={7} className="wfImgOuter">
         <img
-          src={wireframe1}
+          srcSet={imgSrcSet}
+          src={wireframe1_05x}
           alt="Wireframe - Basic Layout"
           onClick={() =>
-            imgClickFunc(wireframe1, null, "Wireframe - Basic Layout", true)
+            imgClickFunc(
+              wireframe1_05x,
+              imgSrcSet,
+              "Wireframe - Basic Layout",
+              true
+            )
           }
         />
       </Col>
@@ -76,6 +87,8 @@ function Sec1({ imgClickFunc }) {
 }
 
 function Sec2({ imgClickFunc }) {
+  const imgSrcSet = `${wireframe2_05x} 1000w, ${wireframe2_1x} 2000w`;
+
   return (
     <Container className="wf2">
       <Col lg={4}>
@@ -94,14 +107,15 @@ function Sec2({ imgClickFunc }) {
 
       <Col lg={7} className="wfImgOuter">
         <img
-          src={wireframe2}
+          srcSet={imgSrcSet}
+          src={wireframe2_05x}
           alt="Wireframe - 100% Height Layout"
           onClick={() =>
             imgClickFunc(
-              wireframe2,
-              null,
+              wireframe2_05x,
+              imgSrcSet,
               "Wireframe - 100% Height Layout",
-              true
+              false
             )
           }
         />

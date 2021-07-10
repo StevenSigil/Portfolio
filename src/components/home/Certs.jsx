@@ -1,6 +1,6 @@
 import { Container, Image, Row, Col } from "react-bootstrap";
 
-import { certificationData } from "../util-data/certificationData";
+import { certificationData } from "../../util-data/certificationData";
 
 function SingleCert({ hText, iSrc, iSrcSet, iAlt, link, linkSecondary }) {
   return (

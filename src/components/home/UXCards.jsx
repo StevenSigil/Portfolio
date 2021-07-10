@@ -2,9 +2,9 @@ import React from "react";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import edZen05x from "../public/static/media/edZen_imgs/Prototype2/allPages/allPages@0.5x.png";
-import edZen075x from "../public/static/media/edZen_imgs/Prototype2/allPages/allPages@0.75x.png";
-import edZen1x from "../public/static/media/edZen_imgs/Prototype2/allPages/allPages@1x.png";
+import edZen05x from "../../public/static/media/edZen_imgs/Prototype2/allPages/allPages@0.5x.png";
+import edZen075x from "../../public/static/media/edZen_imgs/Prototype2/allPages/allPages@0.75x.png";
+import edZen1x from "../../public/static/media/edZen_imgs/Prototype2/allPages/allPages@1x.png";
 
 export default function UXCards() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Button, Image } from "react-bootstrap";
 
-import GithubMark from "../public/static/media/logos-icons/GitHub-Mark-32px.png";
+import GithubMark from "../../public/static/media/logos-icons/GitHub-Mark-32px.png";
 
 // TODO: Convert the above PNG to SVG - OK to do per website
 

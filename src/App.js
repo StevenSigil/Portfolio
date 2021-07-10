@@ -1,16 +1,10 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-import HomeHeading from "./components/HomeHeading";
-import PastPresFuture from "./components/PastPresFuture";
-import Projects from "./components/Projects";
-import Certs from "./components/Certs";
-import Footer from "./components/Footer";
-
-// import EdZen from "./components/edZen/EdZen";
-import EdZen2 from "./components/edZen2/EdZen2";
 
 import "./public/static/css/app.css";
 
+const Home = lazy(() => import("./components/home/Home"));
+const EdZen2 = lazy(() => import("./components/edZen2/EdZen2"));
 
 export default function App() {
   return (
@@ -18,24 +12,15 @@ export default function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/home">
-            <HomeHeading />
-
-            <PastPresFuture />
-
-            <Projects />
-
-            <Certs />
-
-            <Footer />
+            <Suspense fallback={<RenderLoader />}>
+              <Home />
+            </Suspense>
           </Route>
 
-          {/* <Route exact path="/everyday-zen">
-            <EdZen />
-            <Footer />
-          </Route> */}
-
           <Route exact path="/EdZen2">
-            <EdZen2 />
+            <Suspense fallback={<RenderLoader />}>
+              <EdZen2 />
+            </Suspense>
           </Route>
 
           {/* <Route exact path="/test">
@@ -52,3 +37,11 @@ export default function App() {
 }
 
 // Wireframe: https://wireframe.cc/ROwrUh
+
+function RenderLoader() {
+  return (
+    <>
+      <h1 className="topRow-container2">Loading...</h1>
+    </>
+  );
+}

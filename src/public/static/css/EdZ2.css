@@ -393,7 +393,7 @@
 .researchSection .businessResearch .nonTextArea1 .img1 {
   margin-bottom: 3rem;
   max-width: 500px;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -592,17 +592,13 @@
 }
 
 .journeyMap .journeyImgOuter {
-  padding: 0.5rem;
   -webkit-box-shadow: 0 1px 5px 1px #494949;
           box-shadow: 0 1px 5px 1px #494949;
   background-color: #ffffff;
   border-radius: 10px;
   cursor: pointer;
-}
-
-.journeyMap .journeyImgOuter img {
-  background-color: inherit;
-  border-radius: inherit;
+  max-width: 100%;
+  height: auto;
 }
 
 .siteMap {
@@ -643,6 +639,8 @@
 
 .siteMap .siteMapImgOuter img {
   cursor: pointer;
+  max-width: 100%;
+  height: auto;
 }
 
 .moodBoard {

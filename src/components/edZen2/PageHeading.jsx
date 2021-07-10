@@ -30,6 +30,8 @@ export default function PageHeading({ handleImageClick }) {
             srcSet={imgSrcSet}
             src={exProtoHome05x}
             alt="Full screen height Everyday Zen image"
+            width="615px"
+            height="345px"
             onClick={() =>
               handleImageClick(
                 exProtoHome05x,

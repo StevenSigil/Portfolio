@@ -1,7 +1,8 @@
-import { Container, Col, Row, Image } from "react-bootstrap";
-import { ReactComponent as HourglassBottom } from "../public/static/media/logos-icons/hourglass-bottom.svg";
-import { ReactComponent as HourglassSplit } from "../public/static/media/logos-icons/hourglass-split.svg";
-import { ReactComponent as EmptyHourglass } from "../public/static/media/logos-icons/hourglass.svg";
+import { Container, Col, Row } from "react-bootstrap";
+
+import { ReactComponent as HourglassBottom } from "../../public/static/media/logos-icons/hourglass-bottom.svg";
+import { ReactComponent as HourglassSplit } from "../../public/static/media/logos-icons/hourglass-split.svg";
+import { ReactComponent as EmptyHourglass } from "../../public/static/media/logos-icons/hourglass.svg";
 
 function PastPresFuture() {
   return (

@@ -1,22 +1,22 @@
 import { Card } from "react-bootstrap";
 
 // Card Header Images
-import simon from "../public/static/media/project_imgs/simon.png";
-import diceGame from "../public/static/media/project_imgs/dice_game.png";
-import tinDog from "../public/static/media/project_imgs/tin_dog.png";
+import simon from "../../public/static/media/project_imgs/simon.png";
+import diceGame from "../../public/static/media/project_imgs/dice_game.png";
+import tinDog from "../../public/static/media/project_imgs/tin_dog.png";
 
-import MedTrack from "../public/static/media/project_imgs/drug_keep.png";
-import RMessaging from "../public/static/media/project_imgs/react_messaging.png";
-import Keeper from "../public/static/media/project_imgs/keeper.png";
-import Todo from "../public/static/media/project_imgs/todo-djreact.png";
+import MedTrack from "../../public/static/media/project_imgs/drug_keep.png";
+import RMessaging from "../../public/static/media/project_imgs/react_messaging.png";
+import Keeper from "../../public/static/media/project_imgs/keeper.png";
+import Todo from "../../public/static/media/project_imgs/todo-djreact.png";
 
-import Encrypted from "../public/static/media/project_imgs/encryption.png";
-import Life from "../public/static/media/project_imgs/glider-static.png";
-import Kivy from "../public/static/media/project_imgs/kivy.png";
+import Encrypted from "../../public/static/media/project_imgs/encryption.png";
+import Life from "../../public/static/media/project_imgs/glider-static.png";
+import Kivy from "../../public/static/media/project_imgs/kivy.png";
 
 // Card Button Footer
 import ProjectCardFooter from "./ProjectCardFooter";
-import { projectLinks } from "../util-data/project_links";
+import { projectLinks } from "../../util-data/project_links";
 
 export function LifeApp() {
   return (

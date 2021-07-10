@@ -254,8 +254,7 @@
       .img1 {
         margin-bottom: 3rem;
         max-width: 500px;
-        width: 100%;
-        height: auto;
+        @include fullWidthImg;
       }
       .img2 {
         background-color: #fff;
@@ -385,16 +384,11 @@
     }
   }
   .journeyImgOuter {
-    padding: 0.5rem;
     box-shadow: $smBoxShadow;
     background-color: #ffffff;
     border-radius: 10px;
     cursor: pointer;
-
-    img {
-      background-color: inherit;
-      border-radius: inherit;
-    }
+    @include fullWidthImg;
   }
 }
 
@@ -422,6 +416,7 @@
 
     img {
       cursor: pointer;
+      @include fullWidthImg;
     }
   }
 }
