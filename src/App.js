@@ -3,6 +3,8 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 import "./public/static/css/app.css";
 
+import Spinner from "./components/Spinner";
+
 const Home = lazy(() => import("./components/home/Home"));
 const EdZen2 = lazy(() => import("./components/edZen2/EdZen2"));
 
@@ -12,13 +14,13 @@ export default function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/home">
-            <Suspense fallback={<RenderLoader />}>
+            <Suspense fallback={<Spinner />}>
               <Home />
             </Suspense>
           </Route>
 
           <Route exact path="/EdZen2">
-            <Suspense fallback={<RenderLoader />}>
+            <Suspense fallback={<Spinner />}>
               <EdZen2 />
             </Suspense>
           </Route>
@@ -37,11 +39,3 @@ export default function App() {
 }
 
 // Wireframe: https://wireframe.cc/ROwrUh
-
-function RenderLoader() {
-  return (
-    <>
-      <h1 className="topRow-container2">Loading...</h1>
-    </>
-  );
-}

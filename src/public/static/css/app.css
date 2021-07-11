@@ -397,6 +397,50 @@ footer > .container .btn img {
   margin: 0.25rem;
 }
 
+.outerTest {
+  position: relative;
+  background-color: #967d7d;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.outerTest svg {
+  margin: auto auto;
+  width: 300px;
+  height: 300px;
+  fill: #0095c2;
+  -webkit-animation: spinner 3000ms linear infinite;
+          animation: spinner 3000ms linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 /* 
 Fira Sans Regular
 font-family: fira-sans, sans-serif;

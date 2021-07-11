@@ -1,4 +1,3 @@
-import { lazy, Suspense } from "react";
 import { Container, Col } from "react-bootstrap";
 // import { Link } from "react-router-dom";
 import PDF from "../../public/static/media/stevenE_publicResume.pdf";
