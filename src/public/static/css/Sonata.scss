@@ -1,0 +1,416 @@
+@import "scss/variables", "scss/mixin", "scss/media";
+
+.SonataBody {
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+
+  p {
+    font-size: 1.2em;
+    text-align: justify;
+    hyphens: auto;
+    line-height: 1.25em;
+  }
+  em {
+    @extend p;
+  }
+  img {
+    cursor: pointer;
+  }
+}
+
+.sHead {
+  background-color: #333;
+  position: relative;
+
+  .absoluteHomeArrow {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    bottom: 10px;
+    left: 10px;
+
+    svg {
+      fill: #ffffff;
+      margin: auto 0;
+      @include fullWidthImg;
+
+      .cls-1 {
+        fill: #ffffff;
+        stroke: none;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    padding: 0;
+    min-height: $sectionHeight;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 1rem 2rem;
+    font-family: Noto Sans, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    > div {
+      max-width: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+
+      .sLogo {
+        width: 200px;
+        height: auto;
+        color: #ffffff;
+      }
+      p {
+        margin: 3rem auto 0;
+        color: #fff;
+        text-align: start;
+        hyphens: none;
+      }
+      a {
+        margin: 0;
+        margin-top: 3rem;
+        color: #b4eaff;
+        text-decoration: underline 1px;
+      }
+      img {
+        max-width: 100%;
+        box-shadow: $smBoxShadowWhite, $smBoxShadowWhite;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.introSection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $sectionPadding;
+
+  .textCol {
+    margin: 1rem auto;
+    padding: 1rem 3rem 0.5em;
+
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .btnCol {
+    display: inherit;
+    justify-content: center;
+
+    .btn {
+      margin: 0 1.5rem;
+    }
+  }
+}
+
+.wireframeSection {
+  padding: $sectionPadding;
+  display: flex;
+
+  .textContainer1 {
+    margin: 0 auto;
+
+    h3,
+    p {
+      margin-bottom: 3rem;
+    }
+  }
+  .imgContainer1 {
+    margin: 0 auto;
+
+    img {
+      @include fullWidthImg;
+      box-shadow: $smBoxShadow;
+      border-radius: 6px;
+    }
+  }
+}
+
+// =========================================================================
+// =========================== PROTOTYPE SECTIONS ==========================
+.prototypeSection1 {
+  padding: $sectionPadding;
+  display: flex;
+  flex-wrap: wrap;
+
+  h3 {
+    margin-bottom: 0;
+    max-width: 60%;
+  }
+
+  .textContainer2 p {
+    margin-bottom: 3rem;
+
+    &:first-child {
+      margin-top: 3rem;
+    }
+  }
+  .videoContainer {
+    padding: 0 1rem;
+
+    video {
+      width: 100%;
+      height: auto;
+      box-shadow: $smBoxShadow;
+      border-radius: 6px;
+    }
+  }
+}
+
+.prototypeSection2 {
+  padding: $sectionPadding;
+  display: flex;
+  flex-wrap: wrap;
+
+  .textHead {
+    padding: 0;
+    // padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+
+    h3 {
+      line-height: 1.5em;
+      margin: 0;
+      box-shadow: $lgAreaShadow;
+      padding: 1rem;
+      border-radius: 6px;
+    }
+  }
+  .textContainer3 {
+    margin-right: 0;
+    margin-left: auto;
+
+    p {
+      margin-bottom: 2rem;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  .imgContainer2 {
+    padding: 1rem;
+    margin-top: 3rem;
+    background-color: #212121;
+    box-shadow: $smBoxShadow;
+    display: flex;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+
+    img {
+      width: auto;
+      max-height: 30vh;
+      margin: auto;
+      padding-left: 5px;
+    }
+  }
+}
+
+.prototypeSection3 {
+  padding: $sectionPadding;
+  display: flex;
+
+  > div {
+    display: flex;
+    align-items: center;
+  }
+
+  .textContainer4 {
+    padding: 0 2rem;
+
+    h3 {
+      line-height: 1.5em;
+      text-align: justify;
+      hyphens: auto;
+    }
+  }
+  .imgContainer3 {
+    min-height: 452px;
+    padding: 0 2rem;
+    background-color: #212121;
+    box-shadow: $smBoxShadow;
+    border-radius: 6px;
+
+    img {
+      @include fullWidthImg;
+    }
+  }
+}
+
+.prototypeSection4 {
+  padding: $sectionPadding;
+  display: flex;
+
+  .textContainer5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2rem;
+
+    h3,
+    .btn {
+      margin-bottom: 3rem;
+    }
+  }
+
+  img {
+    box-shadow: $smBoxShadow;
+    @include fullWidthImg;
+  }
+}
+
+// =========================================================================
+// ============================= CODING SECTIONS ===========================
+.codingSec1 {
+  padding: $sectionPadding;
+  display: flex;
+  flex-wrap: wrap;
+
+  h3,
+  p {
+    margin-bottom: 3rem;
+    text-align: justify;
+  }
+
+  img {
+    @include fullWidthImg;
+    margin-bottom: 1.5rem;
+    box-shadow: $smBoxShadow;
+    border-radius: 6px;
+  }
+  .btn {
+    margin: 0 auto;
+  }
+}
+
+.codingSec2 {
+  padding: $sectionPadding;
+  display: flex;
+  flex-wrap: wrap;
+
+  > div {
+    margin: 0 auto 3rem;
+  }
+
+  .imageContainer4 {
+    margin-bottom: 0;
+    padding: 2rem 1rem;
+    background-color: #212121;
+    border-radius: 6px;
+    box-shadow: $smBoxShadow;
+
+    img {
+      @include fullWidthImg;
+    }
+  }
+}
+
+.codingSec3 {
+  padding: $sectionPadding;
+  display: flex;
+  flex-wrap: wrap;
+
+  .textContainer5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    box-shadow: $smBoxShadow;
+    border-radius: 6px;
+
+    h3 {
+      margin: 2rem 0 3rem;
+      text-align: justify;
+    }
+    .btn {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .imgContainer5 {
+    padding: 0;
+    margin: 0 0 0 auto;
+    position: relative;
+
+    img {
+      @include fullWidthImg;
+      border-radius: 6px;
+      box-shadow: $smBoxShadow;
+    }
+    .hoverOverlay {
+      display: flex;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 4px;
+
+      h2 {
+        display: none;
+        color: white;
+        margin: auto 0;
+        text-align: center;
+        width: 100%;
+        background-color: #8a8a8a5b;
+        padding: 1rem 0;
+
+        svg {
+          stroke: #ffffff;
+          margin-left: 1rem;
+          margin-top: 10px;
+        }
+      }
+      &:hover {
+        display: flex;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.85);
+        box-shadow: inset 0px 0px 25px #ffffff;
+
+        h2 {
+          display: initial;
+        }
+      }
+    }
+    .gradientShadow1 {
+      position: absolute;
+      display: block;
+      height: 7%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 6px 6px 0 0;
+      background-color: blue;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      );
+    }
+    .gradientShadow2 {
+      position: absolute;
+      display: block;
+      height: 7%;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      border-radius: 0 0 6px 6px;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+  }
+}

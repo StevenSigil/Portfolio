@@ -158,7 +158,9 @@
 
 @media (max-width: 767px) {
   .eHead4 .absoluteHomeArrow {
-    top: 15%;
+    top: 15px;
+    right: 15px;
+    left: auto !important;
   }
   .eHead4 .container {
     -webkit-box-pack: center;
@@ -203,10 +205,6 @@
 @media (max-width: 576px) {
   .fixedTopBtn {
     display: none;
-  }
-  .eHead4 .absoluteHomeArrow {
-    top: 0.25rem;
-    right: 0;
   }
   .eHead4 .container > div {
     padding-left: 0;

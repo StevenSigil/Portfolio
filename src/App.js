@@ -7,6 +7,7 @@ import Spinner from "./components/Spinner";
 
 const Home = lazy(() => import("./components/home/Home"));
 const EdZen2 = lazy(() => import("./components/edZen2/EdZen2"));
+const SonataEvents = lazy(() => import("./components/sonata/SonataEvents"));
 
 export default function App() {
   return (
@@ -22,6 +23,12 @@ export default function App() {
           <Route exact path="/EdZen2">
             <Suspense fallback={<Spinner />}>
               <EdZen2 />
+            </Suspense>
+          </Route>
+
+          <Route exact path="/sonataEvents">
+            <Suspense fallback={<Spinner />}>
+              <SonataEvents />
             </Suspense>
           </Route>
 

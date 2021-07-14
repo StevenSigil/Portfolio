@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import "../../public/static/css/EdZ2.css";
 import PageHeading from "./PageHeading";
 
-import ExpandedImage from "./ExpandedImage";
-import TopOfPageBtn from "./TopOfPageBtn";
+import ExpandedImage from "../ExpandedImage";
+import TopOfPageBtn from "../TopOfPageBtn";
 import IntroSection from "./IntroSection";
 import ResearchSection from "./ResearchSection";
 import WireFrameSection from "./WireFrameSection";

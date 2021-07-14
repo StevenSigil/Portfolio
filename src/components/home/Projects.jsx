@@ -11,7 +11,7 @@ import {
 import { SimonApp, TinDogApp, DiceApp } from "./ProjectCards";
 
 import ProjectsHeading from "./ProjectsHeading";
-// import UXCards from "./UXCards";
+import UXCards from "./UXCards";
 
 export default function Projects() {
   return (

@@ -93,9 +93,9 @@ function Sec2({ imgClickFunc }) {
     <Container className="wf2">
       <Col lg={4}>
         <p>
-          The body's of each page is broken up into {">"}50% vertical screen
-          height sections, leaving enough room to see the next section is just a
-          scroll away.
+          The body's of each page is broken up into {"+"}50% vertical screen
+          height sections. This communicates additional content can be found by
+          scrolling.
         </p>
 
         <p>

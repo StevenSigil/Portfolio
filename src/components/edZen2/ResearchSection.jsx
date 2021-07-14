@@ -120,7 +120,7 @@ function UsersSection({ imgClickFunc }) {
       <Col lg={4} className="usersHeading">
         <h3>
           Randomly selected users find high value in the articles and
-          experienced a sense of positive emotion
+          experience a sense of positive emotion
         </h3>
       </Col>
       <Col lg={8} className="userTextArea">

@@ -83,7 +83,7 @@ function SonataCard() {
 
   return (
     <Card>
-      <Link to={{ pathname: "/edZen2", hash: "#top" }}>
+      <Link to={{ pathname: "/sonataEvents", hash: "#top" }}>
         <Card.Img
           srcSet={imgSrcSet}
           src={sonata05x}
@@ -108,7 +108,7 @@ function SonataCard() {
         <Card.Footer className="projectCard-footer">
           <Button
             type="link"
-            href="/edZen2#top"
+            href="/sonataEvents"
             variant="outline-dark"
             rel="noreferrer"
           >
