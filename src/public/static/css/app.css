@@ -372,16 +372,25 @@ footer > .container {
 }
 
 footer > .container .btn {
-  padding: 0;
+  width: auto;
+  min-height: calc(32px + 1rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer > .container .btn img {
-  padding: 10px 12px;
+  width: 32px;
+  height: 32px;
+  aspect-ratio: 1 / 1;
   -webkit-transition: all 250ms;
   transition: all 250ms;
 }
 
-footer > .container .btn img:hover {
+footer > .container .btn:hover img {
   -webkit-filter: invert(50);
           filter: invert(50);
 }
@@ -395,26 +404,38 @@ footer > .container .btn img {
   margin: 0.25rem;
 }
 
-.outerTest {
+.loadingSpinner {
   position: relative;
-  background-color: #967d7d;
+  background-color: #eeeeee;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.outerTest svg {
-  margin: auto auto;
+.loadingSpinner svg {
+  margin-bottom: 2rem;
   width: 300px;
   height: 300px;
-  fill: #0095c2;
+  fill: #ee0229;
   -webkit-animation: spinner 3000ms linear infinite;
           animation: spinner 3000ms linear infinite;
+}
+
+.loadingSpinner h2 {
+  font-size: 5em;
+  color: #ee0229;
 }
 
 @-webkit-keyframes spinner {

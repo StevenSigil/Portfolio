@@ -183,13 +183,20 @@
 }
 
 @mixin btnImageInvert {
-  padding: 0;
+  width: auto;
+  min-height: calc(32px + 1rem);
+  display: flex;
+  align-items: center;
 
   img {
-    padding: 10px 12px;
+    // margin: auto;
+    width: 32px;
+    height: 32px;
+    aspect-ratio: 1 / 1;
     transition: all 250ms;
-
-    &:hover {
+  }
+  &:hover {
+    img {
       filter: invert(50);
     }
   }

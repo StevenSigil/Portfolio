@@ -769,16 +769,25 @@
 }
 
 .projectsSubsectionRow .card .projectCard-footer .github-btn {
-  padding: 0;
+  width: auto;
+  min-height: calc(32px + 1rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projectsSubsectionRow .card .projectCard-footer .github-btn img {
-  padding: 10px 12px;
+  width: 32px;
+  height: 32px;
+  aspect-ratio: 1 / 1;
   -webkit-transition: all 250ms;
   transition: all 250ms;
 }
 
-.projectsSubsectionRow .card .projectCard-footer .github-btn img:hover {
+.projectsSubsectionRow .card .projectCard-footer .github-btn:hover img {
   -webkit-filter: invert(50);
           filter: invert(50);
 }
@@ -817,6 +826,7 @@
           box-shadow: 0 1px 5px 1px #494949;
   border-radius: 0.25rem;
   border: none;
+  background-color: #ffffff;
 }
 
 .uxCards .card .card-body .card-title {
@@ -826,10 +836,6 @@
 .uxCards .card .card-body .card-subtitle {
   margin-bottom: 1.5rem;
   font-size: 1.1em;
-}
-
-.uxCards .card .card-body .projectCard-footer {
-  background: inherit;
 }
 
 .uxCards .card .card-body .projectCard-footer .btn {

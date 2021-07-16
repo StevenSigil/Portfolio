@@ -93,7 +93,7 @@ function Sec2({ imgClickFunc }) {
     <Container className="wf2">
       <Col lg={4}>
         <p>
-          The body's of each page is broken up into {"+"}50% vertical screen
+          The body of each page is broken up into {"+"}50% vertical screen
           height sections. This communicates additional content can be found by
           scrolling.
         </p>
@@ -132,8 +132,8 @@ function Sec3() {
           As the pages grew in length, it became obvious that the{" "}
           <strong>
             large gaps between page sections made intra-page navigation an issue
-          </strong>
-          ; as it took much effort to scroll to any single section.
+          </strong>{" "}
+          as it took much effort to scroll to any single section.
         </p>
         <p>
           To fix this, section headings were placed on the right side of each

@@ -49,13 +49,13 @@ function CodingIntro({ handleImageClick }) {
         <p>
           Notice the project (that was made with XD) in the main area of the
           screen. Then any element you click on (in the project) displays the
-          properties of that element in the right side panel.
+          properties of that element in the right-side panel.
         </p>
       </Col>
       <Col lg={4}>
         <p>
           This is very convenient for front end developers to quickly get the
-          css properties of the designed elements, preventing guess work and
+          CSS properties of the designed elements, preventing guess work and
           delivering a consistent quality product.
         </p>
       </Col>
@@ -102,7 +102,7 @@ function CodingSec2({ handleImageClick }) {
         <p>
           Because this webpage uses many images, before starting development,
           all image assets were gathered for later use. Since these images are
-          pre-sized, positioning and sizing in css was much easier.
+          pre-sized, positioning and sizing in CSS was much easier.
         </p>
       </Col>
 

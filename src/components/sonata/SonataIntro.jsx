@@ -24,7 +24,7 @@ export default function SonataIntro() {
       <Col lg={6} className="textCol">
         <h3>Objective</h3>
         <p>
-          Create a landing page prototype for a service oriented company which
+          Create a landing page prototype for a service-oriented company which
           caters to trends; both in styles and content. This page will
           prominently display the "ask", offer a limited time deal, and provide
           links to other pages for additional information.

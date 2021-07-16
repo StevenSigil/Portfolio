@@ -79,21 +79,27 @@ footer {
 }
 
 // ============================================================
-// ======================== Test Component ====================
-.outerTest {
+// ======================== Loading Spinner ===================
+.loadingSpinner {
   position: relative;
-  background-color: rgb(150, 125, 125);
+  background-color: #eeeeee;
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   svg {
-    margin: auto auto;
+    margin-bottom: 2rem;
     width: 300px;
     height: 300px;
-    fill: rgb(0, 149, 194);
+    fill: rgb(238, 2, 41);
     animation: spinner 3000ms linear infinite;
+  }
+  h2 {
+    font-size: 5em;
+    color: rgb(238, 2, 41);
   }
 }
 @keyframes spinner {
@@ -154,7 +160,6 @@ footer {
     }
   }
 }
-
 
 // ============================================================
 // ======================== TOP OF PAGE BTN ===================

@@ -4,8 +4,9 @@ import { ReactComponent as LoadingSpinner } from "../public/static/media/logos-i
 
 export default function Spinner() {
   return (
-    <div className="outerTest">
+    <div className="loadingSpinner">
       <LoadingSpinner />
+      <h2>Loading</h2>
     </div>
   );
 }

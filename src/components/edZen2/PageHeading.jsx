@@ -22,7 +22,7 @@ export default function PageHeading({ handleImageClick }) {
       <Container>
         <Col lg={5}>
           <EdZenLogo />
-          <p>A concept project for a blog grown beyond Wordpress</p>
+          <p>A concept project for a blog grown beyond WordPress</p>
         </Col>
 
         <Col lg={7}>

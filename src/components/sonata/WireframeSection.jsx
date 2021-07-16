@@ -17,7 +17,7 @@ export default function WireframeSection({ handleImageClick }) {
         </h3>
         <p>
           After doing competitive research, I found most of the competition
-          SonataEvents has are either exclusively wedding planning company's or
+          SonataEvents has, are either exclusively wedding planning company's or
           are extremely flashy.
         </p>
 
@@ -33,9 +33,8 @@ export default function WireframeSection({ handleImageClick }) {
 
         <p>
           For example, deciding to use a large animated "Hero" background image
-          to draw attention and build excitement. Using a predominantly
-          displayed call to action form. Focused spacing between section
-          elements. Etc.
+          to draw attention and build excitement. Using a prominently displayed
+          call to action form. Focused spacing between section elements. Etc.
         </p>
       </Col>
 
@@ -56,5 +55,3 @@ export default function WireframeSection({ handleImageClick }) {
     </Container>
   );
 }
-
-// Transparency in the navbar to minimize distraction from the content but keep readability.

@@ -8,8 +8,8 @@ export default function IntroSection() {
         <h3>Overview</h3>
 
         <p>
-          Everyday Zen is a online publication website providing a place for the
-          exploration and education of alternative ways of living.
+          Everyday Zen is an online publication website providing a place for
+          the exploration and education of alternative ways of living.
         </p>
         <p>
           In addition to producing articles, they generate revenue through
@@ -39,7 +39,7 @@ export default function IntroSection() {
           exclusive content. This change in strategy has led to steady growth.
         </p>
         <p>
-          Currently being limited to a generic wordpress blog setup, this
+          Currently being limited to a generic WordPress blog setup, this
           audience growth is not reflected in email subscription sign-ups nor to
           a gain in traffic to the Amazon store/partnering brands.
         </p>
@@ -61,10 +61,12 @@ export default function IntroSection() {
             Provide an interactive prototype of the product formatted for
             standard desktop browser sizes
           </p>
-          {/* <p>(Self-Directed Project)</p> */}
         </div>
 
-        <Button href="https://xd.adobe.com/view/d4155688-0edc-460a-9a10-0f1ae6d83d83-8146/?fullscreen">
+        <Button
+          href="https://xd.adobe.com/view/d4155688-0edc-460a-9a10-0f1ae6d83d83-8146/?fullscreen"
+          target="_blank"
+        >
           View Prototype on XD
         </Button>
       </Col>

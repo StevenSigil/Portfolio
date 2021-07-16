@@ -19,13 +19,7 @@ export default function Projects() {
       <Container fluid className="row3-main-container" id="projects-heading">
         <ProjectsHeading />
 
-        {/* ==================================================================
-        ======================================================================
-        UNCOMMENT BELOW COMPONENTS WHEN READY TO PUBLISH UX SECTION!! 
-
         <UXCards />
-        ======================================================================
-        ================================================================== */}
 
         <Row id="web-design" className="projectsSubsectionRow">
           <Col xl={2} lg={12}>

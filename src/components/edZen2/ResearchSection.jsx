@@ -62,9 +62,9 @@ function Business() {
 
           <p>
             At this early stage of development, it was crucial to declare what
-            exactly the goals of Everyday Zen were in regards to this project.
-            After a large list of wants and needs was produced, an overall theme
-            was agreed upon.{" "}
+            exactly the goals of Everyday Zen were regarding this project. After
+            a large list of wants and needs was produced, an overall theme was
+            agreed upon.{" "}
           </p>
 
           <p>
@@ -119,8 +119,8 @@ function UsersSection({ imgClickFunc }) {
     <Container className="userResearch">
       <Col lg={4} className="usersHeading">
         <h3>
-          Randomly selected users find high value in the articles and
-          experience a sense of positive emotion
+          Randomly selected users find high value in the articles and experience
+          a sense of positive emotion
         </h3>
       </Col>
       <Col lg={8} className="userTextArea">
@@ -145,7 +145,7 @@ function UsersSection({ imgClickFunc }) {
           </li>
           <li>
             The customer feels a <strong>connection with the author</strong> of
-            any particular article.
+            any article.
           </li>
           <li>
             The customer uses the website to{" "}
@@ -154,7 +154,7 @@ function UsersSection({ imgClickFunc }) {
         </ul>
 
         <p>
-          From these results, 3 mock-user persona's were made as a reference of
+          From these results, 3 mock-user personas were made as a reference of
           who will be using this website.
         </p>
       </Col>
@@ -180,8 +180,6 @@ function UsersSection({ imgClickFunc }) {
           <img
             srcSet={p1_SrcSet}
             src={persona1_05x}
-            width="485px"
-            height="245px"
             alt="User Persona 3"
             onClick={() =>
               imgClickFunc(persona1_05x, p1_SrcSet, "User Persona 3")
@@ -200,7 +198,7 @@ function CompetitorSection({ imgClickFunc }) {
     <Container className="competitiveAnalysis">
       <Col lg={7} className="compAnalysisImgArea">
         <h3>
-          An Emphasis on a Unique Layout and Avoiding Generic Wordpress-like
+          An Emphasis on a Unique Layout and Avoiding Generic WordPress-like
           Elements Differentiates this Project from the Competition
         </h3>
 
@@ -228,7 +226,8 @@ function CompetitorSection({ imgClickFunc }) {
           </li>
 
           <li>
-            General <strong>styles</strong> of websites were close to or exactly{" "}
+            General <strong>styles</strong> of websites were close to or
+            completely {" "}
             <strong>identical in terms of colors, fonts, etc...</strong>
           </li>
 
@@ -257,9 +256,8 @@ function JourneyMapSection({ imgClickFunc }) {
       <div className="journeyTextArea">
         <Col lg={5}>
           <p>
-            A Journey Map mixed with a User Flow was made, representing the most
-            likely path a new audience member would take given the above user
-            research.
+            A Journey Map mixed with a User Flow was made, representing the path
+            a new audience member would take given the above user research.
           </p>
         </Col>
 
@@ -267,7 +265,7 @@ function JourneyMapSection({ imgClickFunc }) {
           <p>
             A user's primary goal is inferred to be getting to an article. This
             shows the company's idea of prioritizing content over pushing
-            products is inline with the customer's expectations - meaning a
+            products is in line with the customer's expectations - meaning a
             better experience for the user!
           </p>
         </Col>

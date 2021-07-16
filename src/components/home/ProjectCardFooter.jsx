@@ -20,7 +20,7 @@ function ProjectCardFooter(props) {
         rel="noreferrer"
         target="_blank"
       >
-        <Image src={GithubMark} width="100%" height="100%" alt={links.github} />
+        <Image src={GithubMark} width="32px" height="32px" alt={links.github} />
       </Button>
 
       {links.website !== null ? (

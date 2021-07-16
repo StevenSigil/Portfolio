@@ -34,13 +34,9 @@ export default function EdZen2() {
 
       <span className="edZ2Body">
         <PageHeading handleImageClick={handleImageClick} />
-
         <IntroSection />
-
         <ResearchSection handleImageClick={handleImageClick} />
-
         <WireFrameSection handleImageClick={handleImageClick} />
-
         <PrototypeSection handleImageClick={handleImageClick} />
 
         <Footer />

@@ -39,12 +39,12 @@ function ProtoSec1() {
 
       <Col lg={5} className="textContainer2">
         <p>
-          A large animated background was found and edited to serve as the
+          A large, animated background was found and edited to serve as the
           "Hero" background Image.
         </p>
         <p>
           Then, attempting to follow the Z-Pattern layout, a translucent navbar
-          was placed on top of the image, followed by the first Call To Action
+          was placed on top of the image, followed by the first Call-to-Action
           right in the middle of the image.
         </p>
         <p>
@@ -85,7 +85,7 @@ function ProtoSec2({ handleImageClick }) {
         </p>
         <p>
           Keeping with the theme, the pink button from the "Hero" image was
-          turned into it's own section displaying the Limited Special.
+          turned into its own section displaying the Limited Special.
         </p>
         <p>
           The pinks being on top of the dark gray background kept the contrast
@@ -125,7 +125,7 @@ function ProtoSec3({ handleImageClick }) {
     <Container className="prototypeSection3">
       <Col lg={4} className="textContainer4">
         <h3>
-          The Call To Action Forms were Made to be Non-Intimidating Via Easy to
+          The Call-to-Action Forms were Made to be Non-Intimidating Via Easy to
           Fill Out Forms, Minimal Styling and Tempting Buttons & Images.
         </h3>
       </Col>

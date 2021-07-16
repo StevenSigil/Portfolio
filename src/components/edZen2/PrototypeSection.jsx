@@ -39,7 +39,10 @@ function Heading({ imgClickFunc }) {
       <Col lg={3} className="textButtonOuter">
         <h2 className="">Final Mockups</h2>
 
-        <Button href="https://xd.adobe.com/view/d4155688-0edc-460a-9a10-0f1ae6d83d83-8146/?fullscreen">
+        <Button
+          href="https://xd.adobe.com/view/d4155688-0edc-460a-9a10-0f1ae6d83d83-8146/?fullscreen"
+          target="_blank"
+        >
           View Prototype on XD
         </Button>
       </Col>
@@ -69,7 +72,7 @@ function ColorsSection({ imgClickFunc }) {
         <p>
           To keep with earthy tones, a (mostly) monotone color scheme was
           decided on to provide consistency and simplicity; with a goal of
-          aligning the brand as a whole with the color green.
+          aligning the brand with green.
         </p>
         <p>
           To further differentiate Everyday Zen with the competition, an
@@ -96,9 +99,9 @@ function EmailSection({ imgClickFunc }) {
           or an annoying overlay that disrupted the flow of the site.{" "}
         </p>
         <p>
-          My approach was to give it a colored section with high contrast font
+          My approach was to give it a colored section with high-contrast font
           and icons to make it unavoidable when browsing. Then adding it on the
-          pages following the user flow almost guarantees it can't be missed.
+          pages following the user flow almost guarantees it cannot be missed.
         </p>
       </Col>
       <Col lg={6} className="subsImgContainer">
@@ -193,13 +196,14 @@ function ProtoScrollSec({ imgClickFunc }) {
     <>
       <Container className="protoScrollOuter">
         <div className="resultsHead">
-          <h2>Results</h2>
-          <Button href="https://xd.adobe.com/view/d4155688-0edc-460a-9a10-0f1ae6d83d83-8146/?fullscreen">
+          <h2>Final Results</h2>
+          <Button
+            href="https://xd.adobe.com/view/d4155688-0edc-460a-9a10-0f1ae6d83d83-8146/?fullscreen"
+            target="_blank"
+          >
             View Prototype on XD
           </Button>
         </div>
-
-        <h3>Key Pages</h3>
 
         <div className="ScrollInner">
           <div className="protoScroll">
