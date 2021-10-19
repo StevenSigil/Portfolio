@@ -5,9 +5,15 @@ import "./public/static/css/app.css";
 
 import Spinner from "./components/Spinner";
 
+// import SunOverPlane from "./components/arts/singleItem/SunOverPlane";
+// import SleepingTigers from "./components/arts/singleItem/SleepingTigers";
+// import LDRobots from "./components/arts/singleItem/LDRobots";
+// import DPICorp from "./components/arts/singleItem/DPICorp";
+
 const Home = lazy(() => import("./components/home/Home"));
 const EdZen2 = lazy(() => import("./components/edZen2/EdZen2"));
 const SonataEvents = lazy(() => import("./components/sonata/SonataEvents"));
+const ArtsHome = lazy(() => import("./components/arts/ArtsHome"));
 
 export default function App() {
   return (
@@ -31,6 +37,20 @@ export default function App() {
               <SonataEvents />
             </Suspense>
           </Route>
+
+          <Route exact path="/digitalMedia">
+            <Suspense fallback={<Spinner />}>
+              <ArtsHome />
+            </Suspense>
+          </Route>
+
+          {/* ============================================================== */}
+          {/* ======================== VIDEO PAGES ========================= */}
+          {/* <Route path="/digitalMedia/sunoverplane" component={SunOverPlane} />
+          <Route path="/digitalMedia/stigers" component={SleepingTigers} />
+          <Route path="/digitalMedia/ldrobots" component={LDRobots} />
+          <Route path="/digitalMedia/dpicorp" component={DPICorp} /> */}
+          {/* ============================================================== */}
 
           {/* <Route exact path="/test">
             <Test />

@@ -13,6 +13,10 @@ export default function ProjectsHeading() {
       <Container className="outer-list-group">
         <h3>Skip to:</h3>
 
+        <HashLink smooth to="#UX">
+          <p>UX Design/Case Studies</p>
+        </HashLink>
+
         <HashLink smooth to="#web-design">
           <p>Full Stack Web Applications</p>
         </HashLink>

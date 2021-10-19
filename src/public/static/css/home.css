@@ -581,8 +581,8 @@
   position: relative;
   z-index: 0;
   border-radius: 10px;
-  -webkit-transition: 100ms ease-in-out;
-  transition: 100ms ease-in-out;
+  -webkit-transition: 500ms ease-in;
+  transition: 500ms ease-in;
   text-decoration: none;
   padding: 1rem;
   margin: 0;
@@ -627,7 +627,7 @@
 }
 
 .projectsHeadingSection .outer-list-group a p:hover:before {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .projectsHeadingSection .outer-list-group a p:after {
@@ -640,10 +640,6 @@
   left: 2px;
   top: 2px;
   border-radius: 8px;
-}
-
-.projectsHeadingSection .outer-list-group a p:hover {
-  color: #6a6a6a;
 }
 
 .projectsSubsectionRow {
@@ -792,6 +788,11 @@
           filter: invert(50);
 }
 
+.projectsSubsectionRow .card .uxFooter {
+  margin: 0 -1.5rem -1.5rem;
+  padding: 1.5rem;
+}
+
 .uxCards .card {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -804,6 +805,7 @@
           transform: scale(1);
   -webkit-box-shadow: 0 1px 5px 1px #494949;
           box-shadow: 0 1px 5px 1px #494949;
+  background-color: #fff;
 }
 
 .uxCards .card .card-img {
@@ -813,10 +815,10 @@
   border-radius: 0.25rem;
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
-  -webkit-transition: -webkit-transform 200ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
-  transition: -webkit-transform 200ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
-  transition: transform 200ms ease-in-out, box-shadow 150ms ease-in-out;
-  transition: transform 200ms ease-in-out, box-shadow 150ms ease-in-out, -webkit-transform 200ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+  -webkit-transition: background-color 200ms ease-in, -webkit-transform 200ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+  transition: background-color 200ms ease-in, -webkit-transform 200ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+  transition: transform 200ms ease-in-out, box-shadow 150ms ease-in-out, background-color 200ms ease-in;
+  transition: transform 200ms ease-in-out, box-shadow 150ms ease-in-out, background-color 200ms ease-in, -webkit-transform 200ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
 }
 
 .uxCards .card .card-body {

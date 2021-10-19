@@ -29,3 +29,7 @@ test.scss
 
 ignoredImgs/
 *.ai
+
+src/public/static/media/arts/
+src/components/arts/singleItem/
+LgIframeComp.jsx

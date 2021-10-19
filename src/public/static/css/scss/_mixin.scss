@@ -34,7 +34,7 @@
   position: relative;
   z-index: 0;
   border-radius: $outerBorderRadius;
-  transition: $fastTransition;
+  transition: $slowTransition;
   text-decoration: none;
 
   &:focus {
@@ -62,7 +62,7 @@
     box-shadow: $hovShadow;
 
     &:before {
-      opacity: 1;
+      opacity: 0.8;
     }
   }
   &:after {

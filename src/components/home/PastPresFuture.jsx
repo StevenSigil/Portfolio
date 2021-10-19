@@ -19,37 +19,39 @@ function PastPresFuture() {
             <Col md={9} className="textArea">
               <p>
                 I have always had an eye for detail. In 2014, an opportunity to
-                expand on detail-oriented type skills was presented in the form
-                of digital media and graphic design. I took the opportunity and
-                attended vocational school where I learned how to create things
-                that people liked. Being young and rebellious, as soon as school
-                was concluded, I dropped it all to pursue a career climbing
-                corporate ladders. Very quickly, it became apparent the ladders
-                were slick, hard to hang on to, and usually lead to a cliff.
+                expand on detail-oriented skills was presented in the form of
+                digital media and graphic design. I took the opportunity and
+                attended vocational school where I learned how to effectively
+                communicate through a visual medium. Being young and rebellious,
+                as soon as school was concluded, I dropped it all to pursue a
+                career climbing corporate ladders. Very quickly, it became
+                apparent the ladders were slick, hard to hang on to, and usually
+                lead to a cliff.
               </p>
 
               <p>
-                Eventually, I could not ignore the inner voice who was screaming
-                "This isn't you!". I put my pride to the side and became
-                reacquainted with multi-media in my free time while serving as a
+                Eventually, I could not ignore the inner voice screaming "This
+                isn't you!". I put my pride to the side and became reacquainted
+                with multi-media in my free time while serving as an executive
                 manager in a retail environment.
               </p>
 
               <p>
-                While still in a managerial role, I decided it could be useful
+                While still in a managerial role, I decided it would be useful
                 to know more about working with large amounts of data. This led
                 me to begin using Python for data-analysis. After a while, it
-                was getting rather boring to get the answers to a question but
-                have no one be impressed. This led to me building web interfaces
-                that acted as "interactive reports" and allowed me to learn to
-                integrate more practices from the digital media skills
+                was getting rather boring and frustrating to get answers to
+                questions that would improve our business efforts, without a
+                means of communicating the findings. This led to me building web
+                interfaces that acted as "interactive reports" and allowed me to
+                learn to integrate more practices from the digital media skills
                 previously acquired. After a while of trying, failing, and
                 trying again, I realized the time came to be done walking the
-                corporate path I was on and travel the original road I was meant
-                to be on.
+                corporate path and travel the original road I was meant to be
+                on.
               </p>
 
-              <p>
+              <p style={{ textIndent: "initial" }}>
                 A few weeks after that realization, I left my job, and spent the
                 next several months learning to code...
               </p>
@@ -115,7 +117,7 @@ function PastPresFuture() {
               <h2>Future</h2>
               <EmptyHourglass />
             </Col>
-            <Col md={9}>
+            <Col md={9} className="textArea">
               <p>
                 After long deliberations over things such as The Butterfly
                 Effect (phenomenon - not the movie), I no longer speculate on

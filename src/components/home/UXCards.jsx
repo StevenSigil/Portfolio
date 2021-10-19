@@ -26,7 +26,7 @@ export default function UXCards() {
           <EdZenCard />
         </Col>
 
-        <Col xl={5} lg={12} className="projCardSideways">
+        <Col xl={5} lg={12}>
           <SonataCard />
         </Col>
       </Row>
@@ -63,7 +63,7 @@ function EdZenCard() {
           consistent theme that solidifies brand identity.
         </Card.Text>
 
-        <Card.Footer className="projectCard-footer">
+        <Card.Footer className="projectCard-footer uxFooter">
           <Button
             type="link"
             href="/edZen2#top"
@@ -105,7 +105,7 @@ function SonataCard() {
           consistent theme that solidifies brand identity.
         </Card.Text>
 
-        <Card.Footer className="projectCard-footer">
+        <Card.Footer className="projectCard-footer uxFooter">
           <Button
             type="link"
             href="/sonataEvents"

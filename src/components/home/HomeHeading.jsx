@@ -17,7 +17,7 @@ function HomeHeading() {
         <img
           srcSet={bgImgSrcSet}
           src={bgImg1}
-          alt="Background Image"
+          alt="Background"
           typeof="image/png"
           sizes="100vw"
         />
@@ -39,7 +39,7 @@ function HomeHeading() {
           </Col>
 
           {/* <Col sm={3} xs={6} className="">
-            <Link to="/EdZen2">EdZ</Link>
+            <Link to="/digitalMedia">Digital Media</Link>
           </Col> */}
         </div>
       </Container>
