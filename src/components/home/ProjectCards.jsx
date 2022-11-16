@@ -13,10 +13,36 @@ import Todo from "../../public/static/media/project_imgs/todo-djreact.png";
 import Encrypted from "../../public/static/media/project_imgs/encryption.png";
 import Life from "../../public/static/media/project_imgs/glider-static.png";
 import Kivy from "../../public/static/media/project_imgs/kivy.png";
+import ImageMatcherImg from "../../public/static/media/project_imgs/image_matcher.png";
 
 // Card Button Footer
 import ProjectCardFooter from "./ProjectCardFooter";
 import { projectLinks } from "../../util-data/project_links";
+
+export function ImageMatcher() {
+  return (
+    <Card>
+      <Card.Img
+        src={ImageMatcherImg}
+        alt="Image Matcher"
+        width="350"
+        height="175"
+      />
+      <Card.Body>
+        <Card.Title>Image Matcher</Card.Title>
+        <Card.Text>
+          A program that compares one target image to a/many directory(s) to
+          search for closely-matching images using the OpenCV packages, and sped
+          up by being able to run on multiple cores thanks to joblib.
+        </Card.Text>
+      </Card.Body>
+      <ProjectCardFooter
+        btnName="imageMatcher"
+        links={projectLinks.imageMatcher}
+      />
+    </Card>
+  );
+}
 
 export function LifeApp() {
   return (

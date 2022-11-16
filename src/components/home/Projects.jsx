@@ -1,7 +1,12 @@
 import { Container } from "react-bootstrap";
 import { Col, Row } from "react-bootstrap";
 
-import { CryptographyApp, KivyApp, LifeApp } from "./ProjectCards";
+import {
+  CryptographyApp,
+  ImageMatcher,
+  KivyApp,
+  LifeApp,
+} from "./ProjectCards";
 import {
   MedTrackApp,
   ReactMessenger,
@@ -46,6 +51,32 @@ export default function Projects() {
           </Col>
         </Row>
 
+        <Row id="python-programming" className="projectsSubsectionRow">
+          <Col xl={2} lg={12}>
+            <div className="subsectionHeading">
+              <div>
+                <h3>Python</h3>
+              </div>
+            </div>
+          </Col>
+
+          <Col xl={3} lg={5}>
+            <ImageMatcher />
+          </Col>
+
+          <Col xl={3} lg={5}>
+            <LifeApp />
+          </Col>
+
+          <Col xl={3} lg={5}>
+            <KivyApp />
+          </Col>
+
+          <Col xl={3} lg={5}>
+            <CryptographyApp />
+          </Col>
+        </Row>
+
         <Row id="javascript" className="projectsSubsectionRow">
           <Col xl={2} lg={12}>
             <div className="subsectionHeading">
@@ -63,28 +94,6 @@ export default function Projects() {
           </Col>
           <Col xl={3} lg={5}>
             <DiceApp />
-          </Col>
-        </Row>
-
-        <Row id="python-programming" className="projectsSubsectionRow">
-          <Col xl={2} lg={12}>
-            <div className="subsectionHeading">
-              <div>
-                <h3>Misc. Python</h3>
-              </div>
-            </div>
-          </Col>
-
-          <Col xl={3} lg={5}>
-            <LifeApp />
-          </Col>
-
-          <Col xl={3} lg={5}>
-            <KivyApp />
-          </Col>
-
-          <Col xl={3} lg={5}>
-            <CryptographyApp />
           </Col>
         </Row>
       </Container>

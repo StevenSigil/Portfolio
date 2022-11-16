@@ -1,5 +1,5 @@
 import { Container, Col } from "react-bootstrap";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import PDF from "../../public/static/media/stevenE_publicResume.pdf";
 
 import bgImg1 from "../../public/static/media/mainBg/16x9/Main@0.25x.png";

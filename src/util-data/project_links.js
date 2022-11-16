@@ -1,4 +1,8 @@
 export const projectLinks = {
+  imageMatcher: {
+    github: "https://github.com/StevenSigil/Similar-Image-Finder",
+    website: null,
+  },
   life: {
     github: "https://github.com/StevenSigil/Conways-Game-of-Life",
     website: null,
@@ -16,8 +20,8 @@ export const projectLinks = {
     website: "https://medication-track.herokuapp.com/",
   },
   ReactMessenger: {
-    github: 'https://github.com/StevenSigil/React-Full-Messaging-App',
-    website: 'https://react-full-messaging-app.vercel.app/'
+    github: "https://github.com/StevenSigil/React-Full-Messaging-App",
+    website: "https://react-full-messaging-app.vercel.app/",
   },
   ToDo: {
     github: "https://github.com/StevenSigil/ToDo-Django-React",

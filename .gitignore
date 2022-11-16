@@ -31,5 +31,5 @@ ignoredImgs/
 *.ai
 
 src/public/static/media/arts/
-src/components/arts/singleItem/
+src/components/arts/
 LgIframeComp.jsx

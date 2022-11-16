@@ -26,7 +26,7 @@ export default function ProjectsHeading() {
         </HashLink>
 
         <HashLink smooth to="#python-programming">
-          <p>Misc. Python Projects</p>
+          <p>Python Projects</p>
         </HashLink>
       </Container>
     </Container>

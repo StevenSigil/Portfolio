@@ -1,13 +1,22 @@
 import { Col, Row } from "react-bootstrap";
 
-import { CryptographyApp, KivyApp, LifeApp } from "./ProjectCards";
+import {
+  CryptographyApp,
+  ImageMatcher,
+  KivyApp,
+  LifeApp,
+} from "./ProjectCards";
 
-function PythonCards() {
+export default function PythonCards() {
   return (
     <>
-      <Row id='python-programming' className="row3-inner-container">
+      <Row id="python-programming" className="row3-inner-container">
         <Col md={2}>
           <h3>Python</h3>
+        </Col>
+
+        <Col md={3}>
+          <ImageMatcher />
         </Col>
 
         <Col md={3}>
@@ -25,5 +34,3 @@ function PythonCards() {
     </>
   );
 }
-
-export default PythonCards;
