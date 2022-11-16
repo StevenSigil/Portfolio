@@ -1,6 +1,6 @@
 import { Container, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import PDF from "../../public/static/media/stevenE_publicResume.pdf";
+import PDF from "../../public/static/media/StevenElliott-Resume-Public.pdf";
 
 import bgImg1 from "../../public/static/media/mainBg/16x9/Main@0.25x.png";
 import bgImg2 from "../../public/static/media/mainBg/16x9/Main@0.5x.png";

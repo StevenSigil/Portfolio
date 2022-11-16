@@ -110,7 +110,7 @@ export const certificationData = [
               ${Photoshop075x} 1000w`,
     iAlt: "Steven E. Adobe Photoshop Certification",
     link: "https://verify.certiport.com",
-    linkSecondary: "enter code: wAMN6-22xr",
+    linkSecondary: "code: wAMN6-22xr",
   },
   {
     hText: "Graphic Design with Adobe Illustrator",
@@ -119,7 +119,7 @@ export const certificationData = [
               ${Illustrator075x} 1000w`,
     iAlt: "Steven E. Adobe Illustrator Certification",
     link: "https://verify.certiport.com",
-    linkSecondary: "enter code: duHD-DTze",
+    linkSecondary: "code: duHD-DTze",
   },
   {
     hText: "Media Publication with Adobe InDesign",
@@ -128,7 +128,7 @@ export const certificationData = [
               ${InDesign075x} 1000w`,
     iAlt: "Steven E. Adobe InDesign Certification",
     link: "https://verify.certiport.com",
-    linkSecondary: "enter code: mdd9-DTzP",
+    linkSecondary: "code: mdd9-DTzP",
   },
   {
     hText: "Video Communication with Adobe Premiere",
@@ -137,7 +137,7 @@ export const certificationData = [
               ${Premiere075x} 1000w`,
     iAlt: "Steven E. Adobe Premiere Certification",
     link: "https://verify.certiport.com",
-    linkSecondary: "enter code: wLuuM-HanH",
+    linkSecondary: "code: wLuuM-HanH",
   },
   {
     hText: "Rich Media with Adobe Flash",
@@ -146,6 +146,6 @@ export const certificationData = [
               ${Flash075x} 1000w`,
     iAlt: "Steven E. Adobe Flash Certification",
     link: "https://verify.certiport.com",
-    linkSecondary: "enter code: wbzsW-Hany",
+    linkSecondary: "code: wbzsW-Hany",
   },
 ];

@@ -3,25 +3,21 @@
     background-position: 100% 50%;
   }
 }
-
 @keyframes glowing {
   50% {
     background-position: 100% 50%;
   }
 }
-
 @-webkit-keyframes moveGradient {
   50% {
     background-position: 100% 50%;
   }
 }
-
 @keyframes moveGradient {
   50% {
     background-position: 100% 50%;
   }
 }
-
 @media (max-width: 1200px) {
   .fixedTopBtn {
     right: 10px;
@@ -37,7 +33,6 @@
     padding: 1rem;
   }
 }
-
 @media (max-width: 992px) {
   .fixedTopBtn {
     right: 5px;
@@ -54,7 +49,7 @@
     padding: 0;
   }
   .userResearch .usersHeading,
-  .userResearch .userTextArea {
+.userResearch .userTextArea {
     padding: 0;
   }
   .userResearch .hScrollGroup {
@@ -64,17 +59,16 @@
   .userResearch .hScrollGroup .innerWrapper::-webkit-scrollbar {
     width: 0.5rem;
     height: 0.5rem;
-    border-radius: 0.33333rem;
+    border-radius: 0.3333333333rem;
   }
   .userResearch .hScrollGroup .innerWrapper::-webkit-scrollbar-thumb {
     background: #333333;
-    border-radius: 0.33333rem;
+    border-radius: 0.3333333333rem;
   }
   .userResearch .hScrollGroup .innerWrapper::-webkit-scrollbar-track {
     background: #858585;
-    border-radius: 0.33333rem;
-    -webkit-box-shadow: 0 2px 5px #000;
-            box-shadow: 0 2px 5px #000;
+    border-radius: 0.3333333333rem;
+    box-shadow: 0 2px 5px #000;
     margin: 0 5vw;
   }
   .userResearch .hScrollGroup .innerWrapper {
@@ -113,8 +107,7 @@
     padding: 0.25rem;
   }
   .siteMap .siteMapHead h3 {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     max-width: 100%;
     padding: 0;
     margin-bottom: 3rem;
@@ -126,8 +119,7 @@
     padding: 1rem;
     border-radius: 6px 6px 0 0;
     background-color: #333333;
-    -webkit-box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
-            box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
+    box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
     z-index: 1;
   }
   .moodBoard .moodBoardImgCont {
@@ -135,8 +127,7 @@
     border-radius: 0 0 6px 6px;
     margin-top: 0px;
     z-index: 0;
-    -webkit-box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
-            box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
+    box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
     background-color: #333333;
   }
   .finalProto .colorScheme {
@@ -155,7 +146,6 @@
     padding: 0 1rem;
   }
 }
-
 @media (max-width: 767px) {
   .eHead4 .absoluteHomeArrow {
     top: 15px;
@@ -163,9 +153,7 @@
     left: auto !important;
   }
   .eHead4 .container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .eHead4 .container > div svg {
     margin: auto;
@@ -177,8 +165,7 @@
     font-size: 1.25em;
   }
   .finalProto .colorScheme {
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
   }
   .finalProto .colorScheme .svgOuter {
     padding: 0 1rem;
@@ -201,7 +188,6 @@
     padding: 1rem;
   }
 }
-
 @media (max-width: 576px) {
   .fixedTopBtn {
     display: none;
@@ -210,7 +196,7 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .sectionTitle, .researchSection h2, .wireframe .wfPre h2, .finalProto .imgTextHeading .textButtonOuter h2, .finalProto .protoScrollOuter .resultsHead h2 {
+  .sectionTitle, .finalProto .protoScrollOuter .resultsHead h2, .finalProto .imgTextHeading .textButtonOuter h2, .wireframe .wfPre h2, .researchSection h2 {
     margin-left: initial !important;
     margin-right: initial !important;
   }
@@ -240,7 +226,7 @@
     margin: 5% auto 0;
   }
   .finalProto .subscriptArea .subsImgContainer,
-  .finalProto .protoTextArea2 {
+.finalProto .protoTextArea2 {
     padding: 0;
   }
   .finalProto .scrollGroupsDemo div {
@@ -259,7 +245,6 @@
     margin-left: 0;
   }
 }
-
 @media (min-width: 1200px) {
   .sectionHeading {
     width: 60%;
@@ -268,24 +253,20 @@
     max-width: 45vw;
   }
 }
-
 @media (min-width: 992px) {
   footer > .container {
     max-width: 30% !important;
   }
 }
-
 @media (min-width: 768px) {
   .linkCol {
     text-align: start !important;
   }
 }
-
 .eHead4 {
   background-color: #333;
   position: relative;
 }
-
 .eHead4 .absoluteHomeArrow {
   position: absolute;
   width: 50px;
@@ -293,59 +274,39 @@
   bottom: 10px;
   left: 10px;
 }
-
 .eHead4 .absoluteHomeArrow svg {
   fill: #ffffff;
   margin: auto 0;
   max-width: 100%;
   height: auto;
 }
-
 .eHead4 .absoluteHomeArrow svg .cls-1 {
   fill: #ffffff;
   stroke: none;
 }
-
 .eHead4 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0;
   min-height: 60vh;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 2rem 1rem 2rem;
 }
-
 .eHead4 .container > div {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 1rem;
 }
-
 .eHead4 .container > div svg {
   max-width: 225px;
   height: auto;
   margin-left: 5px;
 }
-
 .eHead4 .container > div p {
   margin: 3rem auto 0;
   color: #fff;
@@ -354,29 +315,21 @@
       -ms-hyphens: none;
           hyphens: none;
 }
-
 .eHead4 .container > div img {
   max-width: 100%;
   height: auto;
   cursor: pointer;
-  -webkit-box-shadow: 0px 0px 5px 2px #ffffff70, 0px 0px 5px 2px #ffffff70;
-          box-shadow: 0px 0px 5px 2px #ffffff70, 0px 0px 5px 2px #ffffff70;
+  box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.4392156863), 0px 0px 5px 2px rgba(255, 255, 255, 0.4392156863);
   border-radius: 10px;
 }
 
 .needsCenteredAll {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.sectionTitle, .researchSection h2, .wireframe .wfPre h2, .finalProto .imgTextHeading .textButtonOuter h2, .finalProto .protoScrollOuter .resultsHead h2 {
+.sectionTitle, .finalProto .protoScrollOuter .resultsHead h2, .finalProto .imgTextHeading .textButtonOuter h2, .wireframe .wfPre h2, .researchSection h2 {
   margin-left: -1rem;
   margin-bottom: 0;
   font-size: 3em;
@@ -391,13 +344,11 @@
   background-color: #fff;
   line-height: 1.5em;
 }
-
 .edZ2Body h3 {
   font-size: 2em;
   margin-bottom: 1rem;
   font-weight: 500;
 }
-
 .edZ2Body p {
   font-size: 1.2em;
   text-align: justify;
@@ -406,7 +357,6 @@
           hyphens: auto;
   line-height: 1.25em;
 }
-
 .edZ2Body strong {
   font-size: 1em;
   -webkit-hyphens: none;
@@ -414,110 +364,81 @@
           hyphens: none;
   line-height: 1.25em;
 }
-
 .edZ2Body li {
   margin-bottom: 0.5rem;
   line-height: 1.25em;
   font-size: 1.2em;
 }
-
 .edZ2Body li strong {
   line-height: inherit;
   font-size: 1em;
 }
 
 .introSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 6rem 1rem;
 }
-
 .introSection > div {
   margin: 1rem auto;
   padding: 1rem 3rem 0;
 }
-
 .introSection > div h3 {
   margin-bottom: 0.5rem;
 }
-
 .introSection > div p {
   margin-bottom: 0.5em;
 }
-
 .introSection .roleScope > div {
   margin-bottom: 1.5rem;
 }
-
 .introSection .roleScope p {
   text-align: start;
 }
-
 .introSection .roleScope button,
 .introSection .roleScope a {
   margin-bottom: 0;
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
+  box-shadow: 0 1px 5px 1px rgb(73, 73, 73);
 }
 
 .researchSection {
   padding: 6rem 1rem;
 }
-
 .researchSection h2 {
   margin-bottom: 3rem;
 }
-
 .researchSection .businessResearch {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
-
 .researchSection .businessResearch .textArea1 {
   padding: 1rem;
 }
-
 .researchSection .businessResearch .textArea1 h3 {
   font-weight: 600;
 }
-
 .researchSection .businessResearch .textArea1 p {
   margin: 3rem 0;
 }
-
 .researchSection .businessResearch .nonTextArea1 {
   padding: 2rem 1rem;
   margin: 1rem auto;
   background-color: #333333;
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
+  box-shadow: 0 1px 5px 1px rgb(73, 73, 73);
   text-align: center;
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
   max-width: calc(500px + 4rem);
 }
-
 .researchSection .businessResearch .nonTextArea1 .img1 {
   margin-bottom: 3rem;
   max-width: 500px;
   max-width: 100%;
   height: auto;
 }
-
 .researchSection .businessResearch .nonTextArea1 .img2 {
   background-color: #fff;
   max-width: 500px;
@@ -528,114 +449,76 @@
 
 .userResearch {
   padding: 6rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-
 .userResearch .usersHeading {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0 2rem 0 1rem;
 }
-
 .userResearch .usersHeading h3 {
   margin: 0;
   font-weight: 600;
 }
-
 .userResearch .usersHeading {
   margin-bottom: 3rem;
 }
-
 .userResearch .userTextArea p,
 .userResearch ul {
   margin-bottom: 3rem;
 }
-
 .userResearch .hScrollGroup {
   padding: 1rem 0 1rem;
   margin: 0 1rem;
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
+  box-shadow: 0 1px 5px 1px rgb(73, 73, 73);
   max-width: calc(100% - 2rem);
   border-radius: 12px;
 }
-
 .userResearch .hScrollGroup .innerWrapper {
   overflow-x: scroll;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: auto;
 }
-
 .userResearch .hScrollGroup .innerWrapper::-webkit-scrollbar {
   width: 1rem;
   height: 1rem;
-  border-radius: 0.66667rem;
+  border-radius: 0.6666666667rem;
 }
-
 .userResearch .hScrollGroup .innerWrapper::-webkit-scrollbar-thumb {
   background: #333333;
-  border-radius: 0.66667rem;
+  border-radius: 0.6666666667rem;
 }
-
 .userResearch .hScrollGroup .innerWrapper::-webkit-scrollbar-track {
   background: #858585;
-  border-radius: 0.66667rem;
-  -webkit-box-shadow: 0 2px 5px #000;
-          box-shadow: 0 2px 5px #000;
+  border-radius: 0.6666666667rem;
+  box-shadow: 0 2px 5px #000;
   margin: 0 5vw;
 }
-
 .userResearch .hScrollGroup .innerWrapper {
   scrollbar-face-color: #333333;
   scrollbar-track-color: #858585;
 }
-
 .userResearch .hScrollGroup img {
   margin: 1rem 3rem 2rem;
   max-height: 35vh;
   width: auto;
   border-radius: 12px;
-  -webkit-box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
-          box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
+  box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
   cursor: pointer;
 }
 
 .competitiveAnalysis {
   padding: 6rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .competitiveAnalysis .compAnalysisImgArea {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .competitiveAnalysis .compAnalysisImgArea h3 {
   margin: 1rem 1rem 3rem 0;
   font-weight: 600;
@@ -643,23 +526,18 @@
       -ms-hyphens: none;
           hyphens: none;
 }
-
 .competitiveAnalysis .compAnalysisImgArea img {
   max-width: 100%;
   height: auto;
   cursor: pointer;
   background-color: #ffffff;
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
+  box-shadow: 0 1px 5px 1px rgb(73, 73, 73);
   margin-right: 1rem;
 }
-
 .competitiveAnalysis .compAnalysisTextArea {
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
+  box-shadow: 0 1px 5px 1px rgb(73, 73, 73);
   padding-top: 1rem;
 }
-
 .competitiveAnalysis .compAnalysisTextArea h4 {
   margin-bottom: 3rem;
   border-bottom: 1px solid;
@@ -668,12 +546,10 @@
   width: fit-content;
   padding-top: 0.2em;
 }
-
 .competitiveAnalysis .compAnalysisTextArea ul {
   margin: 0;
   padding: inherit;
 }
-
 .competitiveAnalysis .compAnalysisTextArea ul li {
   text-align: justify;
   text-justify: auto;
@@ -683,38 +559,24 @@
 .journeyMap {
   padding: 6rem 1rem;
 }
-
 .journeyMap h3 {
   margin-bottom: 3rem;
   font-weight: 600;
 }
-
 .journeyMap .journeyTextArea {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 .journeyMap .journeyTextArea > div {
   padding: 0;
 }
-
 .journeyMap .journeyTextArea > div p {
   margin-bottom: 3rem;
 }
-
 .journeyMap .journeyImgOuter {
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
+  box-shadow: 0 1px 5px 1px rgb(73, 73, 73);
   background-color: #ffffff;
   border-radius: 10px;
   cursor: pointer;
@@ -724,40 +586,27 @@
 
 .siteMap {
   padding: 6rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
 .siteMap .siteMapHead {
   padding: 0;
 }
-
 .siteMap .siteMapHead h3 {
   font-weight: 600;
   max-width: 90%;
   padding: 1rem;
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
+  box-shadow: 0 1px 5px 1px rgb(73, 73, 73);
   border-radius: 6px;
   -webkit-hyphens: none;
       -ms-hyphens: none;
           hyphens: none;
 }
-
 .siteMap .siteMapImgOuter {
   padding: 0 1rem;
 }
-
 .siteMap .siteMapImgOuter img {
   cursor: pointer;
   max-width: 100%;
@@ -767,35 +616,29 @@
 .moodBoard {
   padding: 6rem 1rem;
 }
-
 .moodBoard .moodTextArea {
   padding: 1rem 1.5rem;
   text-align: justify;
   text-justify: auto;
   background-color: #333333;
   color: #ffffff;
-  -webkit-box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
-          box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
+  box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
   border-radius: 6px 6px 0 6px;
   z-index: 1;
 }
-
 .moodBoard .moodTextArea h3 {
   margin: 0;
 }
-
 .moodBoard .moodBoardImgCont {
-  background-color: #333333e0;
+  background-color: rgba(51, 51, 51, 0.8784313725);
   padding: 3.7% 3.7%;
   margin-right: 0;
   margin-left: auto;
   margin-top: -1rem;
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
+  box-shadow: 0 1px 5px 1px rgb(73, 73, 73);
   border-radius: 0 6px 6px 6px;
   z-index: 0;
 }
-
 .moodBoard .moodBoardImgCont img {
   max-width: 100%;
   height: auto;
@@ -808,168 +651,109 @@
   margin-top: 3rem;
   padding: 6rem 1rem;
 }
-
 .wireframe .wfPre {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 6rem 1rem;
 }
-
 .wireframe .wfPre h2 {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
   margin-bottom: 3rem;
 }
-
 .wireframe .wfPre h3 {
   -webkit-hyphens: none;
       -ms-hyphens: none;
           hyphens: none;
   font-weight: 600;
 }
-
 .wireframe .wfPre h3,
 .wireframe .wfPre p {
   margin-bottom: 3rem;
 }
-
 .wireframe .wfPre > div {
   padding: 0;
 }
-
-.wireframe .wf1, .wireframe .wf2, .wireframe .wf3 {
+.wireframe .wf1, .wireframe .wf3, .wireframe .wf2 {
   padding: 6rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.wireframe .wf1 .wfImgOuter, .wireframe .wf2 .wfImgOuter, .wireframe .wf3 .wfImgOuter {
+.wireframe .wf1 .wfImgOuter, .wireframe .wf3 .wfImgOuter, .wireframe .wf2 .wfImgOuter {
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 5px 2px #ffffff70;
-          box-shadow: 0px 0px 5px 2px #ffffff70;
+  box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.4392156863);
   border-radius: 6px;
 }
-
-.wireframe .wf1 .wfImgOuter img, .wireframe .wf2 .wfImgOuter img, .wireframe .wf3 .wfImgOuter img,
+.wireframe .wf1 .wfImgOuter img, .wireframe .wf3 .wfImgOuter img, .wireframe .wf2 .wfImgOuter img,
 .wireframe .wf1 .wfImgOuter video,
-.wireframe .wf2 .wfImgOuter video,
-.wireframe .wf3 .wfImgOuter video {
+.wireframe .wf3 .wfImgOuter video,
+.wireframe .wf2 .wfImgOuter video {
   background-color: inherit;
   border-radius: inherit;
-  -webkit-box-shadow: 0px 0px 5px 2px #ffffff70;
-          box-shadow: 0px 0px 5px 2px #ffffff70;
+  box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.4392156863);
   max-width: 100%;
   height: auto;
 }
-
-.wireframe .wf1 > div, .wireframe .wf2 > div, .wireframe .wf3 > div {
+.wireframe .wf1 > div, .wireframe .wf3 > div, .wireframe .wf2 > div {
   padding: 0;
 }
-
-.wireframe .wf1 p, .wireframe .wf2 p, .wireframe .wf3 p {
+.wireframe .wf1 p, .wireframe .wf3 p, .wireframe .wf2 p {
   margin-bottom: 3rem;
 }
-
 .wireframe .wf2 {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 .wireframe .wf3 img {
   max-width: 100%;
   height: auto;
 }
-
 .wireframe .wfScrollOuter {
   padding: 6rem 1rem;
 }
-
 .wireframe .wfScrollOuter .wfScrollHead {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-
 .wireframe .wfScrollOuter .wfScrollHead h3 {
   margin-bottom: 3rem;
   font-weight: 600;
 }
-
 .wireframe .wfScrollOuter .wfScrollInner {
-  -webkit-box-shadow: 0px 0px 5px 2px #ffffff70;
-          box-shadow: 0px 0px 5px 2px #ffffff70;
+  box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.4392156863);
   border-radius: 6px;
   padding: 1rem 0;
 }
-
 .wireframe .wfScrollOuter .wfScrollInner .wireframeScroll {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   overflow-x: auto;
   overflow-y: hidden;
   max-height: 75vh;
 }
-
 .wireframe .wfScrollOuter .wfScrollInner .wireframeScroll::-webkit-scrollbar {
   width: 1rem;
   height: 1rem;
-  border-radius: 0.66667rem;
+  border-radius: 0.6666666667rem;
 }
-
 .wireframe .wfScrollOuter .wfScrollInner .wireframeScroll::-webkit-scrollbar-thumb {
   background: #353535;
-  border-radius: 0.66667rem;
+  border-radius: 0.6666666667rem;
 }
-
 .wireframe .wfScrollOuter .wfScrollInner .wireframeScroll::-webkit-scrollbar-track {
   background: #868686;
-  border-radius: 0.66667rem;
-  -webkit-box-shadow: 0 2px 5px #000;
-          box-shadow: 0 2px 5px #000;
+  border-radius: 0.6666666667rem;
+  box-shadow: 0 2px 5px #000;
   margin: 0 5vw;
 }
-
 .wireframe .wfScrollOuter .wfScrollInner .wireframeScroll {
   scrollbar-face-color: #353535;
   scrollbar-track-color: #868686;
 }
-
 .wireframe .wfScrollOuter .wfScrollInner .wireframeScroll > div {
   max-height: 100%;
   min-width: 50%;
@@ -977,27 +761,22 @@
   text-align: center;
   margin: 0 2rem 1rem;
 }
-
 .wireframe .wfScrollOuter .wfScrollInner .wireframeScroll > div:first-child {
   margin-left: 4rem;
 }
-
 .wireframe .wfScrollOuter .wfScrollInner .wireframeScroll > div:last-child {
   margin-right: 4rem;
 }
-
 .wireframe .wfScrollOuter .wfScrollInner .wireframeScroll > div h4 {
   white-space: nowrap;
   overflow: hidden;
   font-weight: 300;
 }
-
 .wireframe .wfScrollOuter .wfScrollInner .wireframeScroll > div img {
   max-height: 95%;
   max-width: 100%;
   height: auto;
 }
-
 .wireframe img {
   cursor: pointer;
 }
@@ -1005,177 +784,110 @@
 .finalProto {
   padding: 6rem 1rem;
 }
-
 .finalProto .imgTextHeading {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
   padding: 6rem 1rem;
 }
-
 .finalProto .imgTextHeading > div {
   padding: 0;
 }
-
 .finalProto .imgTextHeading .textButtonOuter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
-
 .finalProto .imgTextHeading .textButtonOuter h2 {
   margin-top: 0;
   margin-bottom: 3rem;
 }
-
 .finalProto .imgTextHeading .textButtonOuter button,
 .finalProto .imgTextHeading .textButtonOuter a {
   margin-bottom: 3rem;
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
+  box-shadow: 0 1px 5px 1px rgb(73, 73, 73);
 }
-
 .finalProto .imgTextHeading .headImg img {
   max-width: 100%;
   height: auto;
 }
-
 .finalProto .colorScheme {
   padding: 6rem 1rem;
   min-height: 60vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
 .finalProto .colorScheme .svgOuter {
   padding: 0;
 }
-
 .finalProto .colorScheme .svgOuter svg {
-  -webkit-box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
-          box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
+  box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
   max-width: 100%;
   height: auto;
 }
-
 .finalProto .colorScheme .colorsTextArea h3 {
   margin-bottom: 3rem;
   font-weight: 600;
 }
-
 .finalProto .colorScheme .colorsTextArea p {
   margin-bottom: 3rem;
 }
-
 .finalProto .subscriptArea {
   padding: 6rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .finalProto .subscriptArea .protoTextArea2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .finalProto .subscriptArea .protoTextArea2 h3 {
   font-weight: 600;
 }
-
 .finalProto .subscriptArea .protoTextArea2 p {
   text-align: justify;
   text-justify: auto;
 }
-
 .finalProto .subscriptArea .protoTextArea2 h3,
 .finalProto .subscriptArea .protoTextArea2 p {
   margin-bottom: 3rem;
 }
-
 .finalProto .subscriptArea .subsImgContainer {
   padding: 0;
 }
-
 .finalProto .subscriptArea .subsImgContainer img {
   max-width: 100%;
   height: auto;
-  -webkit-box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
-          box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
+  box-shadow: 5px 7px 10px rgba(49, 49, 49, 0.603), -2px -2px 5px rgba(58, 58, 58, 0.568);
 }
-
 .finalProto .scrollGroupsDemo {
   padding: 5rem 0;
 }
-
 .finalProto .scrollGroupsDemo .outer {
   padding: 1rem;
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
+  box-shadow: 0 1px 5px 1px rgb(73, 73, 73);
   border-radius: 6px;
 }
-
 .finalProto .scrollGroupsDemo .outer .col1 {
   margin-left: 0;
   margin-right: auto;
 }
-
 .finalProto .scrollGroupsDemo .outer .col1 h3 {
   margin-bottom: 3rem;
   font-weight: 600;
 }
-
 .finalProto .scrollGroupsDemo .outer .col2 {
   margin-left: auto;
   margin-right: 0;
   padding: 0;
 }
-
 .finalProto .scrollGroupsDemo .outer .col2 img,
 .finalProto .scrollGroupsDemo .outer .col2 video {
   width: 100%;
@@ -1183,107 +895,78 @@
   cursor: initial;
   background-color: inherit;
 }
-
 .finalProto .imgGradients {
   padding: 6rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .finalProto .imgGradients h3 {
   margin-bottom: 3rem;
   font-weight: 600;
 }
-
 .finalProto .imgGradients .imgGradImgOuter {
   margin-bottom: 3rem;
 }
-
 .finalProto .imgGradients .imgGradImgOuter img {
   max-width: 100%;
   height: auto;
 }
-
 .finalProto .imgGradients .protoTextArea1 {
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
+  box-shadow: 0 1px 5px 1px rgb(73, 73, 73);
   padding-top: 3rem;
   border-radius: 6px;
   margin: 0 auto 3rem auto;
 }
-
 .finalProto .imgGradients .protoTextArea1 p {
   margin-bottom: 3rem;
 }
-
 .finalProto .protoScrollOuter {
   padding: 6rem 1rem;
 }
-
 .finalProto .protoScrollOuter .resultsHead h2 {
   margin-bottom: 3rem;
 }
-
 .finalProto .protoScrollOuter .resultsHead button,
 .finalProto .protoScrollOuter .resultsHead a {
   margin-bottom: 3rem;
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
+  box-shadow: 0 1px 5px 1px rgb(73, 73, 73);
 }
-
 .finalProto .protoScrollOuter h3 {
   font-weight: 600;
   margin-bottom: 3rem;
 }
-
 .finalProto .protoScrollOuter .ScrollInner {
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
+  box-shadow: 0 1px 5px 1px rgb(73, 73, 73);
   border-radius: 6px;
   padding: 3rem 0;
 }
-
 .finalProto .protoScrollOuter .ScrollInner .protoScroll {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   overflow-x: auto;
   overflow-y: hidden;
   max-height: 75vh;
   padding-bottom: 2rem;
 }
-
 .finalProto .protoScrollOuter .ScrollInner .protoScroll::-webkit-scrollbar {
   width: 1rem;
   height: 1rem;
-  border-radius: 0.66667rem;
+  border-radius: 0.6666666667rem;
 }
-
 .finalProto .protoScrollOuter .ScrollInner .protoScroll::-webkit-scrollbar-thumb {
   background: #353535;
-  border-radius: 0.66667rem;
+  border-radius: 0.6666666667rem;
 }
-
 .finalProto .protoScrollOuter .ScrollInner .protoScroll::-webkit-scrollbar-track {
   background: #868686;
-  border-radius: 0.66667rem;
-  -webkit-box-shadow: 0 2px 5px #000;
-          box-shadow: 0 2px 5px #000;
+  border-radius: 0.6666666667rem;
+  box-shadow: 0 2px 5px #000;
   margin: 0 5vw;
 }
-
 .finalProto .protoScrollOuter .ScrollInner .protoScroll {
   scrollbar-face-color: #353535;
   scrollbar-track-color: #868686;
 }
-
 .finalProto .protoScrollOuter .ScrollInner .protoScroll > div {
   max-height: 100%;
   min-width: 35%;
@@ -1291,30 +974,24 @@
   text-align: center;
   margin: 0 3rem;
 }
-
 .finalProto .protoScrollOuter .ScrollInner .protoScroll > div:first-child {
   margin-left: 6rem;
 }
-
 .finalProto .protoScrollOuter .ScrollInner .protoScroll > div:last-child {
   margin-right: 6rem;
 }
-
 .finalProto .protoScrollOuter .ScrollInner .protoScroll > div h4 {
   white-space: nowrap;
   overflow: hidden;
 }
-
 .finalProto .protoScrollOuter .ScrollInner .protoScroll > div img {
   max-height: 95%;
   max-width: 100%;
   height: auto;
-  -webkit-box-shadow: 0 1px 5px 1px #494949;
-          box-shadow: 0 1px 5px 1px #494949;
+  box-shadow: 0 1px 5px 1px rgb(73, 73, 73);
   margin-bottom: 0;
   margin-top: auto;
 }
-
 .finalProto img {
   cursor: pointer;
 }
