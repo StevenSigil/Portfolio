@@ -133,7 +133,7 @@ export default function ArtsHome() {
                   "https://odysee.com/$/embed/LDRTitleSeq/825150704a7eaebd465ddf68422ab1883c2c9cf2?r=AHRiRLY4uphixu1AYFP9Kqgs5vyyroVH"
                 )
               }>
-              View Fianl Video
+              View Final Video
             </Button>
           </div>
         </Container>
