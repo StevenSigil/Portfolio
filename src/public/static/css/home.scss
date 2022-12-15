@@ -34,28 +34,29 @@
     flex-wrap: wrap;
     min-width: 90vw;
     width: fit-content;
-  }
-  .linkDiv > .col-6 {
-    display: flex;
-    align-items: center;
-    min-height: 10vh;
-    justify-content: center;
-  }
-  .linkDiv a {
-    color: inherit;
-    min-width: max-content;
-    font-family: mr-eaves-modern, sans-serif;
-    font-weight: 300;
-    font-size: 1.5em;
-    letter-spacing: 2px;
-    font-style: normal;
-    text-align: center;
-    transition: all 750ms;
-  }
-  .linkDiv a:hover {
-    color: rgba(255, 255, 255, 0.753);
-    text-decoration: none;
-    letter-spacing: 5px;
+
+    .col-6 {
+      display: flex;
+      align-items: center;
+      min-height: 10vh;
+      justify-content: center;
+    }
+    a {
+      color: inherit;
+      min-width: max-content;
+      font-family: mr-eaves-modern, sans-serif;
+      font-weight: 300;
+      font-size: 1.5em;
+      letter-spacing: 2px;
+      font-style: normal;
+      text-align: center;
+      transition: all 750ms;
+    }
+    a:hover {
+      color: rgba(255, 255, 255, 0.753);
+      text-decoration: none;
+      letter-spacing: 5px;
+    }
   }
 }
 

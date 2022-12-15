@@ -4,8 +4,22 @@
 //   overflow-x: hidden;
 // }
 
-$textColor: #ffffff;
-$backgroundColor: #212121;
+// ------------- SCREEN SIZE BREAK POINTS -------------
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+// ----------------------------------------------------
+
+$textColor: initial; // #ffffff;
+$backgroundColor: initial; // #212121;
 
 .staticCover {
   display: flex;
@@ -22,6 +36,25 @@ $backgroundColor: #212121;
   }
 }
 
+@mixin imgContainers {
+  @media only screen and (min-width: $screen-md-min) {
+    padding: 2rem 2rem calc(2rem - 10px);
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto 2rem;
+  padding: 2% 2% calc(2% - 10px);
+  background-color: #333333;
+  box-shadow: -3px -3px 12px -1px #212121, 3px 3px 12px -1px #212121;
+  justify-content: space-between;
+
+  img {
+    margin: 0 5px 10px;
+    height: auto !important;
+  }
+}
 .artsStyles {
   h1,
   h2,
@@ -35,16 +68,188 @@ $backgroundColor: #212121;
     font-style: normal;
     font-display: swap;
     color: $textColor;
+    text-align: center;
   }
   p {
     font-weight: 400;
   }
+
   max-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
   background-color: $backgroundColor;
+  margin-bottom: 30vh;
 
-  // scroll-snap-type: y proximity;
+  .artHead {
+    min-height: 500px;
+    position: relative;
+    color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+
+    .title {
+      z-index: 1;
+    }
+    h1,
+    h2,
+    p {
+      z-index: 1;
+      color: #eeeeee;
+      margin-top: 2rem;
+    }
+
+    img {
+      position: absolute;
+      z-index: 0;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    .linkDiv {
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-width: 90vw;
+      width: fit-content;
+
+      .linkCol {
+        display: flex;
+        align-items: center;
+        min-height: 10vh;
+        justify-content: center;
+      }
+      a {
+        color: inherit;
+        min-width: max-content;
+        font-family: mr-eaves-modern, sans-serif;
+        font-weight: 300;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        font-style: normal;
+        text-align: center;
+        transition: all 750ms;
+      }
+      a:hover {
+        color: rgba(255, 255, 255, 0.753);
+        text-decoration: none;
+        letter-spacing: 5px;
+      }
+    }
+  }
+
+  .secContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin: 2rem auto;
+    }
+
+    .btn {
+      @media only screen and (min-width: $screen-md-min) {
+        margin: 1rem auto 0;
+      }
+
+      margin: 0.5rem auto 0.5rem;
+      max-width: fit-content;
+    }
+  }
+
+  .singleWide {
+    @include imgContainers();
+    flex-direction: column;
+
+    .halfRowImgContainer {
+      flex-wrap: nowrap;
+      justify-content: center;
+      padding: 0 5px;
+
+      .halfRowImg {
+        max-width: 50%;
+        margin: 0;
+      }
+    }
+    img {
+      max-width: 100%;
+      height: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .doubleWide {
+    @include imgContainers();
+
+    img {
+      max-width: calc(50% - 10px);
+      height: auto;
+    }
+  }
+  .videoImgOuter {
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .tripleWide {
+    @include imgContainers();
+
+    img {
+      max-width: calc(33% - 10px);
+      height: auto;
+    }
+  }
+
+  .fourWide {
+    @include imgContainers();
+    flex-direction: row;
+
+    img {
+      max-width: calc(25% - 10px);
+      height: auto;
+    }
+  }
+
+  .oneByTwoWide {
+    @include imgContainers();
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+      max-width: calc(100% - 10px);
+      height: auto;
+      margin: 0 5px 10px;
+    }
+    svg {
+      @media only screen and (min-width: $screen-lg-min) {
+        padding: 2rem 6rem;
+      }
+
+      padding: 0.5rem;
+      margin: 0 5px 0;
+    }
+
+    .leftSingleContainer {
+      max-width: calc(50% - 10px);
+
+      img {
+        height: calc(100% - 10px);
+      }
+    }
+    .rightTwoContainer {
+      max-width: calc(60% - 10px);
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
 }
 
 .globalLinkIcon {
@@ -152,6 +357,7 @@ $backgroundColor: #212121;
       margin: auto;
       width: max-content;
       padding: 1rem 2rem;
+      text-decoration: none;
 
       .videoThumbContainer {
         position: relative;
@@ -160,29 +366,63 @@ $backgroundColor: #212121;
 
         .globalLinkIcon {
           position: absolute;
-          display: none;
           right: 15px;
           top: 15px;
           fill: $textColor;
+          opacity: 0;
         }
         .videoThumbImg {
           @include sizedWide;
         }
       }
+
       &:hover {
         cursor: pointer;
 
         h3 {
-          filter: brightness(50%);
+          // filter: brightness(50%);
+          text-decoration: underline solid #113bf8 2px;
         }
         .videoThumbImg {
           filter: brightness(50%);
+          transition: filter 500ms ease-out;
         }
         .globalLinkIcon {
-          display: initial;
+          opacity: 1;
           z-index: 1;
+          transition: all 300ms ease-out;
         }
       }
+    }
+  }
+}
+
+.videoModalOuter {
+  position: fixed;
+  background-color: #1e1e1ef5;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .closeBtn {
+    max-width: fit-content;
+    margin: 1rem auto 1rem auto;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+
+    iframe {
+      border: none;
+      border-radius: 10px;
+      aspect-ratio: 16/9;
+      max-width: 100%;
+      max-height: 100%;
+      box-shadow: -5px -5px 24px -1px #afafaf, 5px 5px 24px -1px #afafaf;
     }
   }
 }
@@ -204,6 +444,7 @@ $backgroundColor: #212121;
     .iFrameContainer {
       iframe {
         border: none;
+        border-radius: 10px;
       }
     }
   }

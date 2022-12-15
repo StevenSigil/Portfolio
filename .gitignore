@@ -30,6 +30,28 @@ test.scss
 ignoredImgs/
 *.ai
 
-src/public/static/media/arts/
-src/components/arts/
-LgIframeComp.jsx
+# IMAGES
+src/public/static/media/arts/castleDreams
+src/public/static/media/arts/facing_imgs/Aliens
+src/public/static/media/arts/facing_imgs/Charts
+src/public/static/media/arts/facing_imgs/Icons
+src/public/static/media/arts/facing_imgs/MiscGraphics/2-1.png
+src/public/static/media/arts/facing_imgs/MiscGraphics/2-2.png
+src/public/static/media/arts/facing_imgs/MiscGraphics/3.png
+src/public/static/media/arts/facing_imgs/MiscGraphics/4.png
+src/public/static/media/arts/facing_imgs/p1
+src/public/static/media/arts/facing_imgs/paintings
+src/public/static/media/arts/facing_imgs/PipBoy/NOT FINISHED.png
+src/public/static/media/arts/facing_imgs/PVCoffee/2.png 
+src/public/static/media/arts/facing_imgs/PVCoffee/4.png 
+src/public/static/media/arts/facing_imgs/PVCoffee/5.png 
+src/public/static/media/arts/facing_imgs/PVCoffee/8.png 
+src/public/static/media/arts/facing_imgs/PVCoffee/12.png 
+src/public/static/media/arts/facing_imgs/PVCoffee/14.png 
+src/public/static/media/arts/facing_imgs/PVCoffee/15.png 
+src/public/static/media/arts/marketing-infoGraphics
+src/public/static/media/arts/utopia
+src/public/static/media/arts/EZFlower.svg
+src/public/static/media/arts/The FRQ - Main - NO BG.svg
+
+src/components/arts/singleItem

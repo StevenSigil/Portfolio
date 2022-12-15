@@ -39,7 +39,7 @@ function HomeHeading() {
           </Col>
 
           {/* <Col sm={3} xs={6} className="">
-            <Link to="/digitalMedia">Digital Media</Link>
+            <Link to="/digitalmedia">Digital Media</Link>
           </Col> */}
         </div>
       </Container>

@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 export default function ProjectsHeading() {
@@ -28,6 +29,10 @@ export default function ProjectsHeading() {
         <HashLink smooth to="#python-programming">
           <p>Python Projects</p>
         </HashLink>
+
+        {/* <Link to="/digitalmedia">
+          <p>Digital Media</p>
+        </Link> */}
       </Container>
     </Container>
   );

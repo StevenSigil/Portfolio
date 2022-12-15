@@ -5,11 +5,6 @@ import "./public/static/css/app.css";
 
 import Spinner from "./components/Spinner";
 
-// import SunOverPlane from "./components/arts/singleItem/SunOverPlane";
-// import SleepingTigers from "./components/arts/singleItem/SleepingTigers";
-// import LDRobots from "./components/arts/singleItem/LDRobots";
-// import DPICorp from "./components/arts/singleItem/DPICorp";
-
 const Home = lazy(() => import("./components/home/Home"));
 const EdZen2 = lazy(() => import("./components/edZen2/EdZen2"));
 const SonataEvents = lazy(() => import("./components/sonata/SonataEvents"));

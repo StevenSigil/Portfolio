@@ -300,7 +300,7 @@
   width: -moz-fit-content;
   width: fit-content;
 }
-.topRow-container .linkDiv > .col-6 {
+.topRow-container .linkDiv .col-6 {
   display: flex;
   align-items: center;
   min-height: 10vh;
